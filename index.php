@@ -22,6 +22,34 @@ $personal_feed = [
         'shares' => 0,
         'image' => 'https://via.placeholder.com/400x200?text=Personal+3'
     ],
+    [
+        'title' => 'Local baker wins national pie award',
+        'excerpt' => "Small bakery takes home grand prize for rhubarb pie.",
+        'comments' => 5,
+        'shares' => 2,
+        'image' => 'https://via.placeholder.com/400x200?text=Personal+4'
+    ],
+    [
+        'title' => 'City park reopens after renovation',
+        'excerpt' => "Playgrounds and paths have been upgraded for families.",
+        'comments' => 2,
+        'shares' => 0,
+        'image' => 'https://via.placeholder.com/400x200?text=Personal+5'
+    ],
+    [
+        'title' => 'New exhibition celebrates local artists',
+        'excerpt' => "Gallery opens a month-long show of contemporary work.",
+        'comments' => 0,
+        'shares' => 0,
+        'image' => 'https://via.placeholder.com/400x200?text=Personal+6'
+    ],
+    [
+        'title' => 'Weekend farmers market: what to expect',
+        'excerpt' => "Seasonal produce and live music on the high street.",
+        'comments' => 3,
+        'shares' => 1,
+        'image' => 'https://via.placeholder.com/400x200?text=Personal+7'
+    ],
 ];
 
 $main_feed = [
@@ -49,6 +77,38 @@ $main_feed = [
         'image' => 'https://via.placeholder.com/360x220?text=Main+3',
         'category' => 'U.S.'
     ],
+    [
+        'title' => 'EU leaders meet to discuss energy crisis',
+        'excerpt' => "A plan is proposed to stabilize gas prices across member states.",
+        'comments' => 120,
+        'shares' => 12,
+        'image' => 'https://via.placeholder.com/360x220?text=Main+4',
+        'category' => 'World'
+    ],
+    [
+        'title' => 'Tech stocks rally after earnings beat',
+        'excerpt' => "Major technology companies reported stronger-than-expected results.",
+        'comments' => 88,
+        'shares' => 9,
+        'image' => 'https://via.placeholder.com/360x220?text=Main+5',
+        'category' => 'Business'
+    ],
+    [
+        'title' => 'Climate summit: nations pledge new targets',
+        'excerpt' => "Commitments aim to reduce emissions by 2035.",
+        'comments' => 402,
+        'shares' => 55,
+        'image' => 'https://via.placeholder.com/360x220?text=Main+6',
+        'category' => 'Science'
+    ],
+    [
+        'title' => 'Breakthrough in renewable battery storage',
+        'excerpt' => "A prototype promises longer life and faster charging.",
+        'comments' => 77,
+        'shares' => 11,
+        'image' => 'https://via.placeholder.com/360x220?text=Main+7',
+        'category' => 'Science'
+    ],
 ];
 
 $category_strip = [
@@ -73,9 +133,37 @@ $category_strip = [
         'image' => 'https://via.placeholder.com/300x180?text=Cat+3',
         'category' => 'Science'
     ],
+    [
+        'title' => 'New fashion week trends: what to wear',
+        'comments' => 12,
+        'shares' => 2,
+        'image' => 'https://via.placeholder.com/300x180?text=Cat+4',
+        'category' => 'Showbiz'
+    ],
+    [
+        'title' => 'Local team wins regional finals',
+        'comments' => 45,
+        'shares' => 6,
+        'image' => 'https://via.placeholder.com/300x180?text=Cat+5',
+        'category' => 'Sports'
+    ],
+    [
+        'title' => 'How to save money on holiday flights',
+        'comments' => 8,
+        'shares' => 1,
+        'image' => 'https://via.placeholder.com/300x180?text=Cat+6',
+        'category' => 'Travel'
+    ],
+    [
+        'title' => 'Guide to healthy winter recipes',
+        'comments' => 6,
+        'shares' => 0,
+        'image' => 'https://via.placeholder.com/300x180?text=Cat+7',
+        'category' => 'Lifestyle'
+    ],
 ];
 
-// index.php keeps the page-specific PHP arrays and content, but uses shared header/footer
+//uses shared header/footer
 include __DIR__ . '/header.php';
 ?>
 
@@ -83,7 +171,7 @@ include __DIR__ . '/header.php';
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             <!-- Main column -->
             <div class="md:col-span-7">
-                <!-- Hero -->
+                <!-- Hero Section -->
                 <section class="mb-8">
                     <img src="assets/news_article_pics/news1coffeeimg1.png" alt="Hero" class="w-full rounded-lg shadow object-cover" style="height:320px;" />
                     <div class="mt-4">
@@ -101,9 +189,9 @@ include __DIR__ . '/header.php';
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 15.707a1 1 0 01-1.414 0L5.172 10l5.707-5.707a1 1 0 011.414 1.414L8.414 10l3.879 3.879a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
                             </button>
                             <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
-                                <?php foreach(array_slice($personal_feed,0,5) as $item): ?>
-                                    <article class="max-w-[200px] flex-shrink-0 border rounded p-3 bg-gray-50">
-                                        <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-46 rounded" />
+                                <?php foreach(array_slice($personal_feed,0,7) as $item): ?>
+                                    <article class="pf-card border p-3 bg-gray-50">
+                                        <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
                                         <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
                                         <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
                                         <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
@@ -152,7 +240,7 @@ include __DIR__ . '/header.php';
                                 <svg id="catToggleIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform rotate-0 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 4a1 1 0 011.707-.707l6 6a1 1 0 010 1.414l-6 6A1 1 0 016 16.586L11.586 11 6 5.414A1 1 0 016 4z" clip-rule="evenodd"/></svg>
                             </button>
                             <div id="catFiltersPanel" class="panel-slide bg-white border rounded h-9 flex gap-2 items-center overflow-x-auto px-2">
-                                <!-- horizontal category filter buttons injected here -->
+                                <!-- horizontal category filter buttons -->
                             </div>
                         </div>
                     </div>
@@ -172,7 +260,7 @@ include __DIR__ . '/header.php';
                 </section>
             </div>
 
-            <!-- Sidebar: Don't Miss (3 cols) -->
+            <!-- Sidebar: Don't Miss Section-->
             <aside class="md:col-span-3">
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="bg-blue-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
@@ -191,7 +279,7 @@ include __DIR__ . '/header.php';
                 </div>
             </aside>
 
-            <!-- Narrow ad column (wider: 2 cols) -->
+            <!-- Narrow ad column -->
             <div class="hidden md:block md:col-span-2">
                 <div class="sticky top-24">
                     <div class="text-xs text-gray-500 mb-2">ADVERTISEMENT</div>
@@ -204,6 +292,14 @@ include __DIR__ . '/header.php';
     </main>
 <?php include __DIR__ . '/footer.php'; ?>
 <style>
+/* Feed sizing variables and shared card/image helpers */
+:root{
+    --pf-card-width: 200px; /* slightly wider as requested */
+    --pf-img-height: 140px; /* shortened image height as requested */
+}
+.pf-card{ flex: 0 0 var(--pf-card-width); width: var(--pf-card-width); box-sizing: border-box; border-radius:0.5rem; overflow:hidden; }
+.pf-img{ width:100%; height:var(--pf-img-height); object-fit:cover; display:block; }
+
 /* Slide + fade animation helpers for filter strips */
 .anim-hidden {
     max-height: 0;
@@ -292,16 +388,16 @@ function renderMainFeed(filter) {
     // render into the horizontal row
     const row = document.getElementById('main-feed-row');
     row.innerHTML = '';
-    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,5);
+    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
     if (items.length === 0) {
         row.innerHTML = '<div class="text-center text-gray-500">No items for this filter.</div>';
         return;
     }
     items.forEach(post => {
         const art = document.createElement('article');
-        art.className = 'min-w-[300px] flex-shrink-0 bg-gray-50 rounded overflow-hidden shadow-sm';
+        art.className = 'pf-card bg-gray-50 rounded overflow-hidden shadow-sm';
         art.innerHTML = `
-            <img src="${post.image}" alt="${escapeHtml(post.title)}" class="w-full" />
+            <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
             <div class="p-3">
                 <h3 class="font-semibold">${escapeHtml(post.title)}</h3>
                 <p class="text-sm text-gray-600 mt-1">${escapeHtml(post.excerpt || '')}</p>
@@ -314,16 +410,16 @@ function renderMainFeed(filter) {
 function renderCategoryStrip(filter) {
     const row = document.getElementById('category-strip-row');
     row.innerHTML = '';
-    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,5);
+    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
     if (items.length === 0) {
         row.innerHTML = '<div class="text-gray-500">No items for this filter.</div>';
         return;
     }
     items.forEach(cat => {
         const card = document.createElement('div');
-        card.className = 'min-w-[300px] bg-gray-50 rounded shadow-sm p-3';
+        card.className = 'pf-card bg-gray-50 rounded shadow-sm p-3';
         card.innerHTML = `
-            <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="w-full rounded" />
+            <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
             <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
             <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>`;
         row.appendChild(card);

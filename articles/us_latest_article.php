@@ -7,76 +7,72 @@ include __DIR__ . '/../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/news_article_pics/news1coffeeimg1.png" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/news_article_pics/news_latestimg1.png" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">Best bean-to-cup coffee machine: The tried and tested automatics I recommend for a fuss-free brew, even if you're a complete beginner</h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">US tells Europe it must take over 'the majority' of NATO's defence capabilities by 2027 as Trump shifts American military focus while Putin's war in Ukraine rages on</h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By DANIELLE AMATO - LIFESTYLE AND CONSUMER REVIEWS WRITER</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 12:57 GMT, 4 December 2025 | Updated: 12:59 GMT, 4 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By TARYN KAUR PEDLER, FOREIGN NEWS REPORTER</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 13:14 GMT, 5 December 2025 | Updated: 13:40 GMT, 5 December 2025</div>
                 </div>
 
                 
-                <p class="text-gray-700 leading-relaxed">If you care about good coffee but don't have the patience or time for a fully manual espresso machine, a good bean-to-cup coffee machine can produce professional-ish results with just a few taps of a button. <br>
-                <br>These fully- and semi-automatic machines tend to come in a little pricier than their manual counterparts and pod coffee machines, mostly because they are complex machines that do everything for you. There's no need to purchase an extra grinder, portafilter or milk frother.</p>
+                <p class="text-gray-700 leading-relaxed">The United States wants Europe to take over the majority of <a href="#" class="text-blue-700 font-bold">NATO</a>'s defense capabilities by 2027, <a href="#" class="text-blue-700 font-bold">Pentagon</a> officials told diplomats in Washington this week.<br>
+                <br>The message, recounted by five sources familiar with the discussion, including a US official, was conveyed at a meeting in Washington this week of Pentagon staff overseeing NATO policy and several European delegations.<br>
+                <br>The shifting of this burden from the US to European members of the North Atlantic Treaty Organisation would dramatically change how the United States, a founding member of the post-war alliance, works with its most important military partners.</p>
                 <div class="my-4 border-t border-blue-300 py-2">
                     <!-- Section -->
-                <section class="mt-6">
-                    <h2 class="text-xl font-semibold">What exactly is a bean-to-cup coffee machine?</h2>
-                    <p class="text-gray-700 mt-2">If we are being pedantic, a true bean-to-cup coffee machine is one with an integrated bean hopper and internal brewing unit. This means some of my favourite machines, such as the <a href="#" class="text-blue-700">Ninja Cafe Luxe Premier</a> and the <a href="#" class="text-blue-700">Sage Oracle Jet</a>, don't technically qualify.</p>
+                <section class="mt-4">
+                    <p class="text-gray-700 mt-2">In the meeting, Pentagon officials indicated that Washington was not yet satisfied with the strides Europe has made to boost its defense capabilities since Russia began its war on Ukraine in 2022.<br>
+                        <br>The US officials told their counterparts that if Europe does not meet the 2027 deadline, the US may stop participating in some NATO defense coordination mechanisms, said the sources, who requested anonymity to discuss private conversations.<br>
+                        <br>Some officials on Capitol Hill are aware of and concerned about the Pentagon's message to the Europeans, one US official said.<br>
+                        <br>It comes after Donald Trump warned European nations that they are under threat of 'civilisational erasure' and will be 'unrecognisable' in the next 20 years.<br>
+                        <br>The US president brutally criticised allies in Europe and said that the United States will champion opponents to the continent's long-held values on immigration in a new strategy document today that aims to flesh out Trump's norms-shattering 'America First' worldview. </p>
                     <div class="mt-4">
-                        <img src="/assets/news_article_pics/news1coffeeimg2.png" alt="Coffee machine close-up" class="w-full h-auto object-contain rounded-lg shadow" />
+                        <img src="/assets/news_article_pics/news_latestimg2.png" alt="Military exercises 'Iron Defender' at a military range in Wierzbiny" class="w-full h-auto object-contain rounded-lg shadow" />
                     </div>
-                    <p class="text-gray-700 mt-2">However, there are so many machines that are now blurring the lines between a true fully automatic bean-to-cup and a semi-automatic with assisted brewing. Because of this, I've included a couple of these options in our roundup. They're almost as easy to use as a true bean-to-cup, so I'm happy to recommend them.<br>
-                        <br>If you're a true coffee lover that values convenience, quality and time-saving, these are the tried and tested bean-to-cup picks that I recommend to everyone.</p>
+                    <p class="text-gray-700 mt-6">Conventional defense capabilities include non-nuclear assets from troops to weapons and the officials did not explain how the US would measure Europe's progress toward shouldering most of the burden.<br> 
+                        <br>It was also not clear if the 2027 deadline represented the Trump administration position or only the views of some Pentagon officials.<br>
+                        <br>There are significant disagreements in Washington over the military role the US should play in Europe.<br>
+                        <br>Several European officials said that a 2027 deadline was not realistic no matter how Washington measures progress, since Europe needs more than money and political will to replace certain US capabilities in the short term.<br>
+                        <br>Among other challenges, NATO allies face production backlogs for military equipment they are trying to purchase.<br> 
+                        <br>While US officials have encouraged Europe to buy more US-made materiel, some of the most prized US-made weapons and defense systems would take years to be delivered if ordered today.<br>
+                        <br>The US also contributes capabilities that cannot simply be purchased, like unique intelligence, surveillance and reconnaissance that have proven key to the Ukrainian war effort.</p>
                 </section>
                 </div>
 
-                <div class="my-4 border-t border-blue-300 py-2">
-                    <ul class="list-disc ml-6 space-y-1 text-gray-800">
-                        <li>Best value bean-to-cup: <a href="#" class="text-blue-700 hover:underline">De'Longhi Magnifica</a></li>
-                        <li>Best for quality espresso: <a href="#" class="text-blue-700 hover:underline">Gaggia Accademia</a></li>
-                        <li>Best does it all automatic: <a href="#" class="text-blue-700 hover:underline">De'Longhi Eletta Explore</a></li>
-                        <li>Best in-between machine: <a href="#" class="text-blue-700 hover:underline">Sage Oracle Jet</a></li>
-                        <li>Best Ninja machine: <a href="#" class="text-blue-700 hover:underline">Ninja Luxe Cafe Premier</a></li>
-                        <li>Prestige pick: <a href="#" class="text-blue-700 hover:underline">KitchenAid KF8</a></li>
-                    </ul>
-                </div>
-
                 <?php
-                // Sample comments (server-side placeholders). These are intentionally
-                // small and client-side 'Show more' will append additional dummy
-                // comments. Replies and votes are client-only and not persisted.
+                // Sample comments (placeholders). These are intentionally small and client-side 'Show more' will append additional dummy comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Pexi',
-                        'location' => 'Colwyn Bay, United Kingdom',
-                        'time' => '12 minutes ago',
-                        'text' => "I have a De'Longhi Magnifica S and it's brilliant. Easy to use and makes great coffee. Highly recommend for anyone looking for a bean-to-cup machine.",
-                        'up' => 3,
+                        'name' => 'RW Madness',
+                        'location' => 'The North, United Kingdom',
+                        'time' => 'moments ago',
+                        'text' => "The only time article 5 has ever been enacted was by the US after 9/11.",
+                        'up' => 0,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Nigel Fartage',
-                        'location' => 'Clacton on Sea, United Kingdom',
-                        'time' => '28 minutes ago',
-                        'text' => "I actually have the Gaggia Accademia. The espresso is rich and flavorful, and the machine is easy to operate. Definitely a great choice for coffee enthusiasts.",
-                        'up' => 4,
+                        'name' => 'reinalm',
+                        'location' => 'frankfurt, Germany',
+                        'time' => 'moments ago',
+                        'text' => "please Mr. Trump don't do it, the people here can't even run a lemonade stand ..",
+                        'up' => 6,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Marta',
-                        'location' => 'London, United Kingdom',
-                        'time' => '1 hour ago',
-                        'text' => "Great roundup — I bought the Eletta last year and it hasn't let me down.",
-                        'up' => 2,
-                        'down' => 0,
+                        'name' => 'Gart Williams',
+                        'location' => 'A Stop at Willoughby, United States',
+                        'time' => 'moments ago',
+                        'text' => "Good. Let those moochers pay for it",
+                        'up' => 1,
+                        'down' => 3,
                     ],
                 ];
-                $comment_count = 41; // total count for the 'Show more' button
+                $comment_count = 143; // total count for the 'Show more' button
                 ?>
 
                 <section id="comments-section" class="mt-6 bg-white rounded shadow p-4">

@@ -7,76 +7,75 @@ include __DIR__ . '/../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/news_article_pics/news1coffeeimg1.png" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/news_article_pics/royals_latestimg2.png" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">Best bean-to-cup coffee machine: The tried and tested automatics I recommend for a fuss-free brew, even if you're a complete beginner</h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">Prince Harry should be stripped of his titles after Trump-mocking Colbert appearance to bring 'clarity' to Americans who just see a 'British prince insulting their head of state'</h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By DANIELLE AMATO - LIFESTYLE AND CONSUMER REVIEWS WRITER</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 12:57 GMT, 4 December 2025 | Updated: 12:59 GMT, 4 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By JAMES NYE</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 00:35 GMT, 5 December 2025 | Updated: 13:31 GMT, 5 December 2025</div>
                 </div>
 
                 
-                <p class="text-gray-700 leading-relaxed">If you care about good coffee but don't have the patience or time for a fully manual espresso machine, a good bean-to-cup coffee machine can produce professional-ish results with just a few taps of a button. <br>
-                <br>These fully- and semi-automatic machines tend to come in a little pricier than their manual counterparts and pod coffee machines, mostly because they are complex machines that do everything for you. There's no need to purchase an extra grinder, portafilter or milk frother.</p>
+                <p class="text-gray-700 leading-relaxed">Prince Harry should be stripped of his title to bring 'clarity' to Americans who believe he speaks for the Royal Family, says one expert on the House of Windsor.<br>
+                <br>This follows Harry's cringeworthy appearance on a US talk show on Wednesday night during which he put his father the King in a diplomatic chokehold by taking pot-shots at President Trump.<br>
+                <br>'I think the Royal Family has no real choice,' says Tom Sykes, editor of the Royalist newsletter on Substack.</p>
                 <div class="my-4 border-t border-blue-300 py-2">
                     <!-- Section -->
-                <section class="mt-6">
-                    <h2 class="text-xl font-semibold">What exactly is a bean-to-cup coffee machine?</h2>
-                    <p class="text-gray-700 mt-2">If we are being pedantic, a true bean-to-cup coffee machine is one with an integrated bean hopper and internal brewing unit. This means some of my favourite machines, such as the <a href="#" class="text-blue-700">Ninja Cafe Luxe Premier</a> and the <a href="#" class="text-blue-700">Sage Oracle Jet</a>, don't technically qualify.</p>
+                <section class="mt-4">
+                    <p class="text-gray-700 mt-2">'Harry believes he's free to speak his mind now that he's no longer a working royal,' says Sykes. 'I think if he were truly living as Harry Wales, private citizen, that argument would hold water.<br>
+                        <br>'But he isn't Harry Wales. He's Prince Harry, Duke of Sussex. And in the American imagination, he still carries the full aura of a prince — a representative of the monarchy.<br>
+                        <br>Some officials on Capitol Hill are aware of and concerned about the Pentagon's message to the Europeans, one US official said.<br>
+                        <br>'A global audience does not grasp that Harry isn't still a part of the Windsor family business.<br>
+                        <br>'Charles and William may be hundreds of miles away in Balmoral or Windsor, but in the American mind they are standing just offstage as Harry delivers his punchlines.'
+                        <br>And because of that Sykes says, most American viewers will see 'simply see a British prince insulting their head of state'.</p>
                     <div class="mt-4">
-                        <img src="/assets/news_article_pics/news1coffeeimg2.png" alt="Coffee machine close-up" class="w-full h-auto object-contain rounded-lg shadow" />
+                        <img src="/assets/news_article_pics/royals_latestimg3.png" alt="During his cringeworthy appearance on the show Harry performed skits and lip synced a Great British Bake Off meme" class="w-full h-auto object-contain rounded-lg shadow" />
                     </div>
-                    <p class="text-gray-700 mt-2">However, there are so many machines that are now blurring the lines between a true fully automatic bean-to-cup and a semi-automatic with assisted brewing. Because of this, I've included a couple of these options in our roundup. They're almost as easy to use as a true bean-to-cup, so I'm happy to recommend them.<br>
-                        <br>If you're a true coffee lover that values convenience, quality and time-saving, these are the tried and tested bean-to-cup picks that I recommend to everyone.</p>
+                    <p class="text-gray-700 mt-6">'The titles must be removed, not as punishment but for clarity. Removing them draws a clear blue line between Prince Harry the royal and Harry the private citizen. It protects the monarchy from his volatility.'<br> 
+                        <br>Appearing for no discernible reason on the Late Show with Stephen Colbert, Harry called Trump an 'elected King', mocked his legal battles with American television networks and bizarrely lip-synced a Great British Bake Off meme.<br>
+                        <br>This comes as London and Washington work together to plan King Charles' expected state visit to the United States next year after Trump's unprecedented second state visit earlier this year.<br>
+                        <br>Grinning alongside Colbert, a man the royals apparently cannot stand after he joked about Kate Middleton's disappearance from public life amid her cancer fight, Harry was making his second appearance on the iconic show.<br>
+                        <br>And Sykes believes this time was a crucial moment for Harry in the years since he ceased to be a working royal after leaving with wife Meghan in the so-called Megxit.<br> 
+                        <br>'He either doesn't understand the danger he walked into last night, or he simply no longer cares, having developed a craving for the spotlight and for applause that overwhelms caution, context, and even self-preservation,' explains Sykes.<br>
+                    <div class="mt-4">
+                        <img src="/assets/news_article_pics/royals_latestimg4.png" alt="During his cringeworthy appearance on the show Harry performed skits and lip synced a Great British Bake Off meme" class="w-full h-auto object-contain rounded-lg shadow" />
+                    </div>
                 </section>
                 </div>
 
-                <div class="my-4 border-t border-blue-300 py-2">
-                    <ul class="list-disc ml-6 space-y-1 text-gray-800">
-                        <li>Best value bean-to-cup: <a href="#" class="text-blue-700 hover:underline">De'Longhi Magnifica</a></li>
-                        <li>Best for quality espresso: <a href="#" class="text-blue-700 hover:underline">Gaggia Accademia</a></li>
-                        <li>Best does it all automatic: <a href="#" class="text-blue-700 hover:underline">De'Longhi Eletta Explore</a></li>
-                        <li>Best in-between machine: <a href="#" class="text-blue-700 hover:underline">Sage Oracle Jet</a></li>
-                        <li>Best Ninja machine: <a href="#" class="text-blue-700 hover:underline">Ninja Luxe Cafe Premier</a></li>
-                        <li>Prestige pick: <a href="#" class="text-blue-700 hover:underline">KitchenAid KF8</a></li>
-                    </ul>
-                </div>
-
                 <?php
-                // Sample comments (server-side placeholders). These are intentionally
-                // small and client-side 'Show more' will append additional dummy
-                // comments. Replies and votes are client-only and not persisted.
+                // Sample comments (placeholders). These are intentionally small and client-side 'Show more' will append additional dummy comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Pexi',
-                        'location' => 'Colwyn Bay, United Kingdom',
-                        'time' => '12 minutes ago',
-                        'text' => "I have a De'Longhi Magnifica S and it's brilliant. Easy to use and makes great coffee. Highly recommend for anyone looking for a bean-to-cup machine.",
-                        'up' => 3,
+                        'name' => 'aspasia',
+                        'location' => 'Garden City, United States',
+                        'time' => 'moments ago',
+                        'text' => "He has no class. He didn't think or doesn't care about how this impacts his father. The RF are correct in cutting this clown loose. Let him and Meeghan swim or sink on their own.",
+                        'up' => 0,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Nigel Fartage',
-                        'location' => 'Clacton on Sea, United Kingdom',
-                        'time' => '28 minutes ago',
-                        'text' => "I actually have the Gaggia Accademia. The espresso is rich and flavorful, and the machine is easy to operate. Definitely a great choice for coffee enthusiasts.",
+                        'name' => 'Foxtrot Juliet Bravo',
+                        'location' => 'Las Vegas, United States',
+                        'time' => '5 minutes ago',
+                        'text' => "Deport this leftist useful idiot and stat.",
                         'up' => 4,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Marta',
-                        'location' => 'London, United Kingdom',
-                        'time' => '1 hour ago',
-                        'text' => "Great roundup — I bought the Eletta last year and it hasn't let me down.",
-                        'up' => 2,
+                        'name' => 'NebulaBugleShell',
+                        'location' => 'wimbly, United States',
+                        'time' => '6 minutes ago',
+                        'text' => "One thing's for sure; he'll never be king.",
+                        'up' => 8,
                         'down' => 0,
                     ],
                 ];
-                $comment_count = 41; // total count for the 'Show more' button
+                $comment_count = 1900; // total count for the 'Show more' button
                 ?>
 
                 <section id="comments-section" class="mt-6 bg-white rounded shadow p-4">
