@@ -111,13 +111,13 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                                                 }
                                             }
                                         ?>
-                                <a href="/index.php" aria-current="<?php echo $current === 'index.php' ? 'page' : ''; ?>" class="<?php echo navClass($current, 'index.php'); ?>">Home</a>
-                                <a href="/news.php" class="<?php echo navClass($current, 'news.php'); ?>">News</a>
-                                <a href="/royals.php" class="<?php echo navClass($current, 'royals.php'); ?>">Royals</a>
-                                <a href="/us.php" class="<?php echo navClass($current, 'us.php'); ?>">U.S.</a>
-                                <a href="/tv.php" class="<?php echo navClass($current, 'tv.php'); ?>">TV</a>
-                                <a href="/podcasts.php" class="<?php echo navClass($current, 'podcasts.php'); ?>">Podcasts</a>
-                                <a href="/buyline.php" class="<?php echo navClass($current, 'buyline.php'); ?>">Buyline</a>
+                                <a href="index.php" aria-current="<?php echo $current === 'index.php' ? 'page' : ''; ?>" class="<?php echo navClass($current, 'index.php'); ?>">Home</a>
+                                <a href="news.php" class="<?php echo navClass($current, 'news.php'); ?>">News</a>
+                                <a href="royals.php" class="<?php echo navClass($current, 'royals.php'); ?>">Royals</a>
+                                <a href="us.php" class="<?php echo navClass($current, 'us.php'); ?>">U.S.</a>
+                                <a href="tv.php" class="<?php echo navClass($current, 'tv.php'); ?>">TV</a>
+                                <a href="podcasts.php" class="<?php echo navClass($current, 'podcasts.php'); ?>">Podcasts</a>
+                                <a href="buyline.php" class="<?php echo navClass($current, 'buyline.php'); ?>">Buyline</a>
                                 <a href="/mplus.php" class="w-6 h-6 flex items-center justify-center <?php echo navClass($current, 'mplus.php'); ?>"><img src="/assets/m-logo.png" alt="m" class="inline-block h-4 w-auto mr-1">+</a>
                             </div>
                         </div>
