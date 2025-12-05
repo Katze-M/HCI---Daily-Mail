@@ -107,7 +107,12 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                                 <?php
                                             if (!function_exists('navClass')) {
                                                 function navClass($current, $page) {
-                                                    return $current === $page ? 'text-sm px-4 py-2 bg-blue-600 text-white rounded-sm' : 'text-sm px-4 py-2 text-black';
+                                                    if ($current === $page) {
+                                                        // Use royal orange for Buyline, blue for others
+                                                        $bgColor = ($page === 'buyline.php') ? 'bg-orange-600' : 'bg-blue-600';
+                                                        return "text-sm px-4 py-2 {$bgColor} text-white rounded-sm";
+                                                    }
+                                                    return 'text-sm px-4 py-2 text-black';
                                                 }
                                             }
                                         ?>
