@@ -79,7 +79,7 @@ include __DIR__ . '/header.php';
                 <section class="mb-8">
                     <img src="assets/Buyline_assets/Buyline_Pic1.avif" alt="Hero" class="w-full rounded-lg shadow object-cover" style="height:320px;" />
                     <div class="mt-4">
-                        <h1 class="text-2xl font-semibold"><a href="articles/article.php" class="text-blue-800 hover:underline">The pet camera I swear by to keep an eye on my cats is on sale - and it makes a great Christmas gift for pet owners</a></h1>
+                        <h1 class="text-2xl font-semibold"><a href="articles/buyline/buyline_latest_article.php" class="text-blue-800 hover:underline">The pet camera I swear by to keep an eye on my cats is on sale - and it makes a great Christmas gift for pet owners</a></h1>
                         <p class="text-gray-600 mt-2">SHOPPING: If you're shopping for a pet parent this Christmas (or you are one!), a pet camera from Furbo is a gift that makes life easier for the entire family.  An at-home pet camera means no more guessing what your fur babies are up to (or what mischief they're getting into) - you can check in, speak to them, and enjoy peace of mind whether you're simply in the office or away on holiday.  Furbo's latest release, the Furbo Mini 360° is smaller and smarter than ever.</p>
                     </div>
                 </section>
