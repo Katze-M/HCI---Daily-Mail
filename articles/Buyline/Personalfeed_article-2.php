@@ -7,71 +7,82 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/PerFeed_Artc_2 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/CatFeed_SPic-2.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">I’ve scoured the high street for the ultimate Christmas party dresses – these are my 27 favourites for under £100 </h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">
+                    Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas                
+                </h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By SOPHIE HINES, LIFESTYLE & DIGITAL EDITOR</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 10:21 GMT, 5 December 2025 | Updated: 10:40 GMT, 5 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By LAYLA TURNER, COMMERCE WRITER AND CONTENT CREATOR</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 12:12 GMT, 4 December 2025 | Updated: 12:12 GMT, 4 December 2025</div>
                 </div>
-        
-                <section class="mt-6">
-                    <p class="text-gray-700 mt-2">It’s time to dust off your high heels and wrangle that sparkly clutch bag from the back of the wardrobe, because Christmas party season is here, and it’s the one time of year when we’re guaranteed to go for all-out glamour. <br> While summer parties tend to be slightly more demure (perhaps because you’re likely to be viewed in full daylight), the depths of winter see us reaching for sequins, glitter, plush velvet and chandelier earrings – sometimes all at the same time. </p>
 
-                    <p class="text-gray-700 mt-2">With the You magazine Christmas party coming up soon, I’ve been scrolling like mad through all the partywear options on the high street, having suddenly found myself doing so much wardrobe pruning that I actually have nothing suitable to wear (I’ve sold it all on Vinted!)<br>Luckily the high street has lots of great options this year, from Marks & Spencer’s perfect little black dress, to full-on sparkly numbers from Next and H&M. Here is my round-up of the most stylish dresses to buy for your Christmas do, and they’re all under £100. </p>
-
-                </section>
+                
+                <p class="text-gray-700 leading-relaxed">
+                    If you consider yourself a skincare enthusiast, likely, you’ve already heard of Augustinus Bader, the luxury skincare brand used by the likes of Hailey Bieber, Victoria Beckham, and Margot Robbie.
+                    <br>
+                    Perhaps one of its most famous products, The Rich Cream, retails for £180, and has been hailed by A-listers as a ‘game-changer’. If that’s a little out of your price range, though, not to worry - as its stocking stuffers are an affordable way to trial the brand, each costing under £80.
+                    <br>
+                    Their formulas are powered by TFC8®, a patented complex that helps support the skin's natural renewal process so that everything looks smoother, feels firmer, and remains in better condition over time.
+                </p>
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
                     <!-- Product 1 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-6.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/CatFeed_SPic-3.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">Next Ruby Red Long Sleeve Sequin Bow Back Midi Dress </h3>
-                            <p class="text-lg font-bold mt-3">£59</p>
+                            <h3 class="text-xl font-bold">Augustinus Bader Stocking Stuffers  </h3>
+                            <p class="text-gray-700 mt-2">
+                                It's the most wonderful time of the year to splurge on little treasures to add to their stockings!
+
+                                For the beauty lovers in your life (or yourself, of course), Augustinus Bader offers everything from bestselling moisturizers to tinted lip balms to spa-worthy masks.
+
+                                Everything feels super indulgent — and all of them come in at under $100. 
+                            </p>
+                            <p class="text-lg font-bold mt-3">£23 </p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
 
                     <!-- Product 2 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-7.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/MainFeed_SPic-4.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">AYM Studio Dorset Drape Dress with Built-In Bra </h3>
-                            <p class="text-lg font-bold mt-3">£71</p>
+                            <h3 class="text-xl font-bold">Augustinus Bader The Eye Patches </h3>
+                            <p class="text-gray-700 mt-2">
+                                A quick fix for tired eyes, these hydrogel patches work like a charm to de-puff and brighten the delicate undereye area in just minutes. Whether after a late night, before a holiday party, or on those bleary-eyed mornings, the patches even diminish dark circles to leave the entire area revitalized.
+                            </p>
+                            <p class="text-lg font-bold mt-3">£23</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
 
                     <!-- Product 3 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-8.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/MainFeed_SPic-2.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">Never Fully Dressed Spot Print Plisse Maxi Waisted Dress </h3>
-                            <p class="text-lg font-bold mt-3">£99</p>
+                            <h3 class="text-xl font-bold">Augustinus Bader The Rich Cream  </h3>
+                            <p class="text-gray-700 mt-2">
+                            The brand's bestselling moisturizer is the ultimate addition to a well-rounded beauty routine. It's packed with ingredients that combat wrinkles, reduce dryness, and strengthen the skin's barrier while protecting it from environmental damage. Clinical trials bear this out, with 100 percent of users agreeing their skin immediately felt softer. 
+                            </p>
+                            <p class="text-lg font-bold mt-3">£98</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
                     <!-- Product 4 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-9.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/MainFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">H&M Twist Detail Dress</h3>
-                            <p class="text-lg font-bold mt-3">£19.99</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-                    <!-- Product 5 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-10.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Phase Eight Mabel Black Dotty Swing Dress </h3>
-                            <p class="text-lg font-bold mt-3">£99</p>
+                            <h3 class="text-xl font-bold">Augustinus Bader The Hand Treatment </h3>
+                            <p class="text-gray-700 mt-2">
+                                This nourishing and soothing cream is a must if you're constantly battling dry hands. Dry winter air can really take its toll on the skin, leaving the hands especially parched and uncomfortable. This luxe treatment absorbs quickly to leave your skin feeling silky soft (and never greasy). 
+                            </p>
+                            <p class="text-lg font-bold mt-3">£58</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
@@ -87,7 +98,7 @@ include __DIR__ . '/../../header.php';
                         'name' => 'Emma',
                         'location' => 'London, United Kingdom',
                         'time' => 'Just now',
-                        'text' => "Such a stylish outfit! The design is elegant and versatile, perfect for dressing up or down. I can easily see this being a wardrobe favorite for any occasion.",
+                        'text' => "This skin cream feels incredibly gentle and soothing. The texture is lightweight and absorbs quickly, making it perfect for daily use. Definitely something that can fit into any skincare routine.",
                         'up' => 0,
                         'down' => 0,
                     ],
@@ -95,7 +106,7 @@ include __DIR__ . '/../../header.php';
                         'name' => 'Chloe',
                         'location' => 'Manchester, United Kingdom',
                         'time' => '5 minutes ago',
-                        'text' => "Love this look! It’s trendy yet timeless, and the fit seems flattering. A great choice for women who want to feel confident and fashionable.",
+                        'text' => "Really impressed with how hydrating this skin cream is. It leaves the skin soft and smooth without feeling greasy. A great option for anyone looking for a reliable everyday moisturizer.",
                         'up' => 0,
                         'down' => 0,
                     ],
@@ -103,12 +114,11 @@ include __DIR__ . '/../../header.php';
                         'name' => 'Sophia',
                         'location' => 'Birmingham, United Kingdom',
                         'time' => '10 minutes ago',
-                        'text' => "This outfit is gorgeous! Chic, comfortable, and perfect for various occasions. Definitely a versatile piece that every woman would appreciate in her wardrobe.",
+                        'text' => "A lovely skin cream with a refreshing feel. It works well for different skin types and can easily become a staple in your routine. Very versatile and pleasant to use.",
                         'up' => 0,
                         'down' => 0,
                     ],
                 ];
-
 
                 
                 $comment_count = 41; // total count for the 'Show more' button

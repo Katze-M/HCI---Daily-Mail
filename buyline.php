@@ -1,42 +1,46 @@
 <?php
 $personal_feed = [
     [
-        'title' => '<a href="articles/buyline/Personalfeed_article-1.php" class="text-blue-800 hover:underline">Cat Deeley just wore this fashionably festive jumper on This Morning - here\'s where you can buy it and three other Christmassy sweaters still available on the high street</a>',
-        'comments' => 23,
-        'shares' => 1,
-        'image' => 'assets/Buyline_assets/PerFeed_Artc_1 pic.avif'
+        'title' => '<a href="articles/buyline/Personalfeed_article-1.php" class="text-blue-800 hover:underline">The product I rely on for winter skin relief is discounted - and it\'s perfect for tackling bumpy, uneven texture</a>',
+        'comments' => 567,
+        'shares' => 1500,
+        'image' => 'assets/Buyline_assets/CatFeed_Artc_1 pic.avif',
+        'category' => 'News'
     ],
     [
-        'title' => '<a href="articles/buyline/Personalfeed_article-2.php" class="text-blue-800 hover:underline">I’ve scoured the high street for the ultimate Christmas party dresses – these are my 27 favourites for under £100</a>',
-        'comments' => 1,
-        'shares' => 0,
-        'image' => 'assets/Buyline_assets/PerFeed_Artc_2 pic.avif'
+        'title' => '<a href="articles/buyline/Personalfeed_article-2.php" class="text-blue-800 hover:underline">Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas</a>',
+        'comments' => 65,
+        'shares' => 65,
+        'image' => 'assets/Buyline_assets/CatFeed_Artc_2 pic.avif',
+        'category' => 'U.S.'
     ],
     [
-        'title' => '<a href="articles/buyline/Personalfeed_article-3.php" class="text-blue-800 hover:underline">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year</a>',
-        'comments' => 1,
-        'shares' => 0,
-        'image' => 'assets/Buyline_assets/PerFeed_Artc_3 pic.avif'
+        'title' => '<a href="articles/buyline/Personalfeed_article-3.php" class="text-blue-800 hover:underline">Perricone MD drops rare deal on skincare-infused no make-up essentials - including liquid blush for a healthy flush</a>',
+        'comments' => 105,
+        'shares' => 18,
+        'image' => 'assets/Buyline_assets/CatFeed_Artc_3 pic.avif',
+        'category' => 'Science'
     ],
+
 ];
 
-$main_feed = [
+$beauty_feed = [
     [
-        'title' => '<a href="articles/buyline/Mainfeed_article-1.php" class="text-blue-800 hover:underline">The miracle in a bottle cream that celebs swear by to target wrinkles and dryness is a genius holiday gift thats priced just right</a>',
+        'title' => '<a href="articles/buyline/Beautyfeed_article-1.php" class="text-blue-800 hover:underline">The miracle in a bottle cream that celebs swear by to target wrinkles and dryness is a genius holiday gift thats priced just right</a>',
         'comments' => 547,
         'shares' => 30,
         'image' => 'assets/Buyline_assets/MainFeed_Artc_1 pic.avif',
         'category' => 'News'
     ],
     [
-        'title' => '<a href="articles/buyline/Mainfeed_article-2.php" class="text-blue-800 hover:underline">Panic buying presents? No need. The 10 best budget beauty stocking fillers Im gifting to friends and family this year</a>',
+        'title' => '<a href="articles/buyline/Beautyfeed_article-2.php" class="text-blue-800 hover:underline">Panic buying presents? No need. The 10 best budget beauty stocking fillers Im gifting to friends and family this year</a>',
         'comments' => 214,
         'shares' => 8,
         'image' => 'assets/Buyline_assets/MainFeed_Artc_2 pic.avif',
         'category' => 'Science'
     ],
     [
-        'title' => '<a href="articles/buyline/Mainfeed_article-3.php" class="text-blue-800 hover:underline">Men are ditching expensive fragrances for £31 scent that turns heads: You need so little that they last for ages</a>',
+        'title' => '<a href="articles/buyline/Beautyfeed_article-3.php" class="text-blue-800 hover:underline">Men are ditching expensive fragrances for £31 scent that turns heads: You need so little that they last for ages</a>',
         'comments' => 632,
         'shares' => 29,
         'image' => 'assets/Buyline_assets/MainFeed_Artc_3 pic.avif',
@@ -44,29 +48,82 @@ $main_feed = [
     ],
 ];
 
-$category_strip = [
+$fashion_feed = [
+
     [
-        'title' => '<a href="articles/buyline/Categoryfeed_article-1.php" class="text-blue-800 hover:underline">The product I rely on for winter skin relief is discounted - and it\'s perfect for tackling bumpy, uneven texture</a>',
-        'comments' => 567,
-        'shares' => 1500,
-        'image' => 'assets/Buyline_assets/CatFeed_Artc_1 pic.avif',
-        'category' => 'News'
+        'title' => '<a href="articles/buyline/Fashionfeed_article-1.php" class="text-blue-800 hover:underline">Cat Deeley just wore this fashionably festive jumper on This Morning - here\'s where you can buy it and three other Christmassy sweaters still available on the high street</a>',
+        'comments' => 23,
+        'shares' => 1,
+        'image' => 'assets/Buyline_assets/PerFeed_Artc_1 pic.avif'
     ],
     [
-        'title' => '<a href="articles/buyline/Categoryfeed_article-2.php" class="text-blue-800 hover:underline">Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas</a>',
-        'comments' => 65,
-        'shares' => 65,
-        'image' => 'assets/Buyline_assets/CatFeed_Artc_2 pic.avif',
-        'category' => 'U.S.'
+        'title' => '<a href="articles/buyline/Fashionfeed_article-2.php" class="text-blue-800 hover:underline">I’ve scoured the high street for the ultimate Christmas party dresses – these are my 27 favourites for under £100</a>',
+        'comments' => 1,
+        'shares' => 0,
+        'image' => 'assets/Buyline_assets/PerFeed_Artc_2 pic.avif'
     ],
     [
-        'title' => '<a href="articles/buyline/Categoryfeed_article-3.php" class="text-blue-800 hover:underline">Perricone MD drops rare deal on skincare-infused no make-up essentials - including liquid blush for a healthy flush</a>',
-        'comments' => 105,
-        'shares' => 18,
-        'image' => 'assets/Buyline_assets/CatFeed_Artc_3 pic.avif',
-        'category' => 'Science'
+        'title' => '<a href="articles/buyline/Fashionfeed_article-3.php" class="text-blue-800 hover:underline">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year</a>',
+        'comments' => 1,
+        'shares' => 0,
+        'image' => 'assets/Buyline_assets/PerFeed_Artc_3 pic.avif'
+    ],
+
+];
+
+$home_garden_feed = [
+    [
+        'title' => '<a href="articles/buyline/HomeGardenfeed_article-1.php" class="text-blue-800 hover:underline">The Haier air fryer that cuts cooking times in half has finally gone on sale for the lowest price we’ve ever seen</a>',
+        'comments' => 84,
+        'shares' => 12,
+        'image' => 'assets/Buyline_assets/HomeGarden_1.avif',
+        'category' => 'Home & Garden'
+    ],
+    [
+        'title' => '<a href="articles/buyline/HomeGardenfeed_article-2.php" class="text-blue-800 hover:underline">Interior designer reveals the colours that are making your house look dated - and how to style a divisive hue that is set to be the hottest home trend for 2026</a>',
+        'comments' => 31,
+        'shares' => 4,
+        'image' => 'assets/Buyline_assets/HomeGarden_4.avif',
+        'category' => 'Home & Garden'
     ],
 ];
+
+
+$travel_feed = [
+    [
+        'title' => '<a href="articles/buyline/Travel_article-1.php" class="text-blue-800 hover:underline">  London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide</a>',
+        'comments' => 112,
+        'shares' => 18,
+        'image' => 'assets/Buyline_assets/Travel_SPic-5.avif',
+        'category' => 'Travel'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Travel_article-2.php" class="text-blue-800 hover:underline">The best suitcase deals on travel-editor approved brands - including Amazon and John Lewis offers of up to 40% off</a>',
+        'comments' => 56,
+        'shares' => 6,
+        'image' => 'assets/Buyline_assets/Travel_SPic-6.avif',
+        'category' => 'Travel'
+    ],
+];
+
+
+$royals_feed = [
+    [
+        'title' => '<a href="articles/buyline/Royale_article-1.php" class="text-blue-800 hover:underline">Kate Middleton makes star drop earrings the must-have accessory of the season - shop her exact pair and chic alternatives</a>',
+        'comments' => 402,
+        'shares' => 22,
+        'image' => 'assets/Buyline_assets/Royal_Pic-1.avif',
+        'category' => 'Royals'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Royale_article-2.php" class="text-blue-800 hover:underline">Royal-approved gifts for him and her - including Kate Middleton s favourite handbag and jewellery</a>',
+        'comments' => 199,
+        'shares' => 10,
+        'image' => 'assets/Buyline_assets/Royal_Pic-6.avif',
+        'category' => 'Royals'
+    ],
+];
+
 
 include __DIR__ . '/header.php';
 ?>
@@ -86,7 +143,7 @@ include __DIR__ . '/header.php';
 
                 <!-- Main sections kept below the hero -->
                 <section class="mb-8">
-                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">PERSONAL FEED</div>
+                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">PERSONAL</div>
                     <div class="bg-white p-4 rounded-b-lg shadow">
                         <div class="relative">
                             <button aria-label="Scroll personal left" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow" onclick="scrollFeed('personal-feed-row','left')">
@@ -113,10 +170,7 @@ include __DIR__ . '/header.php';
                 <section class="mb-8">
                     <div class="flex items-center">
                         <div class="inline-flex items-center relative">
-                            <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">MAIN FEED</div>
-                            <button id="mainFiltersToggle" aria-expanded="false" aria-controls="mainFiltersStrip" class="ml-2 h-9 w-9 flex items-center justify-center text-sm rounded bg-white border">
-                                <svg id="mainToggleIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform rotate-0 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 4a1 1 0 011.707-.707l6 6a1 1 0 010 1.414l-6 6A1 1 0 016 16.586L11.586 11 6 5.414A1 1 0 016 4z" clip-rule="evenodd"/></svg>
-                            </button>
+                            <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">BEAUTY</div>
                             <div id="mainFiltersStrip" class="panel-slide bg-white border rounded h-9 flex items-center gap-2 px-2 overflow-x-auto">
                                 <!-- Main feed filter buttons-->
                             </div>
@@ -140,10 +194,8 @@ include __DIR__ . '/header.php';
                 <section class="mb-8">
                     <div class="flex items-center">
                         <div class="inline-flex items-center relative">
-                            <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">CATEGORY STRIP</div>
-                            <button id="catFiltersToggle" aria-expanded="false" aria-controls="catFiltersPanel" class="ml-2 h-9 w-9 flex items-center justify-center text-sm rounded bg-white border">
-                                <svg id="catToggleIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform rotate-0 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 4a1 1 0 011.707-.707l6 6a1 1 0 010 1.414l-6 6A1 1 0 016 16.586L11.586 11 6 5.414A1 1 0 016 4z" clip-rule="evenodd"/></svg>
-                            </button>
+                            <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">FASHION</div>
+
                             <div id="catFiltersPanel" class="panel-slide bg-white border rounded h-9 flex gap-2 items-center overflow-x-auto px-2">
                                 <!-- horizontal category filter buttons injected here -->
                             </div>
@@ -163,14 +215,87 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </section>
+
+                <!-- HOME & GARDEN -->
+                <section class="mb-10">
+                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">HOME & GARDEN</div>
+
+                    <div class="bg-white p-4 rounded-b-lg shadow">
+                        <div class="flex gap-4 overflow-x-auto py-2 px-2">
+                            <?php foreach($home_garden_feed as $item): ?>
+                                <article class="max-w-[210px] flex-shrink-0 border rounded bg-gray-50">
+                                    <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                        <img src="<?php echo $item['image']; ?>" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div class="p-3">
+                                        <h3 class="font-semibold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <div class="mt-2 text-xs text-gray-500">
+                                            <?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> shares
+                                        </div>
+                                    </div>
+                                </article>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TRAVEL -->
+                <section class="mb-10">
+                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">TRAVEL</div>
+
+                    <div class="bg-white p-4 rounded-b-lg shadow">
+                        <div class="flex gap-4 overflow-x-auto py-2 px-2">
+                            <?php foreach($travel_feed as $item): ?>
+                                <article class="max-w-[210px] flex-shrink-0 border rounded bg-gray-50">
+                                    <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                        <img src="<?php echo $item['image']; ?>" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div class="p-3">
+                                        <h3 class="font-semibold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <div class="mt-2 text-xs text-gray-500">
+                                            <?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> shares
+                                        </div>
+                                    </div>
+                                </article>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ROYALS -->
+                <section class="mb-10">
+                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">ROYALS</div>
+
+                    <div class="bg-white p-4 rounded-b-lg shadow">
+                        <div class="flex gap-4 overflow-x-auto py-2 px-2">
+                            <?php foreach($royals_feed as $item): ?>
+                                <article class="max-w-[210px] flex-shrink-0 border rounded bg-gray-50">
+                                    <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                        <img src="<?php echo $item['image']; ?>" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div class="p-3">
+                                        <h3 class="font-semibold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <div class="mt-2 text-xs text-gray-500">
+                                            <?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> shares
+                                        </div>
+                                    </div>
+                                </article>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </section>
+
+
             </div>
+
+            
 
             <!-- Sidebar: Don't Miss (3 cols) -->
             <aside class="md:col-span-3">
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="bg-orange-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
                     <div class="p-3">
-                        <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                        <?php foreach(array_slice($beauty_feed,0,3) as $item): ?>
                             <div class="flex gap-3 py-3 border-b last:border-b-0">
                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
                                 <div>
@@ -282,8 +407,8 @@ include __DIR__ . '/header.php';
 </style>
 <script>
 // Embed PHP arrays as JSON for client-side filtering
-const MAIN_FEED = <?php echo json_encode($main_feed, JSON_HEX_TAG); ?>;
-const CAT_STRIP = <?php echo json_encode($category_strip, JSON_HEX_TAG); ?>;
+const beauty_feed = <?php echo json_encode($beauty_feed, JSON_HEX_TAG); ?>;
+const CAT_STRIP = <?php echo json_encode($fashion_feed, JSON_HEX_TAG); ?>;
 
 const MAIN_FILTERS = ['All','Latest headlines','Australia','Scotland','Books','Columnists'];
 const CAT_FILTERS = ['All','Sports','Showbiz','Lifestyle','Health','Science','Money','Travel'];
@@ -293,7 +418,7 @@ function renderMainFeed(filter) {
     // render into the horizontal row
     const row = document.getElementById('main-feed-row');
     row.innerHTML = '';
-    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,5);
+    const items = beauty_feed.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,5);
     if (items.length === 0) {
         row.innerHTML = '<div class="text-center text-gray-500">No items for this filter.</div>';
         return;

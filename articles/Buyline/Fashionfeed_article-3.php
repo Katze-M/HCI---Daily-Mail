@@ -7,107 +7,92 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/CatFeed_Artc_3 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/PerFeed_Artc_3 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">
-                    Perricone MD drops rare deal on skincare-infused 'no make-up' essentials - including liquid blush for a healthy flush                
-                </h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year </h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By EMILY SCRIVENER, DEPUTY COMMERCE EDITOR</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 11:34 GMT, 2 December 2025 | Updated: 00:28 GMT, 4 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By CHARLOTTE VOSSEN, DEPUTY DIGITAL EDITOR</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 09:42 GMT, 5 December 2025 | Updated: 09:45 GMT, 5 December 2025</div>
                 </div>
 
-                
-                <p class="text-gray-700 leading-relaxed">
-                    Perricone MD is here to take the pressure off of your Christmas shopping this year with 30 per cent off their stocking fillers and gift sets. <br> <br>
-                    Created by Dr Nicholas Perricone, a world-renowned healthy ageing expert, the brand's skincare formulas are sure to make for some of the most welcome gifts of the season. After all, who wouldn't want the gift of better skin?                    <br>
-                </p>
+                <section class="mt-6">
+                    <p class="text-gray-700 mt-2">
+                    With Christmas lists flying around the group chat, we asked our editors what they’re actually hoping to unwrap this year – and the answers did not disappoint. From the knitwear they swear by to the beauty staples they burn through plus the chic home upgrades and ‘just because’ treats they’d never buy themselves, consider this your insider guide to gifts that real fashion and lifestyle obsessives genuinely want.       
+                    </p>
+
+                    <p class="text-gray-700 mt-2">
+                    Whether you’re shopping for someone tricky, treating yourself (no judgement) or simply curious, these picks offer equal parts practicality, joy and quietly excellent taste. Ready to peek inside everyone’s wish list?   
+                    </p>
+
+                </section>
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
                     <!-- Product 1 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-4.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-1.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">Perricone MD No Makeup Blush  </h3>
+                            <h3 class="text-xl font-bold">Sézane Betty Cardigan</h3>
                             <p class="text-gray-700 mt-2">
-                                A makeup skincare hybrid, scores of shoppers are ditching powder blushers in favour of this creamy blush with vitamin C ester.
-                                Even those who aren't big makeup wearers are sure to love this sheer and blendable No Makeup Blush that gives you an instant and healthy natural-looking flush of colour. Better still? The Vitamin C Ester visibly improves dullness and discolouration too.
-                                Perricone MD is offering 30 per 
+                            Sézane does the best knitwear in my opinion – classic, well-cut and good-quality in beautiful colours. I already have the Betty style in green and would love it in the hazelnut or burgundy shade. Looks great with jeans, wide-leg joggers, smart black trousers – anything, really!
                             </p>
-                            <p class="text-lg font-bold mt-3">£15.14 </p>
+                            <p class="text-lg font-bold mt-3">£130 </p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
 
                     <!-- Product 2 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-2.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">No Makeup Radiant Glow Balm  </h3>
+                            <h3 class="text-xl font-bold">John Lewis Woven Leather Tote Bag</h3>
                             <p class="text-gray-700 mt-2">
-                                Perricone's No Makeup Radiant Glow Balm could be the antidote to dull winter skin. 
-                                The buildable balm melts into skin to visibly improve dullness and discoloration over time whilst delivering a sheer, natural-looking tint, soft-focus glow and lightweight moisture. It's an all around winner. 
-
+                            I saw this bag in the window of John Lewis and it’s really nice – very practical for carrying around a laptop, gym kit, etc., and it ticks the leather-weave trend box without looking like it’s desperately trying to copy a designer bag. I like a present that I’ll actually use! 
                             </p>
-                            <p class="text-lg font-bold mt-3">£15.92</p>
+                            <p class="text-lg font-bold mt-3">£149</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
 
                     <!-- Product 3 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-6.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-3.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">High Potency Hyaluronic Intensive Hydrating Mask </h3>
+                            <h3 class="text-xl font-bold">Casetify Pug Dance Phone Case</h3>
                             <p class="text-gray-700 mt-2">
-                                Winter can play havoc with your complexion so give it some TLC with the High Potency Hyaluronic Intensive Hydrating Mask.
-                                A rich, nourishing cream mask this clinically proven to show significant improvement in skin tone and texture thanks to the four forms and  two natural building blocks of hyaluronic acid to instantly replenish and condition.                            </p>
-                            <p class="text-lg font-bold mt-3">£26.38</p>
+                            This phone case of a little dancing pug would brighten up my (and, quite frankly, anyone’s) day. And it’s made from the uber-protective bounce material. Win-win.                         </p>
+                            <p class="text-lg font-bold mt-3">£80</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
                     <!-- Product 4 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-7.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-4.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">High Potency Face Finishing & Firming Tinted Moisturizer SPF 30 59ml </h3>
+                            <h3 class="text-xl font-bold">Glossier Ultralip</h3>
                             <p class="text-gray-700 mt-2">
-                                The High Potency Face Finishing & Firming Tinted Moisturizer SPF 30 has been impressing shoppers thanks to its fast-absorbing formula that leaves skin hydrated and happy with a touch of colour.
-                                You can use this alone or under any foundation for a luminous finish, so if you've been searching for an oil-free tinted moisturiser with SPF that isn’t too heavy or tacky, you've found it.                            </p>
-                            <p class="text-lg font-bold mt-3">£29.12</p>
+                            I get through approximately four of these a year, due to my attractive combination of very dry and blue-tinged lips. It’s a fab stocking filler for any woman in your life – and there are 13 shades, so suits everyone! 
+                            </p>
+                            <p class="text-lg font-bold mt-3">£22</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
-
+                    <!-- Product 5 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-8.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">Perricone MD High Potency Retinol Renewal Serum </h3>
+                            <h3 class="text-xl font-bold">Jimmy Fairly Ski Goggles</h3>
                             <p class="text-gray-700 mt-2">
-                                The Triple Retinol Renewal Face Serum is set to be the transformative solution your skin has been looking for.
-                                Similarly formulated with the brand’s triple retinol blend, coenzyme Q10 and naturally derived betacarotene, this powerful day and night serum accelerates skin renewal with less sensitivity to deliver the look of collagen-rich, firmer skin.                            </p>
-                            <p class="text-lg font-bold mt-3">£37.78</p>
+                            Name a cooler pair of ski goggles to hit the slopes with this season than this one from Jimmy Fairly? That’s right. You can’t. They come with two interchangeable lenses (one is polarised and suitable for sunny or partly cloudy days; the other is designed for low-light conditions), equipped with magnetic fastening for easy swapping; a pouch bag and a hard case. 
+                            </p>
+                            <p class="text-lg font-bold mt-3">£135</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
-
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-9.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Essential Fx Acyl-Glutathione Chia Cleansing Balm  </h3>
-                            <p class="text-gray-700 mt-2">
-                                If you love the feel of a luxurious cleanser worthy of a place in your favorite spa, you'll be delighted with this nourishing cleansing balm. 
-                                It virtually melts into the skin on contact, boasting a smooth and silky texture that gently removes all traces of dirt, oil, and makeup to give your skin a quick refresh.                            </p>
-                            <p class="text-lg font-bold mt-3">£17.74</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>                    
-
                 </div>
 
 
@@ -117,26 +102,26 @@ include __DIR__ . '/../../header.php';
                 // comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Emma',
+                        'name' => 'Alex',
                         'location' => 'London, United Kingdom',
                         'time' => 'Just now',
-                        'text' => "This skin cream feels incredibly gentle and soothing. The texture is lightweight and absorbs quickly, making it perfect for daily use. Definitely something that can fit into any skincare routine.",
+                        'text' => "I really like this product! It’s well-made, practical, and adds a nice touch to daily life. Definitely a reliable choice for anyone looking for something functional and stylish.",
                         'up' => 0,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Chloe',
+                        'name' => 'Sophie',
                         'location' => 'Manchester, United Kingdom',
                         'time' => '5 minutes ago',
-                        'text' => "Really impressed with how hydrating this skin cream is. It leaves the skin soft and smooth without feeling greasy. A great option for anyone looking for a reliable everyday moisturizer.",
+                        'text' => "This product exceeded my expectations! It’s easy to use, feels high-quality, and works exactly as described. Perfect for everyday use.",
                         'up' => 0,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Sophia',
+                        'name' => 'Liam',
                         'location' => 'Birmingham, United Kingdom',
                         'time' => '10 minutes ago',
-                        'text' => "A lovely skin cream with a refreshing feel. It works well for different skin types and can easily become a staple in your routine. Very versatile and pleasant to use.",
+                        'text' => "A really solid choice! The design and quality are impressive, and it’s useful in so many situations. Would recommend to anyone looking for a dependable product.",
                         'up' => 0,
                         'down' => 0,
                     ],

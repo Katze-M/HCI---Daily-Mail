@@ -7,107 +7,70 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/CatFeed_Artc_3 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/PerFeed_Artc_1 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">
-                    Perricone MD drops rare deal on skincare-infused 'no make-up' essentials - including liquid blush for a healthy flush                
-                </h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">Cat Deeley just wore this fashionably festive jumper on This Morning - here's where you can buy it and three other Christmassy sweaters still available on the high street</h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By EMILY SCRIVENER, DEPUTY COMMERCE EDITOR</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 11:34 GMT, 2 December 2025 | Updated: 00:28 GMT, 4 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By JESS LESTER</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 10:25 GMT, 5 December 2025 | Updated: 10:46 GMT, 5 December 2025</div>
                 </div>
 
                 
                 <p class="text-gray-700 leading-relaxed">
-                    Perricone MD is here to take the pressure off of your Christmas shopping this year with 30 per cent off their stocking fillers and gift sets. <br> <br>
-                    Created by Dr Nicholas Perricone, a world-renowned healthy ageing expert, the brand's skincare formulas are sure to make for some of the most welcome gifts of the season. After all, who wouldn't want the gift of better skin?                    <br>
+                Cat Deeley presented This Morning in a fashionably festive jumper - and we've found out where you can buy the gorgeous red number. 
+                <br>
+                Thursday's instalment of the ITV show saw the 49-year-old and co-host Ben Shephard, 50, interview a range of celebrity guests and familiar faces.
+                And things took a suitably Christmas-themed turn as Cat and Ben walked viewers through the hottest festive pyjama looks and party-ready Yuletide make-up. 
+                Getting in the spirit, Cat opted for a red knitted jumper with a festive pattern, and incredible as usual in her latest attire. 
+                <br>
+                She paired the dressed-down jumper with relaxed fit jeans, and a pair of pointed toe kitten heels, sprucing up her look with a bouncy blow dry. 
+                Luckily for fans, the chic jumper, which features white detailing and a roll neck, is still available to buy in time for Christmas Day.
                 </p>
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
                     <!-- Product 1 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-4.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-11.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">Perricone MD No Makeup Blush  </h3>
-                            <p class="text-gray-700 mt-2">
-                                A makeup skincare hybrid, scores of shoppers are ditching powder blushers in favour of this creamy blush with vitamin C ester.
-                                Even those who aren't big makeup wearers are sure to love this sheer and blendable No Makeup Blush that gives you an instant and healthy natural-looking flush of colour. Better still? The Vitamin C Ester visibly improves dullness and discolouration too.
-                                Perricone MD is offering 30 per 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£15.14 </p>
+                            <h3 class="text-xl font-bold">Boden Marion Merino High Neck Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£119 </p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
 
                     <!-- Product 2 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-12.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">No Makeup Radiant Glow Balm  </h3>
-                            <p class="text-gray-700 mt-2">
-                                Perricone's No Makeup Radiant Glow Balm could be the antidote to dull winter skin. 
-                                The buildable balm melts into skin to visibly improve dullness and discoloration over time whilst delivering a sheer, natural-looking tint, soft-focus glow and lightweight moisture. It's an all around winner. 
-
-                            </p>
-                            <p class="text-lg font-bold mt-3">£15.92</p>
+                            <h3 class="text-xl font-bold">Joules High Neck Cotton-Blend Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£69</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
 
                     <!-- Product 3 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-6.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-13.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">High Potency Hyaluronic Intensive Hydrating Mask </h3>
-                            <p class="text-gray-700 mt-2">
-                                Winter can play havoc with your complexion so give it some TLC with the High Potency Hyaluronic Intensive Hydrating Mask.
-                                A rich, nourishing cream mask this clinically proven to show significant improvement in skin tone and texture thanks to the four forms and  two natural building blocks of hyaluronic acid to instantly replenish and condition.                            </p>
-                            <p class="text-lg font-bold mt-3">£26.38</p>
+                            <h3 class="text-xl font-bold">M&S Merino Wool Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£85.95</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
                     <!-- Product 4 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-7.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-14.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">High Potency Face Finishing & Firming Tinted Moisturizer SPF 30 59ml </h3>
-                            <p class="text-gray-700 mt-2">
-                                The High Potency Face Finishing & Firming Tinted Moisturizer SPF 30 has been impressing shoppers thanks to its fast-absorbing formula that leaves skin hydrated and happy with a touch of colour.
-                                You can use this alone or under any foundation for a luminous finish, so if you've been searching for an oil-free tinted moisturiser with SPF that isn’t too heavy or tacky, you've found it.                            </p>
-                            <p class="text-lg font-bold mt-3">£29.12</p>
+                            <h3 class="text-xl font-bold">Apricot Chunky Knit Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£35</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
-
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-8.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Perricone MD High Potency Retinol Renewal Serum </h3>
-                            <p class="text-gray-700 mt-2">
-                                The Triple Retinol Renewal Face Serum is set to be the transformative solution your skin has been looking for.
-                                Similarly formulated with the brand’s triple retinol blend, coenzyme Q10 and naturally derived betacarotene, this powerful day and night serum accelerates skin renewal with less sensitivity to deliver the look of collagen-rich, firmer skin.                            </p>
-                            <p class="text-lg font-bold mt-3">£37.78</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-9.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Essential Fx Acyl-Glutathione Chia Cleansing Balm  </h3>
-                            <p class="text-gray-700 mt-2">
-                                If you love the feel of a luxurious cleanser worthy of a place in your favorite spa, you'll be delighted with this nourishing cleansing balm. 
-                                It virtually melts into the skin on contact, boasting a smooth and silky texture that gently removes all traces of dirt, oil, and makeup to give your skin a quick refresh.                            </p>
-                            <p class="text-lg font-bold mt-3">£17.74</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>                    
-
                 </div>
 
 
@@ -120,7 +83,7 @@ include __DIR__ . '/../../header.php';
                         'name' => 'Emma',
                         'location' => 'London, United Kingdom',
                         'time' => 'Just now',
-                        'text' => "This skin cream feels incredibly gentle and soothing. The texture is lightweight and absorbs quickly, making it perfect for daily use. Definitely something that can fit into any skincare routine.",
+                        'text' => "Such a stylish outfit! The design is elegant and versatile, perfect for dressing up or down. I can easily see this being a wardrobe favorite for any occasion.",
                         'up' => 0,
                         'down' => 0,
                     ],
@@ -128,7 +91,7 @@ include __DIR__ . '/../../header.php';
                         'name' => 'Chloe',
                         'location' => 'Manchester, United Kingdom',
                         'time' => '5 minutes ago',
-                        'text' => "Really impressed with how hydrating this skin cream is. It leaves the skin soft and smooth without feeling greasy. A great option for anyone looking for a reliable everyday moisturizer.",
+                        'text' => "Love this look! It’s trendy yet timeless, and the fit seems flattering. A great choice for women who want to feel confident and fashionable.",
                         'up' => 0,
                         'down' => 0,
                     ],
@@ -136,12 +99,11 @@ include __DIR__ . '/../../header.php';
                         'name' => 'Sophia',
                         'location' => 'Birmingham, United Kingdom',
                         'time' => '10 minutes ago',
-                        'text' => "A lovely skin cream with a refreshing feel. It works well for different skin types and can easily become a staple in your routine. Very versatile and pleasant to use.",
+                        'text' => "This outfit is gorgeous! Chic, comfortable, and perfect for various occasions. Definitely a versatile piece that every woman would appreciate in her wardrobe.",
                         'up' => 0,
                         'down' => 0,
                     ],
                 ];
-
                 
                 $comment_count = 41; // total count for the 'Show more' button
                 

@@ -7,107 +7,104 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/CatFeed_Artc_3 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/Travel_SPic-5.avif" alt="Martini article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
+
                 <h1 class="text-3xl font-bold text-blue-800 mb-2">
-                    Perricone MD drops rare deal on skincare-infused 'no make-up' essentials - including liquid blush for a healthy flush                
+                    London's 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide
                 </h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By EMILY SCRIVENER, DEPUTY COMMERCE EDITOR</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 11:34 GMT, 2 December 2025 | Updated: 00:28 GMT, 4 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By HUGHIE DE ZULUETA and ELLA MAY</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 01:03 GMT, 6 December 2025 | Updated: 10:21 GMT, 8 December 2025</div>
                 </div>
 
-                
                 <p class="text-gray-700 leading-relaxed">
-                    Perricone MD is here to take the pressure off of your Christmas shopping this year with 30 per cent off their stocking fillers and gift sets. <br> <br>
-                    Created by Dr Nicholas Perricone, a world-renowned healthy ageing expert, the brand's skincare formulas are sure to make for some of the most welcome gifts of the season. After all, who wouldn't want the gift of better skin?                    <br>
+                    Five years ago, my girlfriend and I set out to find the best martini in London. We were intent on locating a place where even the martini’s greatest ambassador, James Bond, would enjoy drinking his favourite drink. And now, finally, we can reveal the definitive bars for a martini worthy of 007 himself.
                 </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    At first, it felt like an almost impossible task. There’s an incalculable number of bars in the capital and almost endless martini combinations. Gin or vodka? Lemon or olive? Wet, dry, extra dry, or bone dry? And then what about more maverick varieties: the Gibson, the Montgomery, Martinez, Lychee, Appletini and the risque-sounding Porn Star?
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    While the drink’s origin is unclear, what’s certain is that Ian Fleming’s spy popularised the martini. In all Fleming’s books, Bond consumes a total of 35 martinis, with Sean Connery the first to deliver the famous line - ‘shaken, not stirred’ - on screen in Goldfinger (1964).
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    Being 007’s home city, London made sense for our mission - and we stuck to hotel bars as Bond rarely drinks anywhere else. As a strict rule, I only ordered martinis the way he liked them (‘dry vodka martini with a lemon twist’), while my girlfriend, to spice things up, ordered dirty martinis.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    It’s seemingly fashionable, once again, to be a martini drinker. However, this trend has spawned a growing number of ‘martini-pseuds’, a wave of ‘connaisseurs’ who describe their tipples with oblivious, bombastic pretension as anything from ‘vessels of temptation’ to ‘silken glaciers’ or ‘barfly bewitchers’.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    Then there are those, with a small amount of knowledge, who will ask: ‘Have you tried The Connaught bar?’ or ‘What about Duke’s Hotel?’ And yes, both establishments are on this list, but neither makes our top ten (and both, frankly, felt like tourist traps).
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    This project was ruinously expensive. Martinis in London typically start at £20 - and once you get a couple of rounds and some (absurdly expensive) bar snacks, bills regularly top £100. The most expensive martini, for the record, was at The Connaught Bar (£30), while the most ‘reasonable’ at the Side Hustle bar at The Nomad (£18).
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    I’d often look at our ornate, lengthening spreadsheet and wonder whether the task justified the debt. But that, I think, was actually the point. In an age where everyone is posting, tracking and achieving, we had done the opposite. We had gone out, night after night, and got quietly, yet stylishly, incapacitated - and, in doing so, found something close to pure happiness.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-blue-800 mt-6 mb-2">How we scored each bar...</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    We developed a scoring system across five measures. The first was the requirement for a balanced, ice-cold, near-neat ethanol hit. Secondly, the glass should sit nicely in the hand. The third point of order was the need for flawless, friendly service. Fourth up, we were seeking a feel-good atmosphere, whatever that may be. Finally, we sought finger-licking bar snacks. All these considerations combined - at a heightened level - and you’ll have the perfect martini experience.
+                </p>
+
+                <section class="mt-6">
+                    <div class="mt-4">
+                        <img src="/assets/Buyline_assets/Travel_SPic-1.avif" alt="Furbo Mini 360° close-up" class="w-full h-auto object-contain rounded-lg shadow" />
+                    </div>
+                    <p class="text-gray-700 mt-2">Other perks of the I-Master Air Fryer Series 5 is that it boasts a spacious seven-litre capacity, so it’s large enough to cook for a family of four or roast a whole chicken, yet it's compact enough to fit neatly on your countertop.
+                        And according to the brand description, the energy-saving design cuts energy usage by up to 70 per cent compared to traditional ovens, while air frying uses up to 90 per cent less fat. 
+                        <br>Helping you whip up quick nibbles for guests over the Christmas period or just spend less time in the kitchen when there's so much else to do, this Haier air fryer is perfect for busy families or those who prefer a sleeker-looking kitchen appliance.
+                    </p>
+
+                </section>                
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
-                    <!-- Product 1 -->
+                    <!-- Places -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-4.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/Travel_SPic-2.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 300px">
                         <div>
-                            <h3 class="text-xl font-bold">Perricone MD No Makeup Blush  </h3>
-                            <p class="text-gray-700 mt-2">
-                                A makeup skincare hybrid, scores of shoppers are ditching powder blushers in favour of this creamy blush with vitamin C ester.
-                                Even those who aren't big makeup wearers are sure to love this sheer and blendable No Makeup Blush that gives you an instant and healthy natural-looking flush of colour. Better still? The Vitamin C Ester visibly improves dullness and discolouration too.
-                                Perricone MD is offering 30 per 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£15.14 </p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                            <h3 class="text-xl font-bold">THE EGERTON, Knightsbridge: The Bar  </h3>
+                    
+                            <p class="text-lg font-bold mt-3">Details: egertonhousehotel.com </p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Book</button>
                         </div>
                     </div>
 
-                    <!-- Product 2 -->
+                    <!-- Places -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/Travel_SPic-3.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 300px">
                         <div>
-                            <h3 class="text-xl font-bold">No Makeup Radiant Glow Balm  </h3>
-                            <p class="text-gray-700 mt-2">
-                                Perricone's No Makeup Radiant Glow Balm could be the antidote to dull winter skin. 
-                                The buildable balm melts into skin to visibly improve dullness and discoloration over time whilst delivering a sheer, natural-looking tint, soft-focus glow and lightweight moisture. It's an all around winner. 
-
-                            </p>
-                            <p class="text-lg font-bold mt-3">£15.92</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                            <h3 class="text-xl font-bold"> THE STANDARD, King’s Cross: Decimo Bar   </h3>
+                    
+                            <p class="text-lg font-bold mt-3">Details: standardhotels.com  </p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Book</button>
                         </div>
                     </div>
 
-                    <!-- Product 3 -->
+                    <!-- Places -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-6.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/Travel_SPic-4.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 300px">
                         <div>
-                            <h3 class="text-xl font-bold">High Potency Hyaluronic Intensive Hydrating Mask </h3>
-                            <p class="text-gray-700 mt-2">
-                                Winter can play havoc with your complexion so give it some TLC with the High Potency Hyaluronic Intensive Hydrating Mask.
-                                A rich, nourishing cream mask this clinically proven to show significant improvement in skin tone and texture thanks to the four forms and  two natural building blocks of hyaluronic acid to instantly replenish and condition.                            </p>
-                            <p class="text-lg font-bold mt-3">£26.38</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-                    <!-- Product 4 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-7.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">High Potency Face Finishing & Firming Tinted Moisturizer SPF 30 59ml </h3>
-                            <p class="text-gray-700 mt-2">
-                                The High Potency Face Finishing & Firming Tinted Moisturizer SPF 30 has been impressing shoppers thanks to its fast-absorbing formula that leaves skin hydrated and happy with a touch of colour.
-                                You can use this alone or under any foundation for a luminous finish, so if you've been searching for an oil-free tinted moisturiser with SPF that isn’t too heavy or tacky, you've found it.                            </p>
-                            <p class="text-lg font-bold mt-3">£29.12</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-8.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Perricone MD High Potency Retinol Renewal Serum </h3>
-                            <p class="text-gray-700 mt-2">
-                                The Triple Retinol Renewal Face Serum is set to be the transformative solution your skin has been looking for.
-                                Similarly formulated with the brand’s triple retinol blend, coenzyme Q10 and naturally derived betacarotene, this powerful day and night serum accelerates skin renewal with less sensitivity to deliver the look of collagen-rich, firmer skin.                            </p>
-                            <p class="text-lg font-bold mt-3">£37.78</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-9.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Essential Fx Acyl-Glutathione Chia Cleansing Balm  </h3>
-                            <p class="text-gray-700 mt-2">
-                                If you love the feel of a luxurious cleanser worthy of a place in your favorite spa, you'll be delighted with this nourishing cleansing balm. 
-                                It virtually melts into the skin on contact, boasting a smooth and silky texture that gently removes all traces of dirt, oil, and makeup to give your skin a quick refresh.                            </p>
-                            <p class="text-lg font-bold mt-3">£17.74</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                            <h3 class="text-xl font-bold"> DUKES, St. James’s: Duke’s Bar  </h3>
+                    
+                            <p class="text-lg font-bold mt-3">Details: dukeshotel.com  </p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Book</button>
                         </div>
                     </div>                    
-
+                    
                 </div>
 
 
@@ -117,35 +114,34 @@ include __DIR__ . '/../../header.php';
                 // comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Emma',
+                        'name' => 'James',
                         'location' => 'London, United Kingdom',
                         'time' => 'Just now',
-                        'text' => "This skin cream feels incredibly gentle and soothing. The texture is lightweight and absorbs quickly, making it perfect for daily use. Definitely something that can fit into any skincare routine.",
-                        'up' => 0,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Chloe',
-                        'location' => 'Manchester, United Kingdom',
-                        'time' => '5 minutes ago',
-                        'text' => "Really impressed with how hydrating this skin cream is. It leaves the skin soft and smooth without feeling greasy. A great option for anyone looking for a reliable everyday moisturizer.",
+                        'text' => "Loved this guide! Now I know exactly which bars to try for a proper martini. A must-read for Bond fans.",
                         'up' => 0,
                         'down' => 0,
                     ],
                     [
                         'name' => 'Sophia',
+                        'location' => 'Manchester, United Kingdom',
+                        'time' => '5 minutes ago',
+                        'text' => "Fantastic article! The scoring system makes it easy to see which bars really stand out. Excited to visit them all!",
+                        'up' => 0,
+                        'down' => 0,
+                    ],
+                    [
+                        'name' => 'Liam',
                         'location' => 'Birmingham, United Kingdom',
                         'time' => '10 minutes ago',
-                        'text' => "A lovely skin cream with a refreshing feel. It works well for different skin types and can easily become a staple in your routine. Very versatile and pleasant to use.",
+                        'text' => "This is gold for martini lovers. I appreciate the detail and the fun storytelling behind each bar visit.",
                         'up' => 0,
                         'down' => 0,
                     ],
                 ];
 
-                
-                $comment_count = 41; // total count for the 'Show more' button
-                
+                $comment_count = 52; // total count for the 'Show more' button
                 ?>
+
 
                 <section id="comments-section" class="mt-6 bg-white rounded shadow p-4">
                     <div class="flex items-start justify-between">

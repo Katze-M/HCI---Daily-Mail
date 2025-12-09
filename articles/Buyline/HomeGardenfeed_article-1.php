@@ -7,82 +7,46 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/CatFeed_SPic-2.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/HomeGarden_1.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">
-                    Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas                
-                </h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">The Haier air fryer that cuts cooking times in half has finally gone on sale for the lowest price we’ve ever seen</h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By LAYLA TURNER, COMMERCE WRITER AND CONTENT CREATOR</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 12:12 GMT, 4 December 2025 | Updated: 12:12 GMT, 4 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By EMILY SCRIVENER, DEPUTY COMMERCE EDITOR</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 08:59 GMT, 9 December 2025 | Updated: 08:59 GMT, 9 December 2025</div>
                 </div>
-
-                
+       
                 <p class="text-gray-700 leading-relaxed">
-                    If you consider yourself a skincare enthusiast, likely, you’ve already heard of Augustinus Bader, the luxury skincare brand used by the likes of Hailey Bieber, Victoria Beckham, and Margot Robbie.
-                    <br>
-                    Perhaps one of its most famous products, The Rich Cream, retails for £180, and has been hailed by A-listers as a ‘game-changer’. If that’s a little out of your price range, though, not to worry - as its stocking stuffers are an affordable way to trial the brand, each costing under £80.
-                    <br>
-                    Their formulas are powered by TFC8®, a patented complex that helps support the skin's natural renewal process so that everything looks smoother, feels firmer, and remains in better condition over time.
+                    Originally priced at £199, the popular countertop appliance has just dropped to its lowest price yet of £69 with our exclusive discount code MAIL-AIRFRY. That’s a huge discount, and at this price, we expect it will sell out fast.
+                    The Haier I-Master Multi-Air Fryer XXL is a must-have for effortless weeknight meals, offering nine versatile food preparation functions, including air fry, bake, roast, grill, dehydrate, slow cook, reheat, defrost, and yoghurt.
+                <br>
+                    Ending the battle with pre-heating the oven and complicated cooking times, the Haier multi air-fryer has built-in presets for meat, chicken, fish, veg and cakes that take the guesswork out of times and temperatures, making it ideal for unsure or busy home cooks. 
+                    With a unique and very stylish insulated clear glass, you'll also be able to keep a watchful eye over each meal as it cooks for the results. 
                 </p>
+
+                <section class="mt-6">
+                    <div class="mt-4">
+                        <img src="/assets/Buyline_assets/HomeGarden_2.avif" alt="Furbo Mini 360° close-up" class="w-full h-auto object-contain rounded-lg shadow" />
+                    </div>
+                    <p class="text-gray-700 mt-2">Other perks of the I-Master Air Fryer Series 5 is that it boasts a spacious seven-litre capacity, so it’s large enough to cook for a family of four or roast a whole chicken, yet it's compact enough to fit neatly on your countertop.
+                        And according to the brand description, the energy-saving design cuts energy usage by up to 70 per cent compared to traditional ovens, while air frying uses up to 90 per cent less fat. 
+                        <br>Helping you whip up quick nibbles for guests over the Christmas period or just spend less time in the kitchen when there's so much else to do, this Haier air fryer is perfect for busy families or those who prefer a sleeker-looking kitchen appliance.
+                    </p>
+
+                </section>                
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
                     <!-- Product 1 -->
                     <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/CatFeed_SPic-3.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <img src="/assets/Buyline_assets/HomeGarden_3.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
                         <div>
-                            <h3 class="text-xl font-bold">Augustinus Bader Stocking Stuffers  </h3>
-                            <p class="text-gray-700 mt-2">
-                                It's the most wonderful time of the year to splurge on little treasures to add to their stockings!
-
-                                For the beauty lovers in your life (or yourself, of course), Augustinus Bader offers everything from bestselling moisturizers to tinted lip balms to spa-worthy masks.
-
-                                Everything feels super indulgent — and all of them come in at under $100. 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£23 </p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/MainFeed_SPic-4.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Augustinus Bader The Eye Patches </h3>
-                            <p class="text-gray-700 mt-2">
-                                A quick fix for tired eyes, these hydrogel patches work like a charm to de-puff and brighten the delicate undereye area in just minutes. Whether after a late night, before a holiday party, or on those bleary-eyed mornings, the patches even diminish dark circles to leave the entire area revitalized.
-                            </p>
-                            <p class="text-lg font-bold mt-3">£23</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/MainFeed_SPic-2.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Augustinus Bader The Rich Cream  </h3>
-                            <p class="text-gray-700 mt-2">
-                            The brand's bestselling moisturizer is the ultimate addition to a well-rounded beauty routine. It's packed with ingredients that combat wrinkles, reduce dryness, and strengthen the skin's barrier while protecting it from environmental damage. Clinical trials bear this out, with 100 percent of users agreeing their skin immediately felt softer. 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£98</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-                    <!-- Product 4 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/MainFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Augustinus Bader The Hand Treatment </h3>
-                            <p class="text-gray-700 mt-2">
-                                This nourishing and soothing cream is a must if you're constantly battling dry hands. Dry winter air can really take its toll on the skin, leaving the hands especially parched and uncomfortable. This luxe treatment absorbs quickly to leave your skin feeling silky soft (and never greasy). 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£58</p>
+                            <h3 class="text-xl font-bold">Haier I-Master Series 5 Air Fryer - Black - 7L  </h3>
+                    
+                            <p class="text-lg font-bold mt-3">£69 (save £139)</p>
                             <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
                         </div>
                     </div>
@@ -95,32 +59,31 @@ include __DIR__ . '/../../header.php';
                 // comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Emma',
-                        'location' => 'London, United Kingdom',
+                        'name' => 'Emily',
+                        'location' => 'Bristol, United Kingdom',
                         'time' => 'Just now',
-                        'text' => "This skin cream feels incredibly gentle and soothing. The texture is lightweight and absorbs quickly, making it perfect for daily use. Definitely something that can fit into any skincare routine.",
+                        'text' => "This air fryer is amazing! Cooks everything so evenly and saves so much time. Perfect for quick meals without sacrificing taste.",
                         'up' => 0,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Chloe',
-                        'location' => 'Manchester, United Kingdom',
+                        'name' => 'Hannah',
+                        'location' => 'Leeds, United Kingdom',
                         'time' => '5 minutes ago',
-                        'text' => "Really impressed with how hydrating this skin cream is. It leaves the skin soft and smooth without feeling greasy. A great option for anyone looking for a reliable everyday moisturizer.",
+                        'text' => "Absolutely love this! It makes crispy fries, juicy chicken, and even reheats leftovers perfectly. Such a useful kitchen appliance.",
                         'up' => 0,
                         'down' => 0,
                     ],
                     [
-                        'name' => 'Sophia',
-                        'location' => 'Birmingham, United Kingdom',
+                        'name' => 'Olivia',
+                        'location' => 'Liverpool, United Kingdom',
                         'time' => '10 minutes ago',
-                        'text' => "A lovely skin cream with a refreshing feel. It works well for different skin types and can easily become a staple in your routine. Very versatile and pleasant to use.",
+                        'text' => "A total game-changer! Healthy, fast, and easy to clean. I use mine almost every day now — highly recommend for busy households.",
                         'up' => 0,
                         'down' => 0,
                     ],
                 ];
 
-                
                 $comment_count = 41; // total count for the 'Show more' button
                 
                 ?>
