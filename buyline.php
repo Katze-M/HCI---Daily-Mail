@@ -1,224 +1,201 @@
 <?php
-    // Simple Home page using Tailwind via CDN, PHP arrays for content, and minimal JS
-    $personal_feed = [
-        [
-            'title' => '<a href="articles/buyline/Personalfeed_article-1.php" class="text-blue-800 hover:underline">Cat Deeley just wore this fashionably festive jumper on This Morning - here\'s where you can buy it and three other Christmassy sweaters still available on the high street</a>',
-            'excerpt' => "Former Manchester United man reveals unusual message.",
-            'comments' => 23,
-            'shares' => 1,
-            'image' => 'assets/Buyline_assets/PerFeed_Artc_1 pic.avif'
-        ],
-        [
-            'title' => '<a href="articles/buyline/Personalfeed_article-2.php" class="text-blue-800 hover:underline">I’ve scoured the high street for the ultimate Christmas party dresses – these are my 27 favourites for under £100</a>',
-            'excerpt' => "Wales and Northern Ireland in collision course for place in tournament.",
-            'comments' => 1,
-            'shares' => 0,
-            'image' => 'assets/Buyline_assets/PerFeed_Artc_2 pic.avif'
-        ],
-        [
-            'title' => '<a href="articles/buyline/Personalfeed_article-3.php" class="text-blue-800 hover:underline">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year</a>',
-            'excerpt' => "Tom Hanks made a cameo in a surprise appearance.",
-            'comments' => 1,
-            'shares' => 0,
-            'image' => 'assets/Buyline_assets/PerFeed_Artc_3 pic.avif'
-        ],
-    ];
-    
+$personal_feed = [
+    [
+        'title' => '<a href="articles/buyline/Personalfeed_article-1.php" class="text-blue-800 hover:underline">Cat Deeley just wore this fashionably festive jumper on This Morning - here\'s where you can buy it and three other Christmassy sweaters still available on the high street</a>',
+        'comments' => 23,
+        'shares' => 1,
+        'image' => 'assets/Buyline_assets/PerFeed_Artc_1 pic.avif'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Personalfeed_article-2.php" class="text-blue-800 hover:underline">I’ve scoured the high street for the ultimate Christmas party dresses – these are my 27 favourites for under £100</a>',
+        'comments' => 1,
+        'shares' => 0,
+        'image' => 'assets/Buyline_assets/PerFeed_Artc_2 pic.avif'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Personalfeed_article-3.php" class="text-blue-800 hover:underline">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year</a>',
+        'comments' => 1,
+        'shares' => 0,
+        'image' => 'assets/Buyline_assets/PerFeed_Artc_3 pic.avif'
+    ],
+];
 
-    $main_feed = [
-        [
-            'title' => '<a href="articles/buyline/Mainfeed_article-1.php" class="text-blue-800 hover:underline">Trump warns European nations are under threat of \'civilisational erasure\' and will be \'unrecognisable\' within the next 20 years</a>',
-            'excerpt' => "Officials arrived to try to force Zelensky into accepting peace deal.",
-            'comments' => 547,
-            'shares' => 30,
-            'image' => 'assets/Buyline_assets/MainFeed_Artc_1 pic.avif',
-            'category' => 'News'
-        ],
-        [
-            'title' => '<a href="articles/buyline/Mainfeed_article-2.php" class="text-blue-800 hover:underline">Mysterious 400-mile stretch of radiation fog blankets 13 million Americans</a>',
-            'excerpt' => "Ban is set to apply across all schools and public places.",
-            'comments' => 214,
-            'shares' => 8,
-            'image' => 'assets/Buyline_assets/MainFeed_Artc_2 pic.avif',
-            'category' => 'Science'
-        ],
-        [
-            'title' => '<a href="articles/buyline/Mainfeed_article-3.php" class="text-blue-800 hover:underline">Family rage at cop for handcuffing teen after they failed to scan items at Walmart self checkout then walked out without paying</a>',
-            'excerpt' => "Warships and planes will intercept any move.",
-            'comments' => 632,
-            'shares' => 29,
-            'image' => 'assets/Buyline_assets/MainFeed_Artc_3 pic.avif',
-            'category' => 'U.S.'
-        ],
-    ];
+$main_feed = [
+    [
+        'title' => '<a href="articles/buyline/Mainfeed_article-1.php" class="text-blue-800 hover:underline">The miracle in a bottle cream that celebs swear by to target wrinkles and dryness is a genius holiday gift thats priced just right</a>',
+        'comments' => 547,
+        'shares' => 30,
+        'image' => 'assets/Buyline_assets/MainFeed_Artc_1 pic.avif',
+        'category' => 'News'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Mainfeed_article-2.php" class="text-blue-800 hover:underline">Panic buying presents? No need. The 10 best budget beauty stocking fillers Im gifting to friends and family this year</a>',
+        'comments' => 214,
+        'shares' => 8,
+        'image' => 'assets/Buyline_assets/MainFeed_Artc_2 pic.avif',
+        'category' => 'Science'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Mainfeed_article-3.php" class="text-blue-800 hover:underline">Men are ditching expensive fragrances for £31 scent that turns heads: You need so little that they last for ages</a>',
+        'comments' => 632,
+        'shares' => 29,
+        'image' => 'assets/Buyline_assets/MainFeed_Artc_3 pic.avif',
+        'category' => 'U.S.'
+    ],
+];
 
-    $category_strip = [
-        [
-            'title' => '<a href="articles/buyline/Categoryfeed_article-1.php" class="text-blue-800 hover:underline">The product I rely on for winter skin relief is discounted - and it\'s perfect for tackling bumpy, uneven texture</a>',
-            'comments' => 567,
-            'shares' => 1500,
-            'image' => 'assets/Buyline_assets/CatFeed_Artc_1 pic.avif',
-            'category' => 'News'
-        ],
-        [
-            'title' => '<a href="articles/buyline/Categoryfeed_article-2.php" class="text-blue-800 hover:underline">Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas</a>',
-            'comments' => 65,
-            'shares' => 65,
-            'image' => 'assets/Buyline_assets/CatFeed_Artc_2 pic.avif',
-            'category' => 'U.S.'
-        ],
-        [
-            'title' => '<a href="articles/buyline/Categoryfeed_article-3.php" class="text-blue-800 hover:underline">Perricone MD drops rare deal on skincare-infused no make-up essentials - including liquid blush for a healthy flush</a>',
-            'comments' => 105,
-            'shares' => 18,
-            'image' => 'assets/Buyline_assets/CatFeed_Artc_3 pic.avif',
-            'category' => 'Science'
-        ],
-    ];
+$category_strip = [
+    [
+        'title' => '<a href="articles/buyline/Categoryfeed_article-1.php" class="text-blue-800 hover:underline">The product I rely on for winter skin relief is discounted - and it\'s perfect for tackling bumpy, uneven texture</a>',
+        'comments' => 567,
+        'shares' => 1500,
+        'image' => 'assets/Buyline_assets/CatFeed_Artc_1 pic.avif',
+        'category' => 'News'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Categoryfeed_article-2.php" class="text-blue-800 hover:underline">Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas</a>',
+        'comments' => 65,
+        'shares' => 65,
+        'image' => 'assets/Buyline_assets/CatFeed_Artc_2 pic.avif',
+        'category' => 'U.S.'
+    ],
+    [
+        'title' => '<a href="articles/buyline/Categoryfeed_article-3.php" class="text-blue-800 hover:underline">Perricone MD drops rare deal on skincare-infused no make-up essentials - including liquid blush for a healthy flush</a>',
+        'comments' => 105,
+        'shares' => 18,
+        'image' => 'assets/Buyline_assets/CatFeed_Artc_3 pic.avif',
+        'category' => 'Science'
+    ],
+];
 
-    include __DIR__ . '/header.php';
+include __DIR__ . '/header.php';
 ?>
 
-<!-- MAIN LAYOUT -->
-<main class="max-w-6xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-
-        <!-- LEFT MAIN SECTION -->
-        <div class="md:col-span-7">
-
-            <!-- HERO -->
-            <section class="mb-8">
-                <img src="assets/Buyline_assets/Buyline_Pic1.avif" class="w-full rounded-lg shadow object-cover" style="height:320px;">
-                <div class="mt-4">
-                    <h1 class="text-2xl font-semibold">
-                        <a href="articles/buyline/buyline_latest_article.php" class="text-blue-800 hover:underline">
-                            The pet camera I swear by to keep an eye on my cats is on sale - and it makes a great Christmas gift
-                        </a>
-                    </h1>
-                    <p class="text-gray-600 mt-2">
-                        SHOPPING: If you're shopping for a pet parent this Christmas...
-                    </p>
-                </div>
-            </section>
-
-            <!-- PERSONAL FEED -->
-            <section class="mb-8">
-                <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">PERSONAL FEED</div>
-                <div class="bg-white p-4 rounded-b-lg shadow">
-                    <div class="relative">
-                        <button class="absolute left-2 top-1/2 -translate-y-1/2 ...">‹</button>
-
-                        <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
-                            <?php foreach($personal_feed as $item): ?>
-                                <article class="max-w-[210px] border rounded p-3 bg-gray-50 flex-shrink-0">
-                                    <img src="<?= $item['image']; ?>" class="w-full h-32 object-cover rounded">
-                                    <h3 class="mt-2 font-bold text-sm line-clamp-2"><?= $item['title']; ?></h3>
-                                    <p class="text-xs text-gray-600 line-clamp-2"><?= $item['excerpt']; ?></p>
-                                    <div class="text-xs mt-2 text-gray-500"><?= $item['comments']; ?> comments • <?= $item['shares']; ?> share</div>
-                                </article>
-                            <?php endforeach; ?>
-                        </div>
-
-                        <button class="absolute right-2 top-1/2 -translate-y-1/2 ...">›</button>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Main column -->
+            <div class="md:col-span-7">
+                <!-- Hero -->
+                <section class="mb-8">
+                    <img src="assets/Buyline_assets/Buyline_Pic1.avif" alt="Hero" class="w-full rounded-lg shadow object-cover" style="height:320px;" />
+                    <div class="mt-4">
+                        <h1 class="text-2xl font-semibold"><a href="articles/article.php" class="text-blue-800 hover:underline">The pet camera I swear by to keep an eye on my cats is on sale - and it makes a great Christmas gift for pet owners</a></h1>
+                        <p class="text-gray-600 mt-2">SHOPPING: If you're shopping for a pet parent this Christmas (or you are one!), a pet camera from Furbo is a gift that makes life easier for the entire family.  An at-home pet camera means no more guessing what your fur babies are up to (or what mischief they're getting into) - you can check in, speak to them, and enjoy peace of mind whether you're simply in the office or away on holiday.  Furbo's latest release, the Furbo Mini 360° is smaller and smarter than ever.</p>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- MAIN FEED -->
-            <section class="mb-8">
-                <div class="flex items-center">
-                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">MAIN FEED</div>
-                </div>
-
-                <div class="bg-white p-4 rounded-b-lg shadow">
-                    <div id="main-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
-
-                        <?php foreach($main_feed as $item): ?>
-                            <div class="max-w-[250px] border rounded p-3 bg-gray-50 flex-shrink-0">
-                                <img src="<?= $item['image']; ?>" class="w-full h-36 object-cover rounded">
-                                <div class="mt-1 text-xs text-orange-600 font-semibold"><?= $item['category']; ?></div>
-
-                                <!-- TITLE WITH LINK ✔ -->
-                                <h3 class="mt-1 font-bold text-sm line-clamp-2">
-                                    <?= $item['title']; ?>
-                                </h3>
-
-                                <p class="text-xs text-gray-600 line-clamp-2"><?= $item['excerpt']; ?></p>
-                                <div class="text-xs mt-2 text-gray-500"><?= $item['comments']; ?> comments • <?= $item['shares']; ?> shares</div>
+                <!-- Main sections kept below the hero -->
+                <section class="mb-8">
+                    <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">PERSONAL FEED</div>
+                    <div class="bg-white p-4 rounded-b-lg shadow">
+                        <div class="relative">
+                            <button aria-label="Scroll personal left" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow" onclick="scrollFeed('personal-feed-row','left')">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 15.707a1 1 0 01-1.414 0L5.172 10l5.707-5.707a1 1 0 011.414 1.414L8.414 10l3.879 3.879a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+                            </button>
+                            <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
+                                <?php foreach(array_slice($personal_feed,0,5) as $item): ?>
+                                    <article class="max-w-[210px] flex-shrink-0 border rounded p-3 bg-gray-50">
+                                        <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                            <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-full h-full object-cover object-center" loading="lazy" />
+                                        </div>
+                                        <h3 class="mt-2 font-bold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
+                                    </article>
+                                <?php endforeach; ?>
                             </div>
-                        <?php endforeach; ?>
-
+                            <button aria-label="Scroll personal right" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow flex items-center justify-center" onclick="scrollFeed('personal-feed-row','right')">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700 block" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- CATEGORY STRIP -->
-            <section class="mb-8">
-                <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">CATEGORY STRIP</div>
+                <section class="mb-8">
+                    <div class="flex items-center">
+                        <div class="inline-flex items-center relative">
+                            <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">MAIN FEED</div>
+                            <button id="mainFiltersToggle" aria-expanded="false" aria-controls="mainFiltersStrip" class="ml-2 h-9 w-9 flex items-center justify-center text-sm rounded bg-white border">
+                                <svg id="mainToggleIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform rotate-0 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 4a1 1 0 011.707-.707l6 6a1 1 0 010 1.414l-6 6A1 1 0 016 16.586L11.586 11 6 5.414A1 1 0 016 4z" clip-rule="evenodd"/></svg>
+                            </button>
+                            <div id="mainFiltersStrip" class="panel-slide bg-white border rounded h-9 flex items-center gap-2 px-2 overflow-x-auto">
+                                <!-- Main feed filter buttons-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow">
+                        <div class="relative">
+                            <button aria-label="Scroll main left" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow" onclick="scrollFeed('main-feed-row','left')">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 15.707a1 1 0 01-1.414 0L5.172 10l5.707-5.707a1 1 0 011.414 1.414L8.414 10l3.879 3.879a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+                            </button>
+                            <div id="main-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
+                                <!-- Main feed cards rendered by JS -->
+                            </div>
+                            <button aria-label="Scroll main right" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow flex items-center justify-center" onclick="scrollFeed('main-feed-row','right')">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700 block" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="bg-white p-4 rounded-b-lg shadow">
-                    <div id="category-strip-row" class="flex gap-4 overflow-x-auto py-2 px-8">
+                <section class="mb-8">
+                    <div class="flex items-center">
+                        <div class="inline-flex items-center relative">
+                            <div class="bg-orange-600 text-white px-4 py-2 rounded-t-lg inline-block">CATEGORY STRIP</div>
+                            <button id="catFiltersToggle" aria-expanded="false" aria-controls="catFiltersPanel" class="ml-2 h-9 w-9 flex items-center justify-center text-sm rounded bg-white border">
+                                <svg id="catToggleIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform rotate-0 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 4a1 1 0 011.707-.707l6 6a1 1 0 010 1.414l-6 6A1 1 0 016 16.586L11.586 11 6 5.414A1 1 0 016 4z" clip-rule="evenodd"/></svg>
+                            </button>
+                            <div id="catFiltersPanel" class="panel-slide bg-white border rounded h-9 flex gap-2 items-center overflow-x-auto px-2">
+                                <!-- horizontal category filter buttons injected here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow">
+                        <div class="relative">
+                            <button aria-label="Scroll category left" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow" onclick="scrollFeed('category-strip-row','left')">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 15.707a1 1 0 01-1.414 0L5.172 10l5.707-5.707a1 1 0 011.414 1.414L8.414 10l3.879 3.879a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+                            </button>
+                            <div id="category-strip-row" class="flex gap-4 overflow-x-auto py-2 px-8">
+                                <!-- Category cards rendered by JS -->
+                            </div>
+                            <button aria-label="Scroll category right" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow flex items-center justify-center" onclick="scrollFeed('category-strip-row','right')">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700 block" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-                        <?php foreach($category_strip as $item): ?>
-                            <article class="max-w-[250px] border rounded p-3 bg-gray-50 flex-shrink-0">
-                                <img src="<?= $item['image']; ?>" class="w-full h-36 object-cover rounded">
-
-                                <div class="text-xs text-orange-600 font-semibold mt-1"><?= $item['category']; ?></div>
-
-                                <!-- CATEGORY TITLE WITH LINK ✔ -->
-                                <h3 class="mt-1 font-bold text-sm line-clamp-2">
-                                    <?= $item['title']; ?>
-                                </h3>
-
-                                <div class="text-xs mt-2 text-gray-500">
-                                    <?= $item['comments']; ?> comments • <?= $item['shares']; ?> shares
+            <!-- Sidebar: Don't Miss (3 cols) -->
+            <aside class="md:col-span-3">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <div class="bg-orange-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
+                    <div class="p-3">
+                        <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                            <div class="flex gap-3 py-3 border-b last:border-b-0">
+                                <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
+                                <div>
+                                    <div class="text-xs text-red-600 font-semibold">EXCLUSIVE</div>
+                                    <a href="#" class="text-sm font-semibold text-blue-700 hover:underline"><?php echo $item['title']; ?></a>
+                                    <div class="text-xs text-gray-500 mt-1"><?php echo $item['comments']; ?> comments</div>
                                 </div>
-                            </article>
+                            </div>
                         <?php endforeach; ?>
-
                     </div>
                 </div>
-            </section>
-        </div>
+            </aside>
 
-        <!-- SIDEBAR -->
-        <aside class="md:col-span-3">
-            <div class="bg-white rounded-lg shadow overflow-hidden">
-                <div class="bg-orange-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
-                <div class="p-3">
-
-                    <?php foreach(array_slice($main_feed,0,3) as $item): ?>
-                        <div class="flex gap-3 py-3 border-b last:border-b-0">
-                            <img src="<?= $item['image']; ?>" class="w-20 h-14 object-cover rounded">
-                            <div>
-                                <div class="text-xs text-red-600 font-semibold">EXCLUSIVE</div>
-                                <a href="articles/buyline/Mainfeed_article-1.php"  class="text-sm font-semibold text-blue-700 hover:underline">
-                                    <?= strip_tags($item['title']); ?>
-                                </a>
-                                <div class="text-xs text-gray-500"><?= $item['comments']; ?> comments</div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-
-                </div>
-            </div>
-        </aside>
-
-        <!-- AD COLUMN -->
-        <div class="hidden md:block md:col-span-2">
-            <div class="sticky top-24">
-                <div class="text-xs text-gray-500 mb-2">ADVERTISEMENT</div>
-                <div class="bg-white p-2 rounded shadow flex justify-center">
-                    <img src="assets/ads.png" class="w-28 object-contain">
+            <!-- Narrow ad column (wider: 2 cols) -->
+            <div class="hidden md:block md:col-span-2">
+                <div class="sticky top-24">
+                    <div class="text-xs text-gray-500 mb-2">ADVERTISEMENT</div>
+                    <div class="bg-white p-2 rounded shadow flex justify-center">
+                        <img src="assets/ads.png" alt="Ad" class="w-28 h-auto object-contain" />
+                    </div>
                 </div>
             </div>
         </div>
-
-    </div>
-</main>
-
+    </main>
 <?php include __DIR__ . '/footer.php'; ?>
-
 <style>
 /* Slide + fade animation helpers for filter strips */
 .anim-hidden {
@@ -308,7 +285,7 @@
 const MAIN_FEED = <?php echo json_encode($main_feed, JSON_HEX_TAG); ?>;
 const CAT_STRIP = <?php echo json_encode($category_strip, JSON_HEX_TAG); ?>;
 
-const MAIN_FILTERS = ['All','Beauty','Fashion','Home and garden','Black Friday'];
+const MAIN_FILTERS = ['All','Latest headlines','Australia','Scotland','Books','Columnists'];
 const CAT_FILTERS = ['All','Sports','Showbiz','Lifestyle','Health','Science','Money','Travel'];
 
 function renderMainFeed(filter) {
@@ -326,11 +303,11 @@ function renderMainFeed(filter) {
         art.className = 'max-w-[210px] flex-shrink-0 bg-gray-50 rounded overflow-hidden shadow-sm';
         art.innerHTML = `
             <div class="relative w-48 h-32 overflow-hidden rounded-t">
-                <img src="${post.image}" alt="${escapeHtml(post.title)}" class="w-full h-full object-cover object-center" loading="lazy" />
+                <img src="${post.image}" alt="" class="w-full h-full object-cover object-center" loading="lazy" />
             </div>
             <div class="p-3">
-                <h3 class="font-semibold text-sm line-clamp-2 h-10">${escapeHtml(post.title)}</h3>
-                <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10">${escapeHtml(post.excerpt || '')}</p>
+                <h3 class="font-semibold text-sm line-clamp-2 h-10">${(post.title)}</h3>
+                <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10">${(post.excerpt || '')}</p>
                 <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
             </div>`;
         row.appendChild(art);
@@ -350,9 +327,9 @@ function renderCategoryStrip(filter) {
         card.className = 'max-w-[210px] bg-gray-50 rounded shadow-sm p-3';
         card.innerHTML = `
             <div class="relative w-48 h-32 overflow-hidden rounded-t">
-                <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="w-full h-full object-cover object-center" loading="lazy" />
+                <img src="${cat.image}" alt="" class="w-full h-full object-cover object-center" loading="lazy" />
             </div>
-            <h4 class="mt-2 font-semibold text-sm line-clamp-2 h-10">${escapeHtml(cat.title)}</h4>
+            <h4 class="mt-2 font-semibold text-sm line-clamp-2 h-10">${(cat.title)}</h4>
             <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>`;
         row.appendChild(card);
     });

@@ -7,84 +7,70 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/Buyline_Pic1.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/PerFeed_Artc_1 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">The pet camera I swear by to keep an eye on my cats is on sale - and it makes a great Christmas gift for pet owners </h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">Cat Deeley just wore this fashionably festive jumper on This Morning - here's where you can buy it and three other Christmassy sweaters still available on the high street</h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By PHOEBE DAVENPORT, COMMERCE WRITER</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 09:13 GMT, 5 December 2025 | Updated: 09:13 GMT, 5 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By JESS LESTER</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 10:25 GMT, 5 December 2025 | Updated: 10:46 GMT, 5 December 2025</div>
                 </div>
 
                 
-                <p class="text-gray-700 leading-relaxed">If you're shopping for a pet parent this Christmas (or you are one!), a pet camera from Furbo is a gift that makes life easier for the entire family.  <br>
-                <br>An at-home pet camera means no more guessing what your fur babies are up to (or what mischief they're getting into) - you can check in, speak to them, and enjoy peace of mind whether you're simply in the office or away on holiday. </p>
-                <div class="my-4 border-t border-blue-300 py-2">
-                    <!-- Section -->
-                <section class="mt-6">
-                    <h2 class="text-xl font-semibold">Got a loved one who's slightly obsessed with their pet? Buy them a Furbo Pet Camera this Christmas to make their year</h2>
-                    <p class="text-gray-700 mt-2">Furbo's latest release, the Furbo Mini 360°, is smaller and smarter than ever. 
-                    Complete with 2K QHD 360° view and Lite Treat Toss, this camera is suitable for both dogs and cats. You can also fit up to 10 small treats in here, perfect for reinforcing good behaviour. 
-                    It auto-rotates and zooms in to track your pet while at home, allowing you to keep an eye on them from wherever. </p>
-                    <div class="mt-4">
-                        <img src="/assets/Buyline_assets/Furbo.avif" alt="Furbo Mini 360° close-up" class="w-full h-auto object-contain rounded-lg shadow" />
-                    </div>
-                    <p class="text-gray-700 mt-2">The best thing? Furbo have recently released its latest innovation - the AI-powered Furbo Nanny. Designed to keep your pets safe from any harm and help you generally keep track of them, this is perfect for pet owners who like to stay informed. 
-                        On the app, you can get expert advice and opinions on anything pet-related instantly using Nanny Chat. And with the AI Health Checker, you can get instant insights on your pet's health and wellbeing by asking a question or uploading an image. <br>
-                        <br>For nervous pets, Furbo Nanny has a Calm My Pet feature that offers instant and automatic anxiety relief when your pet displays visible signs of stress or anxiety. There are also plans to add pet emergency and health alerts soon, making this even more essential for those who work in an office or travel a lot. 
-                        In the Standard plan, you have access to a three-day video history, and seven days for the Premium plan.Furbo Nanny plans start from £5.19 per month for Standard if you opt for the two-year plan, £5.59 per month for one-year, or £7.99 if billed monthly. The Premium plan starts from £6.49 per month for the two-year plan, £6.99 per month for one year, or £9.99 if billed monthly. </p>
-
-                </section>
-                </div>
+                <p class="text-gray-700 leading-relaxed">
+                Cat Deeley presented This Morning in a fashionably festive jumper - and we've found out where you can buy the gorgeous red number. 
+                <br>
+                Thursday's instalment of the ITV show saw the 49-year-old and co-host Ben Shephard, 50, interview a range of celebrity guests and familiar faces.
+                And things took a suitably Christmas-themed turn as Cat and Ben walked viewers through the hottest festive pyjama looks and party-ready Yuletide make-up. 
+                Getting in the spirit, Cat opted for a red knitted jumper with a festive pattern, and incredible as usual in her latest attire. 
+                <br>
+                She paired the dressed-down jumper with relaxed fit jeans, and a pair of pointed toe kitten heels, sprucing up her look with a bouncy blow dry. 
+                Luckily for fans, the chic jumper, which features white detailing and a roll neck, is still available to buy in time for Christmas Day.
+                </p>
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
-                <!-- Product 1 -->
-                <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                    <img src="/assets/Buyline_assets/IMG_Furbo-1.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
-                    <div>
-                        <h3 class="text-xl font-bold">Furbo 360° Dog Camera</h3>
-                        <p class="text-gray-700 mt-2">
-                            Designed specifically for dogs, this 360° camera rotates and zooms in on your dog.<br><br>
-                            With Barking Alert, real-time 2-way audio, and treat tossing (up to 100 treats),
-                            you can interact with your dog anytime.
-                        </p>
-                        <p class="text-lg font-bold mt-3">£32 <span class="text-orange-500 font-semibold">(save £167)</span></p>
-                        <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                    <!-- Product 1 -->
+                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-11.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <div>
+                            <h3 class="text-xl font-bold">Boden Marion Merino High Neck Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£119 </p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Product 2 -->
-                <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                    <img src="/assets/Buyline_assets/IMG_Furbo-2.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
-                    <div>
-                        <h3 class="text-xl font-bold">Furbo 360° Cat Camera</h3>
-                        <p class="text-gray-700 mt-2">
-                            With 360° HD video, this camera keeps track of your cat’s mischief.<br><br>
-                            Includes a feather wand, spill-proof design, and 2-way audio.
-                        </p>
-                        <p class="text-lg font-bold mt-3">£32 <span class="text-orange-500 font-semibold">(save £167)</span></p>
-                        <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                    <!-- Product 2 -->
+                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-12.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
+                        <div>
+                            <h3 class="text-xl font-bold">Joules High Neck Cotton-Blend Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£69</p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Product 3 -->
-                <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                    <img src="/assets/Buyline_assets/IMG_Furbo-3.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                    <div>
-                        <h3 class="text-xl font-bold">Furbo Mini</h3>
-                        <p class="text-gray-700 mt-2">
-                            A compact camera you can mount on the wall. 130° wide-angle lens, 4× digital zoom,
-                            and colour night vision.
-                        </p>
-                        <p class="text-lg font-bold mt-3">£15 <span class="text-orange-500 font-semibold">(save £80)</span></p>
-                        <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                    <!-- Product 3 -->
+                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-13.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <div>
+                            <h3 class="text-xl font-bold">M&S Merino Wool Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£85.95</p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                        </div>
                     </div>
-                </div>
-
+                    <!-- Product 4 -->
+                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
+                        <img src="/assets/Buyline_assets/PerFeed_SPic-14.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
+                        <div>
+                            <h3 class="text-xl font-bold">Apricot Chunky Knit Jumper </h3>
+                            <p class="text-lg font-bold mt-3">£35</p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -94,27 +80,27 @@ include __DIR__ . '/../../header.php';
                 // comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Pexi',
-                        'location' => 'Colwyn Bay, United Kingdom',
-                        'time' => '12 minutes ago',
-                        'text' => "I bought the Furbo 360° Dog Camera last month and it's honestly amazing. The treat-tossing feature works perfectly and the 360 view lets me check on my Labrador wherever he hides.",
-                        'up' => 3,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Nigel Fartage',
-                        'location' => 'Clacton on Sea, United Kingdom',
-                        'time' => '28 minutes ago',
-                        'text' => "We picked up the Furbo 360° Cat Camera for our two mischievous cats. The feather wand is genius — they spend half the day trying to attack it. Great quality video as well.",
-                        'up' => 4,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Marta',
+                        'name' => 'Emma',
                         'location' => 'London, United Kingdom',
-                        'time' => '1 hour ago',
-                        'text' => "I bought the Furbo Mini for my small flat and it’s been perfect. Super clear video, even at night, and the wide-angle lens covers the whole room. Definitely worth the price.",
-                        'up' => 2,
+                        'time' => 'Just now',
+                        'text' => "Such a stylish outfit! The design is elegant and versatile, perfect for dressing up or down. I can easily see this being a wardrobe favorite for any occasion.",
+                        'up' => 0,
+                        'down' => 0,
+                    ],
+                    [
+                        'name' => 'Chloe',
+                        'location' => 'Manchester, United Kingdom',
+                        'time' => '5 minutes ago',
+                        'text' => "Love this look! It’s trendy yet timeless, and the fit seems flattering. A great choice for women who want to feel confident and fashionable.",
+                        'up' => 0,
+                        'down' => 0,
+                    ],
+                    [
+                        'name' => 'Sophia',
+                        'location' => 'Birmingham, United Kingdom',
+                        'time' => '10 minutes ago',
+                        'text' => "This outfit is gorgeous! Chic, comfortable, and perfect for various occasions. Definitely a versatile piece that every woman would appreciate in her wardrobe.",
+                        'up' => 0,
                         'down' => 0,
                     ],
                 ];
@@ -452,4 +438,4 @@ include __DIR__ . '/../../header.php';
         </div>
     </div>
 
-<?php include __DIR__ . '/../footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>

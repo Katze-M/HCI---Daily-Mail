@@ -7,83 +7,52 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/Buyline_Pic1.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
+                    <img src="/assets/Buyline_assets/MainFeed_Artc_3 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
                     <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">The pet camera I swear by to keep an eye on my cats is on sale - and it makes a great Christmas gift for pet owners </h1>
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">Men are ditching expensive fragrances for £31 scent that 'turns heads': 'You need so little that they last for ages' </h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By PHOEBE DAVENPORT, COMMERCE WRITER</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 09:13 GMT, 5 December 2025 | Updated: 09:13 GMT, 5 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By EMILY SCRIVENER, DEPUTY COMMERCE EDITOR</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 13:00 GMT, 18 March 2025 | Updated: 13:00 GMT, 18 March 2025</div>
                 </div>
 
                 
-                <p class="text-gray-700 leading-relaxed">If you're shopping for a pet parent this Christmas (or you are one!), a pet camera from Furbo is a gift that makes life easier for the entire family.  <br>
-                <br>An at-home pet camera means no more guessing what your fur babies are up to (or what mischief they're getting into) - you can check in, speak to them, and enjoy peace of mind whether you're simply in the office or away on holiday. </p>
+                <p class="text-gray-700 leading-relaxed">
+                    An under £35 cologne is earning shoppers endless compliments, with many praising the spicy-vanilla scent that 'turns heads'.                 <br>
+                <br>
+                Cremo is the under-the-radar fragrance brand that has been wowing shoppers with its unique scents, earning praises like 'compliment grabber'. And the Cremo Spice & Black Vanilla Eau De Toilette in particular has proved to be a standout, with a whopping 17,000 five-star reviews on Amazon and counting                </p>
                 <div class="my-4 border-t border-blue-300 py-2">
+
                     <!-- Section -->
                 <section class="mt-6">
-                    <h2 class="text-xl font-semibold">Got a loved one who's slightly obsessed with their pet? Buy them a Furbo Pet Camera this Christmas to make their year</h2>
-                    <p class="text-gray-700 mt-2">Furbo's latest release, the Furbo Mini 360°, is smaller and smarter than ever. 
-                    Complete with 2K QHD 360° view and Lite Treat Toss, this camera is suitable for both dogs and cats. You can also fit up to 10 small treats in here, perfect for reinforcing good behaviour. 
-                    It auto-rotates and zooms in to track your pet while at home, allowing you to keep an eye on them from wherever. </p>
                     <div class="mt-4">
-                        <img src="/assets/Buyline_assets/Furbo.avif" alt="Furbo Mini 360° close-up" class="w-full h-auto object-contain rounded-lg shadow" />
+                        <img src="/assets/Buyline_assets/MainFeed_Artc_3 Big pic.avif" alt="Furbo Mini 360° close-up" class="w-full h-auto object-contain rounded-lg shadow" />
                     </div>
-                    <p class="text-gray-700 mt-2">The best thing? Furbo have recently released its latest innovation - the AI-powered Furbo Nanny. Designed to keep your pets safe from any harm and help you generally keep track of them, this is perfect for pet owners who like to stay informed. 
-                        On the app, you can get expert advice and opinions on anything pet-related instantly using Nanny Chat. And with the AI Health Checker, you can get instant insights on your pet's health and wellbeing by asking a question or uploading an image. <br>
-                        <br>For nervous pets, Furbo Nanny has a Calm My Pet feature that offers instant and automatic anxiety relief when your pet displays visible signs of stress or anxiety. There are also plans to add pet emergency and health alerts soon, making this even more essential for those who work in an office or travel a lot. 
-                        In the Standard plan, you have access to a three-day video history, and seven days for the Premium plan.Furbo Nanny plans start from £5.19 per month for Standard if you opt for the two-year plan, £5.59 per month for one-year, or £7.99 if billed monthly. The Premium plan starts from £6.49 per month for the two-year plan, £6.99 per month for one year, or £9.99 if billed monthly. </p>
+                    <p class="text-gray-700 mt-2">If you like to stand out from the crowd, Cremo is the male grooming brand you need to know about, offering men elevated products to upgrade their grooming routine. <br>
+                        <br>If you're not sure where to start, or are looking for a unique gift, then the Cremo Men's Spice and Black Vanilla Cologne is a bestseller and it's drumming up huge attention online. 
+                        Designed to smell 'uncommonly good', the fragrance is aromatic, soft, and warm with a gourmet touch of black vanilla and a spicy zest of cardamom. Better still? It costs just £30.95 for 100ml. 
+                    </p>
 
                 </section>
                 </div>
 
                 <div class="my-4 border-t border-blue-300 py-2">
 
-                <!-- Product 1 -->
-                <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                    <img src="/assets/Buyline_assets/IMG_Furbo-1.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
-                    <div>
-                        <h3 class="text-xl font-bold">Furbo 360° Dog Camera</h3>
-                        <p class="text-gray-700 mt-2">
-                            Designed specifically for dogs, this 360° camera rotates and zooms in on your dog.<br><br>
-                            With Barking Alert, real-time 2-way audio, and treat tossing (up to 100 treats),
-                            you can interact with your dog anytime.
-                        </p>
-                        <p class="text-lg font-bold mt-3">£32 <span class="text-orange-500 font-semibold">(save £167)</span></p>
-                        <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                    <!-- Product 1 -->
+                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
+                        <img src="/assets/Buyline_assets/MainFeed_SPic-11.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
+                        <div>
+                            <h3 class="text-xl font-bold">Phlur Irresistible Layering Set  </h3>
+                            <p class="text-gray-700 mt-2">
+                                If you've not yet heard of Phlur, we can only assume you've been living under a rock. The viral fragrance brand produces decadent, long-lasting body mists and perfumes that have earned the brand a cult-like following, and this gift set is the perfect way to try three bestselling favourites. 
+                            </p>
+                            <p class="text-lg font-bold mt-3">£30.95 </p>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                    <img src="/assets/Buyline_assets/IMG_Furbo-2.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
-                    <div>
-                        <h3 class="text-xl font-bold">Furbo 360° Cat Camera</h3>
-                        <p class="text-gray-700 mt-2">
-                            With 360° HD video, this camera keeps track of your cat’s mischief.<br><br>
-                            Includes a feather wand, spill-proof design, and 2-way audio.
-                        </p>
-                        <p class="text-lg font-bold mt-3">£32 <span class="text-orange-500 font-semibold">(save £167)</span></p>
-                        <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                    <img src="/assets/Buyline_assets/IMG_Furbo-3.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                    <div>
-                        <h3 class="text-xl font-bold">Furbo Mini</h3>
-                        <p class="text-gray-700 mt-2">
-                            A compact camera you can mount on the wall. 130° wide-angle lens, 4× digital zoom,
-                            and colour night vision.
-                        </p>
-                        <p class="text-lg font-bold mt-3">£15 <span class="text-orange-500 font-semibold">(save £80)</span></p>
-                        <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                    </div>
-                </div>
 
                 </div>
 
@@ -94,31 +63,31 @@ include __DIR__ . '/../../header.php';
                 // comments. Replies and votes are client-only and not persisted.
                 $comments = [
                     [
-                        'name' => 'Pexi',
-                        'location' => 'Colwyn Bay, United Kingdom',
-                        'time' => '12 minutes ago',
-                        'text' => "I bought the Furbo 360° Dog Camera last month and it's honestly amazing. The treat-tossing feature works perfectly and the 360 view lets me check on my Labrador wherever he hides.",
-                        'up' => 3,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Nigel Fartage',
-                        'location' => 'Clacton on Sea, United Kingdom',
-                        'time' => '28 minutes ago',
-                        'text' => "We picked up the Furbo 360° Cat Camera for our two mischievous cats. The feather wand is genius — they spend half the day trying to attack it. Great quality video as well.",
-                        'up' => 4,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Marta',
+                        'name' => 'Emma',
                         'location' => 'London, United Kingdom',
-                        'time' => '1 hour ago',
-                        'text' => "I bought the Furbo Mini for my small flat and it’s been perfect. Super clear video, even at night, and the wide-angle lens covers the whole room. Definitely worth the price.",
-                        'up' => 2,
+                        'time' => 'Just now',
+                        'text' => "This cologne has such a clean and refreshing scent. It’s subtle but noticeable, making it perfect for everyday wear. A great choice for anyone who likes a balanced fragrance.",
+                        'up' => 0,
+                        'down' => 0,
+                    ],
+                    [
+                        'name' => 'Chloe',
+                        'location' => 'Manchester, United Kingdom',
+                        'time' => '5 minutes ago',
+                        'text' => "Really enjoying this fragrance! It’s modern, smooth, and lasts well throughout the day. Ideal for people who want something stylish without being overpowering.",
+                        'up' => 0,
+                        'down' => 0,
+                    ],
+                    [
+                        'name' => 'Sophia',
+                        'location' => 'Birmingham, United Kingdom',
+                        'time' => '10 minutes ago',
+                        'text' => "Such a lovely cologne—light, elegant, and versatile. Works well for casual days or more dressed-up occasions. Definitely a scent that many will appreciate.",
+                        'up' => 0,
                         'down' => 0,
                     ],
                 ];
-                
+
                 $comment_count = 41; // total count for the 'Show more' button
                 
                 ?>
@@ -452,4 +421,4 @@ include __DIR__ . '/../../header.php';
         </div>
     </div>
 
-<?php include __DIR__ . '/../footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
