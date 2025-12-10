@@ -2,165 +2,99 @@
 // Royals landing page (based on index.php) — royal-themed placeholders
 $personal_feed = [
     [
-        'title' => "King Charles III visits local community centre",
+        'title' => '<a href="articles/buyline/Royale_article-1.php" class="text-blue-800 hover:underline">Kate Middleton makes star drop earrings the must-have accessory of the season - shop her exact pair and chic alternatives</a>',
         'excerpt' => "The King met volunteers and launched a new initiative.",
-        'comments' => 34,
-        'shares' => 6,
-        'image' => 'https://via.placeholder.com/400x200?text=King+Charles'
+        'comments' => 402,
+        'shares' => 22,
+        'image' => 'assets/Buyline_assets/Royal_Pic-1.avif',
     ],
     [
-        'title' => 'Kate Middleton attends school charity event',
-        'excerpt' => "The Princess of Wales praised teachers and pupils.",
-        'comments' => 27,
-        'shares' => 4,
-        'image' => 'https://via.placeholder.com/400x200?text=Kate+Middleton'
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article4.php" class="text-blue-800 hover:underline">Prince Harry believes Home Office review into his taxpayer-funded security is long overdue, sources reveal - as experts suggest his relationship with the King is thawing</a>',
+        'comments' => 305,
+        'shares' => 48,
+        'image' => 'assets/Royal_assets/Royal-12.avif',
     ],
     [
-        'title' => 'Prince William visits wildlife reserve',
-        'excerpt' => "Focus on conservation and youth engagement.",
-        'comments' => 18,
-        'shares' => 2,
-        'image' => 'https://via.placeholder.com/400x200?text=Prince+William'
-    ],
-    [
-        'title' => 'Prince Harry launches new veterans charity',
-        'excerpt' => "Programme aims to support ex-service personnel.",
-        'comments' => 22,
-        'shares' => 3,
-        'image' => 'https://via.placeholder.com/400x200?text=Prince+Harry'
-    ],
-    [
-        'title' => 'Meghan Markle shares mental health advice',
-        'excerpt' => "Actor and campaigner speaks about wellbeing.",
-        'comments' => 41,
-        'shares' => 7,
-        'image' => 'https://via.placeholder.com/400x200?text=Meghan+Markle'
-    ],
-    [
-        'title' => 'Royal garden party highlights young artists',
-        'excerpt' => "Young creatives display work in palace gardens.",
-        'comments' => 5,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Garden+Party'
-    ],
-    [
-        'title' => 'Historic portrait unveiled at National Gallery',
-        'excerpt' => "A new painting of a senior royal is revealed.",
-        'comments' => 9,
+        'title' => '<a href="articles/Royals/Royal_catfeed-article2.php" class="text-blue-800 hover:underline">Meghan Markle sends letter to her sick father Thomas in hospital after he made urgent plea he did not want to die with them being estranged</a>',
+        'comments' => 12,
         'shares' => 1,
-        'image' => 'https://via.placeholder.com/400x200?text=Portrait'
+        'image' => 'assets/Royal_assets/Royal-18.avif',
     ],
+
 ];
 
 $main_feed = [
     [
-        'title' => "King Charles III hosts diplomatic reception",
-        'excerpt' => "Ambassadors gathered for talks at Buckingham Palace.",
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article1.php" class="text-blue-800 hover:underline">How ex-PM John Major played the role of an honest broker between Charles and Diana during the War of the Waleses</a>',
         'comments' => 220,
         'shares' => 34,
-        'image' => 'https://via.placeholder.com/360x220?text=Royal+Reception',
-        'category' => 'Royals'
+        'image' => 'assets/Royal_assets/Royal-1.avif',
+        'category' => 'King Charles III'
     ],
     [
-        'title' => 'Kate Middleton to champion early years education',
-        'excerpt' => "A new campaign will focus on nursery support.",
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article2.php" class="text-blue-800 hover:underline">Prince William celebrates 20 years of his patronage with homeless charity Centrepoint - after Princess Diana took him to a shelter when he was 11 years old</a>',
         'comments' => 160,
         'shares' => 19,
-        'image' => 'https://via.placeholder.com/360x220?text=Kate+Education',
-        'category' => 'Features'
+        'image' => 'assets/Royal_assets/Royal-5.avif',
+        'category' => 'Prince William'
     ],
     [
-        'title' => 'Prince William visits youth mental health centre',
-        'excerpt' => "Emphasis on services for young people.",
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article3.php" class="text-blue-800 hover:underline">Lady Davina Windsor and her daughter Senna support Kate Middleton at Christmas carol concert in rare royal outing</a>',
         'comments' => 98,
         'shares' => 12,
-        'image' => 'https://via.placeholder.com/360x220?text=William+Visit',
-        'category' => 'U.K.'
+        'image' => 'assets/Royal_assets/Royal-8.avif',
+        'category' => 'Kate Middleton'
     ],
     [
-        'title' => 'Prince Harry releases new memoir excerpt',
-        'excerpt' => "A chapter reflects on military service and family.",
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article4.php" class="text-blue-800 hover:underline">Prince Harry believes Home Office review into his taxpayer-funded security is long overdue, sources reveal - as experts suggest his relationship with the King is thawing</a>',
         'comments' => 305,
         'shares' => 48,
-        'image' => 'https://via.placeholder.com/360x220?text=Harry+Memoir',
-        'category' => 'Books'
+        'image' => 'assets/Royal_assets/Royal-12.avif',
+        'category' => 'Prince Harry'
     ],
     [
-        'title' => 'Meghan Markle advocates for women entrepreneurs',
-        'excerpt' => "Initiative to provide mentoring and seed funding.",
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article5.php" class="text-blue-800 hover:underline">Meghan Markle sends letter to her sick father Thomas in hospital after he made urgent plea he did not want to die with them being estranged</a>',
         'comments' => 142,
         'shares' => 21,
-        'image' => 'https://via.placeholder.com/360x220?text=Meghan+Campaign',
-        'category' => 'Business'
-    ],
-    [
-        'title' => 'Royal tour schedule announced for spring',
-        'excerpt' => "A series of engagements across the UK and Commonwealth.",
-        'comments' => 73,
-        'shares' => 8,
-        'image' => 'https://via.placeholder.com/360x220?text=Royal+Tour',
-        'category' => 'U.K.'
-    ],
-    [
-        'title' => 'Palace reveals archival footage of coronation',
-        'excerpt' => "Restored clips to be part of a public exhibition.",
-        'comments' => 56,
-        'shares' => 6,
-        'image' => 'https://via.placeholder.com/360x220?text=Coronation',
-        'category' => 'Culture'
+        'image' => 'assets/Royal_assets/Royal-15.avif',
+        'category' => 'Meghan Markle'
     ],
 ];
 
 $category_strip = [
     [
-        'title' => "Kate Middleton visits children's hospice",
+        'title' => '<a href="articles/Royals/Royal_catfeed-article1.php" class="text-blue-800 hover:underline">Prince Harry turns to trusted royal aide for charity role, RICHARD EDEN reveals amid Sentable saga</a>',
         'comments' => 84,
         'shares' => 11,
-        'image' => 'https://via.placeholder.com/300x180?text=Kate+Hospice',
+        'image' => 'assets/Royal_assets/Royal-23.avif',
         'category' => 'Charity'
     ],
     [
-        'title' => 'William speaks at climate forum',
-        'comments' => 47,
-        'shares' => 6,
-        'image' => 'https://via.placeholder.com/300x180?text=William+Climate',
-        'category' => 'Environment'
-    ],
-    [
-        'title' => 'Harry attends veterans wellbeing workshop',
-        'comments' => 59,
-        'shares' => 7,
-        'image' => 'https://via.placeholder.com/300x180?text=Harry+Veterans',
-        'category' => 'Welfare'
-    ],
-    [
-        'title' => 'Meghan launches mentoring platform',
-        'comments' => 101,
-        'shares' => 14,
-        'image' => 'https://via.placeholder.com/300x180?text=Meghan+Mentor',
-        'category' => 'Business'
-    ],
-    [
-        'title' => 'King Charles highlights conservation grants',
-        'comments' => 33,
-        'shares' => 3,
-        'image' => 'https://via.placeholder.com/300x180?text=Charles+Conservation',
-        'category' => 'Royals'
-    ],
-    [
-        'title' => 'Royal fashion: Kate’s season favourites',
+        'title' => '<a href="articles/Royals/Royal_catfeed-article2.php" class="text-blue-800 hover:underline">Meghan Markle sends letter to her sick father Thomas in hospital after he made urgent plea he did not want to die with them being estranged</a>',
         'comments' => 12,
         'shares' => 1,
-        'image' => 'https://via.placeholder.com/300x180?text=Kate+Style',
+        'image' => 'assets/Royal_assets/Royal-18.avif',
         'category' => 'Style'
     ],
+
     [
-        'title' => 'Guide: Visiting royal palaces this winter',
-        'comments' => 6,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/300x180?text=Palaces',
-        'category' => 'Travel'
+        'title' => '<a href="articles/Royals/Royal_mainfeed-article2.php" class="text-blue-800 hover:underline">Prince William celebrates 20 years of his patronage with homeless charity Centrepoint - after Princess Diana took him to a shelter when he was 11 years old</a>',
+        'comments' => 160,
+        'shares' => 19,
+        'image' => 'assets/Royal_assets/Royal-5.avif',
+        'category' => 'Charity'
     ],
+
+    [
+        'title' => '<a href="articles/buyline/Royale_article-1.php" class="text-blue-800 hover:underline">Kate Middleton makes star drop earrings the must-have accessory of the season - shop her exact pair and chic alternatives</a>',
+        'excerpt' => "The King met volunteers and launched a new initiative.",
+        'comments' => 402,
+        'shares' => 22,
+        'image' => 'assets/Buyline_assets/Royal_Pic-1.avif',
+        'category' => 'Style'
+        
+    ],
+
 ];
 
 // uses shared header/footer
@@ -173,9 +107,9 @@ include __DIR__ . '/header.php';
             <div class="md:col-span-7">
                 <!-- Hero Section -->
                 <section class="mb-8">
-                    <img src="assets/news_article_pics/royals_latestimg1.png" alt="Hero" class="w-full rounded-lg shadow object-cover" style="height:320px;" />
+                    <img src="assets/news_article_pics/Royals_latestimg1.png" alt="Hero" class="w-full rounded-lg shadow object-cover" style="height:320px;" />
                     <div class="mt-4">
-                        <h1 class="text-2xl font-semibold"><a href="articles/royals_latest_article.php" class="text-blue-800 hover:underline">Prince Harry should be stripped of his titles after Trump-mocking Colbert appearance to bring 'clarity' to Americans who just see a 'British prince insulting their head of state'</a></h1>
+                        <h1 class="text-2xl font-semibold"><a href="articles/Royals_latest_article.php" class="text-blue-800 hover:underline">Prince Harry should be stripped of his titles after Trump-mocking Colbert appearance to bring 'clarity' to Americans who just see a 'British prince insulting their head of state'</a></h1>
                         <p class="text-gray-600 mt-2">Prince Harry should be stripped of his title to bring 'clarity' to Americans who believe he speaks for the Royal Family, says one expert on the House of Windsor.</p>
                     </div>
                 </section>
@@ -191,9 +125,8 @@ include __DIR__ . '/header.php';
                             <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
                                 <?php foreach(array_slice($personal_feed,0,7) as $item): ?>
                                     <article class="pf-card border p-3 bg-gray-50">
-                                        <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
+                                        <img src="<?php echo $item['image']; ?>" alt="<?php($item['title']); ?>" class="pf-img rounded" />
                                         <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
-                                        <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
                                         <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
                                     </article>
                                 <?php endforeach; ?>
@@ -337,8 +270,8 @@ function renderMainFeed(filter) {
         art.innerHTML = `
             <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
             <div class="p-3">
-                <h3 class="font-semibold">${escapeHtml(post.title)}</h3>
-                <p class="text-sm text-gray-600 mt-1">${escapeHtml(post.excerpt || '')}</p>
+                <h3 class="font-semibold">${(post.title)}</h3>
+                <p class="text-sm text-gray-600 mt-1">${(post.excerpt || '')}</p>
                 <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
             </div>`;
         row.appendChild(art);
@@ -355,7 +288,7 @@ function renderCategoryStrip(filter) {
         card.className = 'pf-card bg-gray-50 rounded shadow-sm p-3';
         card.innerHTML = `
             <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
-            <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
+            <h4 class="mt-2 font-semibold text-sm">${(cat.title)}</h4>
             <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>`;
         row.appendChild(card);
     });
