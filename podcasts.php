@@ -24,7 +24,7 @@ $allPodcasts = [
     // Lifestyle (4 total)
     ["title" => "Daily Living Tips", "image" => "assets/podcasts/dailytips.jpg", "description"=>"Simple tips for everyday life.", "category"=>"Lifestyle"],
     ["title" => "Wellness Talks", "image" => "assets/podcasts/wellness.jpg", "description"=>"Health and wellness guidance.", "category"=>"Lifestyle"],
-    ["title" => "Home & Style", "image" => "assets/podcasts/home_style.jpg", "description"=>"Decor, organization, and lifestyle hacks.", "category"=>"Lifestyle"],
+    ["title" => "Home & Style", "image" => "assets/podcasts/home.jpg", "description"=>"Decor, organization, and lifestyle hacks.", "category"=>"Lifestyle"],
     ["title" => "Mindful Moments", "image" => "assets/podcasts/mindful.jpg", "description"=>"Tips for mindfulness and personal growth.", "category"=>"Lifestyle"],
 
     // Tech (3 total)
@@ -57,55 +57,9 @@ function jattr($data){
     return htmlspecialchars(json_encode($data, JSON_HEX_APOS|JSON_HEX_QUOT), ENT_QUOTES, 'UTF-8');
 }
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>DailyMail — Podcasts</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-  .modal-bg { background: rgba(0,0,0,0.6); }
+<?php include __DIR__ . '/header.php'; ?>
 
-  /* Make horizontal scrollbar visible (always) */
-  .scroll-row {
-    scroll-behavior: smooth;
-    overflow-x: auto; /* default behavior */
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: auto;               /* Firefox */
-    scrollbar-color: #cbd5e1 transparent; /* Firefox */
-  }
-  .scroll-row::-webkit-scrollbar {
-    height: 8px; /* visible horizontal scrollbar height */
-  }
-  .scroll-row::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .scroll-row::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 9999px;
-  }
-
-  .line-clamp-2 { 
-    overflow:hidden; 
-    display:-webkit-box; 
-    -webkit-line-clamp:2; 
-    -webkit-box-orient:vertical; 
-  }
-</style>
-</head>
-
-<body class="bg-gray-100">
-
-<!-- HEADER -->
-<header class="bg-[#0C2D78] text-white p-5 shadow flex items-center justify-between">
-  <div class="flex items-center gap-3">
-    <img src="assets/logo.png" class="w-14" onerror="this.style.opacity=.35;">
-    <h1 class="text-2xl font-bold">DailyMail Podcasts</h1>
-  </div>
-  <button onclick="openRegisterModal()" class="bg-white text-[#0C2D78] px-4 py-2 rounded-md">Subscribe</button>
-</header>
-
-<!-- FILTER BUTTONS -->
+<!-- FILTER BUTTONS (page-specific, placed inside shared main) -->
 <div class="max-w-6xl mx-auto mt-6 px-4 flex gap-3 flex-wrap">
 <?php $filters = ["All","Crime","Politics","Lifestyle","Tech"]; ?>
 <?php foreach($filters as $f): ?>
@@ -116,7 +70,7 @@ function jattr($data){
 </div>
 
 <!-- MAIN LAYOUT -->
-<main class="max-w-6xl mx-auto mt-6 px-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+<div class="max-w-6xl mx-auto mt-6 px-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
 
 <!-- LEFT (3 columns) -->
 <section class="lg:col-span-3 space-y-10">
@@ -174,8 +128,8 @@ function jattr($data){
 </section>
 
 <!-- SIDEBAR -->
-<aside class="hidden lg:block">
- <div class="bg-white p-4 rounded-xl shadow">
+<aside class="hidden lg:block lg:self-start relative">
+ <div id="sidebarAd" class="bg-white p-4 rounded-xl shadow lg:sticky lg:top-24 mx-auto">
   <h3 class="text-lg font-bold text-[#0C2D78] mb-4">Advertisement</h3>
   <div class="h-[600px] rounded-xl overflow-hidden">
     <img src="assets/ads.png" class="w-full h-full object-cover" alt="Advertisement">
@@ -205,7 +159,7 @@ function jattr($data){
     <h2 class="text-xl font-bold text-[#0C2D78] mb-3">Register Required</h2>
     <p class="text-gray-700 mb-4">You must register before accessing podcast episodes.</p>
     <div class="flex gap-3 justify-center">
-      <button class="bg-[#0C2D78] text-white px-4 py-2 rounded-md">Register</button>
+      <button onclick="location.href='/login.php'" class="bg-[#0C2D78] text-white px-4 py-2 rounded-md">Register</button>
       <button onclick="closeRegisterModal()" class="bg-gray-300 px-4 py-2 rounded-md">Close</button>
     </div>
   </div>
@@ -232,16 +186,32 @@ function filterCategory(cat){
   if(cat === "All"){
     sections.forEach(sec => {
       sec.style.display = "block";
-      const row = sec.querySelector(".scroll-row");
-
+      // Find the row container by its known id pattern (dontmiss-row or row-<category>).
+      // This avoids accidentally selecting the surrounding wrapper and
+      // ensures we target the element that holds the podcast cards.
+      const row = sec.querySelector('#dontmiss-row, [id^="row-"]');
       if(row){
-        // ensure horizontal scroll mode (flex + overflow auto)
+        // remove any grid-specific classes that may have been added
         row.classList.remove(
           "grid","grid-cols-1","sm:grid-cols-2",
           "md:grid-cols-3","lg:grid-cols-4","gap-6"
         );
-        row.classList.add("flex");
+        // ensure horizontal scroll mode (flex + scroll-row)
+        row.classList.add("flex","scroll-row","gap-4");
+        // make sure horizontal scrolling is enabled and vertical overflow hidden
         row.style.overflowX = "auto";
+        row.style.overflowY = "hidden";
+        // reset any inline grid-specific sizing that may remain
+        row.style.gridTemplateColumns = '';
+        row.scrollLeft = 0;
+        // Restore the card sizing used for horizontal scroller so items keep
+        // their intended width and spacing (prevents them squashing together).
+        const cards = row.querySelectorAll('article');
+        cards.forEach(c => {
+          c.classList.remove('w-full');
+          if (!c.classList.contains('w-48')) c.classList.add('w-48');
+          if (!c.classList.contains('min-w-[12rem]')) c.classList.add('min-w-[12rem]');
+        });
       }
     });
     return;
@@ -261,14 +231,30 @@ function filterCategory(cat){
     if(sectionCat === cat){
       sec.style.display = "block";
 
-      const row = sec.querySelector(".scroll-row");
+      // Use the same robust selector when switching a single category into
+      // grid mode so we reliably target the card container.
+      const row = sec.querySelector('#dontmiss-row, [id^="row-"]');
       if(row){
+        // Use a grid layout for this category so items wrap into rows
         row.classList.remove("flex");
+        row.classList.remove("scroll-row");
         row.classList.add(
           "grid","grid-cols-1","sm:grid-cols-2",
           "md:grid-cols-3","lg:grid-cols-4","gap-6"
         );
+        // ensure no horizontal scroll is present for the grid view
         row.style.overflowX = "visible";
+        row.style.overflowY = "visible";
+        row.scrollLeft = 0;
+        // In grid mode make each card take full width of its grid cell so the
+        // grid can manage column sizing and gaps (prevents forced fixed widths
+        // from overflowing or compressing the layout).
+        const cards = row.querySelectorAll('article');
+        cards.forEach(c => {
+          c.classList.remove('w-48');
+          c.classList.remove('min-w-[12rem]');
+          if (!c.classList.contains('w-full')) c.classList.add('w-full');
+        });
       }
     }
     else{
@@ -278,5 +264,12 @@ function filterCategory(cat){
 }
 </script>
 
-</body>
-</html>
+<script>
+// Ensure the page starts in the horizontal "All" mode on first load so each
+// category shows a horizontal scroller and doesn't overflow to the page edge.
+document.addEventListener('DOMContentLoaded', function(){
+  try { filterCategory('All'); } catch (e) { /* ignore if function not available */ }
+});
+</script>
+
+<?php include __DIR__ . '/footer.php'; ?>

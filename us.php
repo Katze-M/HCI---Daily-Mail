@@ -2,6 +2,13 @@
 // US section landing page (based on index.php) — US-themed placeholders
 $personal_feed = [
     [
+        'title' => "Trump explodes at Zelensky for not accepting peace deal as he warns Putin 'has the upper hand'",
+        'excerpt' => "The President criticised Zelensky and warned Russia holds the upper hand in negotiations.",
+        'comments' => 842,
+        'shares' => 98,
+        'image' => 'assets/HomePage_assets/Homepage_article2-image1.png'
+    ],
+    [
         'title' => "Trump announces new campaign rally dates",
         'excerpt' => "Former president schedules a series of rallies across swing states.",
         'comments' => 842,
@@ -53,6 +60,15 @@ $personal_feed = [
 ];
 
 $main_feed = [
+    [
+        'title' => "Melania Trump slammed over 'really bizarre' faux pas while reading Christmas story to kids during hospital visit",
+        'excerpt' => "Melania was criticised after reading to children without showing the pictures.",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/HomePage_assets/Homepage_article3-image1.png',
+        'category' => 'U.S.',
+        'link' => 'articles/HomePage/Home_mainfeed-article3.php'
+    ],
     [
         'title' => "Trump indicted in new case, pleads not guilty",
         'excerpt' => "Court filings show charges related to presidential documents.",
@@ -190,13 +206,16 @@ include __DIR__ . '/header.php';
                             </button>
                             <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
                                 <?php foreach(array_slice($personal_feed,0,7) as $item): ?>
-                                    <article class="pf-card border p-3 bg-gray-50">
-                                        <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
-                                        <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
-                                        <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
-                                        <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
-                                    </article>
-                                <?php endforeach; ?>
+                                        <?php $href = isset($item['link']) ? $item['link'] : 'articles/article.php'; ?>
+                                        <article class="pf-card border p-3 bg-gray-50">
+                                            <a href="<?php echo $href; ?>" class="block h-full">
+                                                <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
+                                                <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
+                                                <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
+                                                <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
+                                            </a>
+                                        </article>
+                                    <?php endforeach; ?>
                             </div>
                             <button aria-label="Scroll personal right" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow flex items-center justify-center" onclick="scrollFeed('personal-feed-row','right')">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700 block" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
@@ -268,11 +287,12 @@ include __DIR__ . '/header.php';
                     <div class="bg-blue-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
                     <div class="p-3">
                         <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                            <?php $sHref = isset($item['link']) ? $item['link'] : 'articles/article.php'; ?>
                             <div class="flex gap-3 py-3 border-b last:border-b-0">
                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
                                 <div>
                                     <div class="text-xs text-red-600 font-semibold">EXCLUSIVE</div>
-                                    <a href="#" class="text-sm font-semibold text-blue-700 hover:underline"><?php echo $item['title']; ?></a>
+                                    <a href="<?php echo $sHref; ?>" class="text-sm font-semibold text-blue-700 hover:underline"><?php echo $item['title']; ?></a>
                                     <div class="text-xs text-gray-500 mt-1"><?php echo $item['comments']; ?> comments</div>
                                 </div>
                             </div>
@@ -294,13 +314,7 @@ include __DIR__ . '/header.php';
     </main>
 <?php include __DIR__ . '/footer.php'; ?>
 <style>
-/* Feed sizing variables and shared card/image helpers */
-:root{
-    --pf-card-width: 200px; /* slightly wider */
-    --pf-img-height: 140px;
-}
-.pf-card{ flex: 0 0 var(--pf-card-width); width: var(--pf-card-width); box-sizing: border-box; border-radius:0.5rem; overflow:hidden; }
-.pf-img{ width:100%; height:var(--pf-img-height); object-fit:cover; display:block; }
+/* Feed sizing variables and shared card/image helpers are centralized in header.php */
 
 .anim-hidden { max-height: 0; opacity: 0; transform: translateY(-6px); transition: max-height .28s ease, opacity .28s ease, transform .28s ease; overflow: hidden; }
 .anim-open { max-height: 600px; opacity: 1; transform: translateY(0); transition: max-height .35s ease, opacity .35s ease, transform .35s ease; }
@@ -383,14 +397,3 @@ document.addEventListener('DOMContentLoaded', function(){ renderMainFilters(); r
     window.scrollFeed = function(id, dir) { const el = document.getElementById(id); if (!el) return; const amount = Math.round(el.clientWidth * 0.7) || 300; el.scrollBy({ left: dir === 'left' ? -amount : amount, behavior: 'smooth' }); };
 });
 </script>
-<?php
-$pageTitle = 'U.S.';
-include __DIR__ . '/header.php';
-?>
-
-    <section class="mb-8">
-        <h1 class="text-2xl font-semibold">U.S.</h1>
-        <p class="text-gray-600 mt-2">This is a placeholder page for the U.S. section.</p>
-    </section>
-
-<?php include __DIR__ . '/footer.php'; ?>

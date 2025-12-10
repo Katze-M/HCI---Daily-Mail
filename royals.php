@@ -305,12 +305,7 @@ include __DIR__ . '/header.php';
 .bg-blue-50 { background-color: rgba(84,12,117,0.06) !important; }
 
 /* Feed sizing variables and shared card/image helpers (copied from index) */
-:root{
-    --pf-card-width: 200px;
-    --pf-img-height: 140px;
-}
-.pf-card{ flex: 0 0 var(--pf-card-width); width: var(--pf-card-width); box-sizing: border-box; border-radius:0.5rem; overflow:hidden; }
-.pf-img{ width:100%; height:var(--pf-img-height); object-fit:cover; display:block; }
+/* Feed sizing variables and shared card/image helpers are centralized in header.php */
 
 /* keep other helpers similar to index */
 .anim-hidden { max-height: 0; opacity: 0; transform: translateY(-6px); transition: max-height .28s ease, opacity .28s ease, transform .28s ease; overflow: hidden; }

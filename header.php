@@ -24,6 +24,43 @@ $current = basename($_SERVER['SCRIPT_NAME']);
         .byline {
             font-family: 'Instrument Serif', 'Playfair Display', Georgia, serif;
         }
+        /* Global back button for article pages: fixed to the viewport so it
+           does not reserve layout space (won't push the article). A small
+           script positions it just below the header on load/resize so it
+           appears visually under the header and then stays fixed while
+           scrolling (sticky-like behavior without affecting layout). */
+        header { position: relative; }
+        .global-back-btn {
+            position: fixed; /* fixed to viewport so it doesn't affect document flow */
+            left: 16px;
+            top: 72px; /* will be adjusted by script on load/resize */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            border-radius: 9999px;
+            box-shadow: 0 6px 12px rgba(15,23,42,0.08);
+            color: #374151; /* gray-700 */
+            border: none;
+            cursor: pointer;
+            z-index: 70;
+        }
+        @media (max-width: 640px) {
+            .global-back-btn { left: 12px; top: 64px; width: 36px; height: 36px; }
+        }
+            /* Shared feed sizing variables and card helpers so all pages (including
+               article pages) render feed items consistently. Previously these
+               were duplicated in `index.php`/`news.php` and missing from many
+               article templates which caused the feed layout to differ on
+               article pages. Centralizing here avoids visual regressions. */
+            :root{
+                --pf-card-width: 200px;
+                --pf-img-height: 140px;
+            }
+            .pf-card{ flex: 0 0 var(--pf-card-width); width: var(--pf-card-width); box-sizing: border-box; border-radius:0.5rem; overflow:hidden; }
+            .pf-img{ width:100%; height:var(--pf-img-height); object-fit:cover; display:block; }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -48,7 +85,18 @@ $current = basename($_SERVER['SCRIPT_NAME']);
             </div>
         </div>
 
-        <!-- Main blue header area -->
+        <!-- Main header area: full site header for most pages; a compact header is shown on podcasts.php -->
+        <?php if ($current === 'podcasts.php') : ?>
+        <div class="bg-[#0C2D78]">
+            <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="/assets/dailymail-white.png" alt="Daily Mail" class="h-14 object-contain" />
+                    <h1 class="text-white text-3xl font-bold">Podcasts</h1>
+                </div>
+                <button onclick="openRegisterModal()" class="bg-white text-[#0C2D78] px-4 py-2 rounded-md">Subscribe</button>
+            </div>
+        </div>
+        <?php else: ?>
         <div class="bg-blue-900">
             <div class="max-w-6xl mx-auto px-4 py-6 flex items-start justify-between gap-6">
                 <!-- Left column: logo box and its last-updated line beneath -->
@@ -96,6 +144,7 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                 </div>
             </div>
         </div>
+        <?php endif; ?>
 
         <!-- Navigation bar placed below the header -->
             <nav class="bg-blue-100 border-t border-slate-200">
@@ -142,5 +191,57 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                 </div>
             </nav>
     </header>
+
+    <?php if (strpos($_SERVER['SCRIPT_NAME'], '/articles/') !== false) : ?>
+    <!-- site-level back button is rendered inside the header so it doesn't affect layout -->
+    <button type="button" onclick="history.back()" aria-label="Back" class="global-back-btn" id="site-back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+
+    <script>
+        // Position the back button directly below the header so it appears
+        // visually under the header, but because it's `position: fixed` it
+        // won't affect the article container layout (it won't push content).
+        (function positionBackButton(){
+            function update() {
+                var header = document.querySelector('header');
+                var btn = document.getElementById('site-back-btn');
+                if (!btn) return;
+                var offset = 8; // px gap between header and button
+                // Default to a small top offset (upper-left) if header isn't available
+                var top = 16;
+                if (header) {
+                    var rect = header.getBoundingClientRect();
+                    // When header is visible, place the button a few px below it.
+                    // When header scrolls away (rect.bottom becomes small/negative),
+                    // clamp so the button remains at the viewport top (upper-left).
+                    top = Math.round(Math.max(16, rect.bottom + offset));
+                }
+                btn.style.top = top + 'px';
+                // For very narrow viewports keep a small left offset
+                btn.style.left = (window.innerWidth <= 640) ? '12px' : '16px';
+            }
+            // Update on load, resize and scroll. We update on scroll using
+            // requestAnimationFrame to avoid layout thrashing and keep the
+            // button clamped to the upper-left once the header scrolls away.
+            var ticking = false;
+            function onScroll() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        update();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+
+            window.addEventListener('load', update);
+            window.addEventListener('resize', update);
+            window.addEventListener('scroll', onScroll, { passive: true });
+            // Also run after a short timeout to catch late layout shifts
+            setTimeout(update, 250);
+        })();
+    </script>
+    <?php endif; ?>
 
     <main class="max-w-6xl mx-auto px-4 py-8">

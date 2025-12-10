@@ -1,4 +1,11 @@
 <?php
+// Article: The 19 signs that say you're insecure
+$comments = [
+    ['name' => 'CuriousReader', 'location' => 'UK', 'time' => '4h', 'text' => 'Some of these hit home...', 'up' => 1, 'down' => 0],
+    ['name' => 'FashionGuru', 'location' => 'London', 'time' => '2h', 'text' => 'Handbag habits say more than you think.', 'up' => 2, 'down' => 0],
+];
+$comment_count = 6;
+
 include __DIR__ . '/../../header.php';
 ?>
 
@@ -7,129 +14,35 @@ include __DIR__ . '/../../header.php';
             <!-- Article main column -->
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
-                    <img src="/assets/Buyline_assets/PerFeed_Artc_3 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
-                    
+                    <img src="/assets/HomePage_assets/Homepage_article4-image1.png" alt="Handbag styles" class="w-full rounded-lg object-cover" style="height:360px;" />
                 </div>
-                <h1 class="text-3xl font-bold text-blue-800 mb-2">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year </h1>
+
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">The 19 signs that say you're insecure: Psychotherapist reveals the tell-tale quirks - including how you carry your handbag</h1>
 
                 <div class="my-4 border-t border-b border-blue-300 py-2">
-                    <div class="text-xl text-gray-600 mb-2 byline">By CHARLOTTE VOSSEN, DEPUTY DIGITAL EDITOR</div>
-                    <div class="text-xl text-gray-600 mb-0 byline">Published: 09:42 GMT, 5 December 2025 | Updated: 09:45 GMT, 5 December 2025</div>
+                    <div class="text-xl text-gray-600 mb-2 byline">By ELLA RAYMENT-WARD</div>
+                    <div class="text-xl text-gray-600 mb-0 byline">Published: 11:20 GMT, 8 December 2025 | Updated: 11:27 GMT, 8 December 2025</div>
                 </div>
 
-                <section class="mt-6">
-                    <p class="text-gray-700 mt-2">
-                    With Christmas lists flying around the group chat, we asked our editors what they’re actually hoping to unwrap this year – and the answers did not disappoint. From the knitwear they swear by to the beauty staples they burn through plus the chic home upgrades and ‘just because’ treats they’d never buy themselves, consider this your insider guide to gifts that real fashion and lifestyle obsessives genuinely want.       
-                    </p>
+                <p class="text-gray-700 leading-relaxed">Do you walk around with a clutch bag tucked under your arm or do you favour a tote that you dangle from your fingers? The answer is not just a matter of fashion preference - it may actually be a way of signalling how secure or insecure you are, according to Marygrace Anderson, a psychotherapist and founder of MG Hypnosis.</p>
 
-                    <p class="text-gray-700 mt-2">
-                    Whether you’re shopping for someone tricky, treating yourself (no judgement) or simply curious, these picks offer equal parts practicality, joy and quietly excellent taste. Ready to peek inside everyone’s wish list?   
-                    </p>
+                <p class="text-gray-700 leading-relaxed">Marygrace says everything from the way you enter a room, your make-up and even your choice of handbag is a way of subtly letting the world know how confident you are.</p>
 
-                </section>
+                <h3 class="mt-4 font-semibold">Signs you're insecure...</h3>
+                <ol class="list-decimal ml-6 mt-2 space-y-1 text-gray-800">
+                    <li>Changing your order to the same as someone else's</li>
+                    <li>Pretending to be in a rush so people won't look at you</li>
+                    <li>Using car windows as mirrors - no one secure is that desperate to check their appearance</li>
+                    <li>Bragging about being 'so busy'</li>
+                    <li>Being embarrassed when asked what your partner does for a living</li>
+                    <li>'Accidentally' leaving your car keys out so people can see what type of car you have</li>
+                    <li>Using ChatGPT for all life advice - sometimes, you need to make decisions on your own</li>
+                    <li>Bragging about being 'low maintenance' - those who really are don't mention it</li>
+                    <li>If your camera roll shows 18 takes of the same smile in a selfie</li>
+                    <li>If you've ever left a browser tab open at work on something expensive for your colleagues to see</li>
+                </ol>
 
-                <div class="my-4 border-t border-blue-300 py-2">
-
-                    <!-- Product 1 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-1.avif" alt="Furbo 360 Dog Camera" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Sézane Betty Cardigan</h3>
-                            <p class="text-gray-700 mt-2">
-                            Sézane does the best knitwear in my opinion – classic, well-cut and good-quality in beautiful colours. I already have the Betty style in green and would love it in the hazelnut or burgundy shade. Looks great with jeans, wide-leg joggers, smart black trousers – anything, really!
-                            </p>
-                            <p class="text-lg font-bold mt-3">£130 </p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-2.avif" alt="Furbo 360 Cat Camera" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">John Lewis Woven Leather Tote Bag</h3>
-                            <p class="text-gray-700 mt-2">
-                            I saw this bag in the window of John Lewis and it’s really nice – very practical for carrying around a laptop, gym kit, etc., and it ticks the leather-weave trend box without looking like it’s desperately trying to copy a designer bag. I like a present that I’ll actually use! 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£149</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-3.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Casetify Pug Dance Phone Case</h3>
-                            <p class="text-gray-700 mt-2">
-                            This phone case of a little dancing pug would brighten up my (and, quite frankly, anyone’s) day. And it’s made from the uber-protective bounce material. Win-win.                         </p>
-                            <p class="text-lg font-bold mt-3">£80</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-                    <!-- Product 4 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-4.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Glossier Ultralip</h3>
-                            <p class="text-gray-700 mt-2">
-                            I get through approximately four of these a year, due to my attractive combination of very dry and blue-tinged lips. It’s a fab stocking filler for any woman in your life – and there are 13 shades, so suits everyone! 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£22</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-                    <!-- Product 5 -->
-                    <div class="flex gap-4 my-6 p-4 border rounded-lg bg-white">
-                        <img src="/assets/Buyline_assets/PerFeed_SPic-5.avif" alt="Furbo Mini" class="w-32" style="width: 200px">
-                        <div>
-                            <h3 class="text-xl font-bold">Jimmy Fairly Ski Goggles</h3>
-                            <p class="text-gray-700 mt-2">
-                            Name a cooler pair of ski goggles to hit the slopes with this season than this one from Jimmy Fairly? That’s right. You can’t. They come with two interchangeable lenses (one is polarised and suitable for sunny or partly cloudy days; the other is designed for low-light conditions), equipped with magnetic fastening for easy swapping; a pouch bag and a hard case. 
-                            </p>
-                            <p class="text-lg font-bold mt-3">£135</p>
-                            <button class="bg-orange-500 text-white px-4 py-2 rounded mt-2">Shop</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <?php
-                // Sample comments (server-side placeholders). These are intentionally
-                // small and client-side 'Show more' will append additional dummy
-                // comments. Replies and votes are client-only and not persisted.
-                $comments = [
-                    [
-                        'name' => 'Alex',
-                        'location' => 'London, United Kingdom',
-                        'time' => 'Just now',
-                        'text' => "I really like this product! It’s well-made, practical, and adds a nice touch to daily life. Definitely a reliable choice for anyone looking for something functional and stylish.",
-                        'up' => 0,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Sophie',
-                        'location' => 'Manchester, United Kingdom',
-                        'time' => '5 minutes ago',
-                        'text' => "This product exceeded my expectations! It’s easy to use, feels high-quality, and works exactly as described. Perfect for everyday use.",
-                        'up' => 0,
-                        'down' => 0,
-                    ],
-                    [
-                        'name' => 'Liam',
-                        'location' => 'Birmingham, United Kingdom',
-                        'time' => '10 minutes ago',
-                        'text' => "A really solid choice! The design and quality are impressive, and it’s useful in so many situations. Would recommend to anyone looking for a dependable product.",
-                        'up' => 0,
-                        'down' => 0,
-                    ],
-                ];
-
-                
-                $comment_count = 41; // total count for the 'Show more' button
-                
-                ?>
-
+                <hr class="my-6" />
                 <section id="comments-section" class="mt-6 bg-white rounded shadow p-4">
                     <div class="flex items-start justify-between">
                         <h3 class="text-lg font-semibold">Comments (<?php echo $comment_count; ?>)</h3>
@@ -156,7 +69,7 @@ include __DIR__ . '/../../header.php';
                                         <div class="flex items-center justify-between">
                                             <div>
                                                 <div class="text-sm font-semibold"><?php echo htmlspecialchars($c['name']); ?></div>
-                                                <div class="text-xs text-gray-500"><?php echo htmlspecialchars($c['location']); ?>, <?php echo $c['time']; ?></div>
+                                                <div class="text-xs text-gray-500"><?php echo htmlspecialchars($c['location'] ?? ''); ?>, <?php echo $c['time']; ?></div>
                                             </div>
                                             <div class="text-xs text-gray-400"> 
                                                 <button type="button" class="px-2 reply-link">Reply</button>
@@ -167,9 +80,9 @@ include __DIR__ . '/../../header.php';
                                             <div>Click to rate</div>
                                             <div class="flex items-center gap-2">
                                                 <button type="button" class="vote-btn vote-up text-green-600 border rounded-full w-6 h-6 flex items-center justify-center" data-vote="up" aria-label="Upvote">▲</button>
-                                                <span class="vote-count-up text-green-600"><?php echo $c['up']; ?></span>
+                                                <span class="vote-count-up text-green-600">0</span>
                                                 <button type="button" class="vote-btn vote-down text-red-500 border rounded-full w-6 h-6 flex items-center justify-center" data-vote="down" aria-label="Downvote">▼</button>
-                                                <span class="vote-count-down text-red-500"><?php echo $c['down']; ?></span>
+                                                <span class="vote-count-down text-red-500">0</span>
                                             </div>
                                         </div>
                                     </div>
@@ -181,7 +94,7 @@ include __DIR__ . '/../../header.php';
                     <div class="mt-4 text-center">
                         <button id="show-more-comments" data-remaining="<?php echo ($comment_count - count($comments)); ?>" class="bg-blue-700 text-white px-6 py-2 rounded-full">Show <?php echo ($comment_count - count($comments)); ?> More Comments</button>
                     </div>
-                </section>
+
                 <style>
                 /*Vote button animation styles*/
                 .vote-btn { transition: transform .12s ease, background-color .18s ease; cursor: pointer; }
@@ -445,15 +358,15 @@ include __DIR__ . '/../../header.php';
                     });
                 })();
                 </script>
+                </section>
+
             </main>
 
             <!-- Right ad column -->
             <aside class="hidden md:block md:col-span-3">
-                <div class="sticky top-24">
-                    <div class="text-xs text-gray-500 mb-2">ADVERTISEMENT</div>
-                    <div class="bg-white p-2 rounded shadow flex justify-center">
-                        <img src="/assets/ads.png" alt="Advertisement" class="w-36 h-auto object-contain" />
-                    </div>
+                <div class="text-xs text-gray-500 mb-2">ADVERTISEMENT</div>
+                <div class="bg-white p-2 rounded shadow flex justify-center">
+                    <img src="/assets/ads.png" alt="Ad" class="w-28 h-auto object-contain" />
                 </div>
             </aside>
         </div>

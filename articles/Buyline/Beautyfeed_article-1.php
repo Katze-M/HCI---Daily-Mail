@@ -8,9 +8,7 @@ include __DIR__ . '/../../header.php';
             <main class="relative md:col-span-9 bg-white rounded shadow p-6">
                 <div class="mb-4">
                     <img src="/assets/Buyline_assets/MainFeed_Artc_1 pic.avif" alt="Article hero" class="w-full rounded-lg object-cover" style="height:360px;" />
-                    <button type="button" onclick="history.back()" aria-label="Back" style="left:-44px; top:18px;" class="absolute z-50 inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-                    </button>
+                    
                 </div>
                 <h1 class="text-3xl font-bold text-blue-800 mb-2">
                 The 'miracle in a bottle' cream that celebs swear by to target wrinkles and dryness is a genius holiday gift that's priced just right
