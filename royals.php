@@ -249,6 +249,24 @@ include __DIR__ . '/header.php';
 #mainFiltersStrip, #catFiltersPanel, #category-strip-row, #personal-feed-row, #main-feed-row { -ms-overflow-style: none; scrollbar-width: none; }
 #mainFiltersStrip::-webkit-scrollbar, #catFiltersPanel::-webkit-scrollbar, #category-strip-row::-webkit-scrollbar, #personal-feed-row::-webkit-scrollbar, #main-feed-row::-webkit-scrollbar { display: none; width: 0; height: 0; }
 #mainFiltersStrip::-webkit-scrollbar-button, #catFiltersPanel::-webkit-scrollbar-button, #category-strip-row::-webkit-scrollbar-button, #personal-feed-row::-webkit-scrollbar-button, #main-feed-row::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+
+.pf-card h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* Multi-line truncation for excerpt (e.g., 2 lines) */
+.pf-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 </style>
 
 <script>

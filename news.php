@@ -2,192 +2,143 @@
 // News landing page (copied from index.php and adapted for news feed)
 $personal_feed = [
     [
-        'title' => "Local council approves park redevelopment",
-        'excerpt' => "Council votes to upgrade children's play area and paths.",
-        'comments' => 12,
-        'shares' => 3,
-        'image' => 'https://via.placeholder.com/400x200?text=Local+Park'
+        'title' => "Revealed: Which World Cup games the BBC and ITV will show next summer as broadcasters CONFIRM match split",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-18.avif',
+        'category' => 'Sports',
+        'link' => 'articles/News/News_catfeed-article1.php'
     ],
     [
-        'title' => 'Community shelter offers winter support',
-        'excerpt' => "Volunteers open doors for rough sleepers this winter.",
-        'comments' => 4,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/400x200?text=Shelter'
+        'title' => "The item that sells every minute globally transforms under-eye bags in SECONDS: 'You look 10 years younger'",
+        'excerpt' => "An Australian beauty product that mimics the appearance of having had under-eye surgery has become a global bestseller, with one bottle purchased every minute.",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-1.avif',
+        'category' => 'Australia',
+        'link' => 'articles/News/News_mainfeed-article1.php'
     ],
     [
-        'title' => 'Mayor meets business leaders over transport',
-        'excerpt' => "Improvements to bus routes promised in next budget.",
-        'comments' => 6,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Transport'
+        'title' => "QUENTIN LETTS: Brother Torsten shimmered, beamed and lovingly stroked his girlishly smooth throat...",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-15.avif',
+        'category' => 'Debate',
+        'link' => 'articles/News/News_mainfeed-article4.php'
     ],
     [
-        'title' => 'School secures funding for music program',
-        'excerpt' => "Pupils to receive new instruments and tuition.",
-        'comments' => 2,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=School'
+        'title' => "Michelle Obama blasts 'aging' leaders who 'hold on for too long' in veiled swipe at Joe Biden",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-24.avif',
+        'category' => 'Lifestyle',
+        'link' => 'articles/News/News_catfeed-article3.php'
+    ],
+        [
+        'title' => "London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide",
+        'comments' => 112,
+        'shares' => 18,
+        'image' => 'assets/Buyline_assets/Travel_SPic-5.avif',
+        'category' => 'Travel',
+        'link' => 'articles/buyline/Travel_article-1.php'
     ],
     [
-        'title' => 'Local deli wins regional food award',
-        'excerpt' => "Artisan sandwiches praised by judges.",
-        'comments' => 1,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Deli'
-    ],
-    [
-        'title' => 'Community garden volunteers needed',
-        'excerpt' => "City initiative seeks helpers for spring planting.",
-        'comments' => 0,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Garden'
-    ],
-    [
-        'title' => 'Cinema reopens with safety measures',
-        'excerpt' => "New seating layout and sanitisation stations installed.",
-        'comments' => 3,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/400x200?text=Cinema'
+        'title' => "The best suitcase deals on travel-editor approved brands - including Amazon and John Lewis offers of up to 40% off",
+        'comments' => 56,
+        'shares' => 6,
+        'image' => 'assets/Buyline_assets/Travel_SPic-6.avif',
+        'category' => 'Travel',
+        'link' => 'articles/buyline/Travel_article-2.php'
     ],
 ];
 
 $main_feed = [
     [
-        'title' => "Melania Trump slammed over 'really bizarre' faux pas while reading Christmas story to kids during hospital visit",
-        'excerpt' => "Melania was criticised after reading to children without showing the pictures.",
+        'title' => "The item that sells every minute globally transforms under-eye bags in SECONDS: 'You look 10 years younger'",
+        'excerpt' => "An Australian beauty product that mimics the appearance of having had under-eye surgery has become a global bestseller, with one bottle purchased every minute.",
         'comments' => 214,
         'shares' => 12,
-        'image' => 'assets/HomePage_assets/Homepage_article3-image1.png',
-        'category' => 'News',
-        'link' => 'articles/HomePage/Home_mainfeed-article3.php'
+        'image' => 'assets/news_article_pics/News-1.avif',
+        'category' => 'Australia',
+        'link' => 'articles/News/News_mainfeed-article1.php'
     ],
+
     [
-        'title' => "Trump explodes at Zelensky for not accepting peace deal as he warns Putin 'has the upper hand'",
-        'excerpt' => "The President criticised Zelensky and warned Russia holds the upper hand in negotiations.",
-        'comments' => 842,
-        'shares' => 98,
-        'image' => 'assets/HomePage_assets/Homepage_article2-image1.png',
-        'category' => 'News',
-        'link' => 'articles/HomePage/Home_mainfeed-article2.php'
+        'title' => "Art swindler shares jaw-dropping explanation of how his wife 'died' and why he chopped up her body",
+        'excerpt' => "In opening statements in Norfolk County Superior Court in Dedham on Monday morning, defense attorney Larry Tipton laid out Brian Walshe's version of events - claiming that there was no murder after all.",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-5.avif',
+        'category' => 'The Crime Desk',
+        'link' => 'articles/News/News_mainfeed-article2.php'
     ],
+
+
     [
-        'title' => "Worker is fired from her job after boss was fed up with her arriving 40 minutes EARLY all the time",
-        'excerpt' => "A Spanish office worker was dismissed after repeatedly arriving 40 minutes before her shift and ignoring company rules.",
-        'comments' => 12,
-        'shares' => 3,
-        'image' => 'assets/news_article_pics/Homepage_article1-image1.png',
-        'category' => 'News',
-        'link' => 'articles/HomePage/Home_mainfeed-article1.php'
+        'title' => "Husband is charged with murdering Miss Switzerland finalist mother-of-two who was 'strangled, pureed in a blender and had womb cut out'",
+        'excerpt' => "A husband has been charged with brutally murdering his Miss Switzerland finalist wife after he allegedly strangled and pureed her in a blender. The 41-year-old, who was named in local media by the pseudonym of Thomas due to Swiss privacy laws, is accused of decapitating Kristina Joksimovic and cutting out her womb.  Her ravaged body was found in their home in Binningen, near Basel, on February 13, 2024. According to a neighbor, the couple's two young children also lived in the house.",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-9.avif',
+        'category' => 'World News',
+        'link' => 'articles/News/News_mainfeed-article3.php'
     ],
+
     [
-        'title' => "Government announces new energy support package",
-        'excerpt' => "Measures aim to shield households from rising costs.",
-        'comments' => 124,
-        'shares' => 22,
-        'image' => 'https://via.placeholder.com/360x220?text=Energy+Plan',
-        'category' => 'News'
+        'title' => "QUENTIN LETTS: Brother Torsten shimmered, beamed and lovingly stroked his girlishly smooth throat...",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-15.avif',
+        'category' => 'Debate',
+        'link' => 'articles/News/News_mainfeed-article4.php'
     ],
-    [
-        'title' => 'International summit on climate concludes',
-        'excerpt' => "Leaders agree on phased emissions targets.",
-        'comments' => 87,
-        'shares' => 10,
-        'image' => 'https://via.placeholder.com/360x220?text=Climate+Summit',
-        'category' => 'World'
-    ],
-    [
-        'title' => 'Markets wobble as tech stocks retreat',
-        'excerpt' => "Investors react to mixed earnings reports.",
-        'comments' => 45,
-        'shares' => 5,
-        'image' => 'https://via.placeholder.com/360x220?text=Markets',
-        'category' => 'Business'
-    ],
-    [
-        'title' => 'Health experts warn of seasonal flu rise',
-        'excerpt' => "Advisory published ahead of winter months.",
-        'comments' => 32,
-        'shares' => 4,
-        'image' => 'https://via.placeholder.com/360x220?text=Health',
-        'category' => 'Health'
-    ],
-    [
-        'title' => 'Breakthrough therapy shows promise in trials',
-        'excerpt' => "Researchers report encouraging early results.",
-        'comments' => 18,
-        'shares' => 2,
-        'image' => 'https://via.placeholder.com/360x220?text=Therapy',
-        'category' => 'Science'
-    ],
-    [
-        'title' => 'Transport strikes planned next month',
-        'excerpt' => "Commuters warned to expect disruption.",
-        'comments' => 56,
-        'shares' => 7,
-        'image' => 'https://via.placeholder.com/360x220?text=Strikes',
-        'category' => 'UK'
-    ],
-    [
-        'title' => 'Local theatre wins national arts award',
-        'excerpt' => "Community production praised for innovation.",
-        'comments' => 9,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/360x220?text=Theatre',
-        'category' => 'Culture'
-    ],
+
 ];
 
 $category_strip = [
     [
-        'title' => "Coastal towns prepare for storm surge",
-        'comments' => 210,
-        'shares' => 45,
-        'image' => 'https://via.placeholder.com/300x180?text=Coast',
-        'category' => 'U.K.'
-    ],
-    [
-        'title' => 'World leaders praise vaccine rollout',
-        'comments' => 98,
-        'shares' => 20,
-        'image' => 'https://via.placeholder.com/300x180?text=Vaccine',
-        'category' => 'World'
-    ],
-    [
-        'title' => 'Championship final set for Sunday',
-        'comments' => 65,
+        'title' => "Revealed: Which World Cup games the BBC and ITV will show next summer as broadcasters CONFIRM match split",
+        'comments' => 214,
         'shares' => 12,
-        'image' => 'https://via.placeholder.com/300x180?text=Sports',
-        'category' => 'Sports'
+        'image' => 'assets/news_article_pics/News-18.avif',
+        'category' => 'Sports',
+        'link' => 'articles/News/News_catfeed-article1.php'
     ],
     [
-        'title' => 'New study links diet to better sleep',
-        'comments' => 14,
-        'shares' => 2,
-        'image' => 'https://via.placeholder.com/300x180?text=Health',
-        'category' => 'Health'
+        'title' => "King Of The Jungle AngryGinge wears his I'm A Celeb winner's crown as he jets back to Manchester with co-star Lisa Riley on a first class flight",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-21.avif',
+        'category' => 'Showbiz',
+        'link' => 'articles/News/News_catfeed-article2.php'
     ],
     [
-        'title' => 'Top travel deals announced for winter escapes',
-        'comments' => 11,
-        'shares' => 3,
-        'image' => 'https://via.placeholder.com/300x180?text=Travel',
-        'category' => 'Travel'
+        'title' => "Michelle Obama blasts 'aging' leaders who 'hold on for too long' in veiled swipe at Joe Biden",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-24.avif',
+        'category' => 'Lifestyle',
+        'link' => 'articles/News/News_catfeed-article3.php'
+    ],
+        [
+        'title' => "London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide",
+        'comments' => 112,
+        'shares' => 18,
+        'image' => 'assets/Buyline_assets/Travel_SPic-5.avif',
+        'category' => 'Travel',
+        'link' => 'articles/buyline/Travel_article-1.php'
     ],
     [
-        'title' => 'Experts discuss rising housing costs',
-        'comments' => 23,
+        'title' => "The best suitcase deals on travel-editor approved brands - including Amazon and John Lewis offers of up to 40% off",
+        'comments' => 56,
         'shares' => 6,
-        'image' => 'https://via.placeholder.com/300x180?text=Housing',
-        'category' => 'Money'
+        'image' => 'assets/Buyline_assets/Travel_SPic-6.avif',
+        'category' => 'Travel',
+        'link' => 'articles/buyline/Travel_article-2.php'
     ],
-    [
-        'title' => 'Guide: How to winter-proof your home',
-        'comments' => 7,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/300x180?text=Home',
-        'category' => 'Lifestyle'
-    ],
+
+
+
 ];
 
 // uses shared header/footer
@@ -346,6 +297,25 @@ include __DIR__ . '/header.php';
 #mainFiltersStrip, #catFiltersPanel, #category-strip-row, #personal-feed-row, #main-feed-row { -ms-overflow-style: none; scrollbar-width: none; }
 #mainFiltersStrip::-webkit-scrollbar, #catFiltersPanel::-webkit-scrollbar, #category-strip-row::-webkit-scrollbar, #personal-feed-row::-webkit-scrollbar, #main-feed-row::-webkit-scrollbar { display: none; width: 0; height: 0; }
 #mainFiltersStrip::-webkit-scrollbar-button, #catFiltersPanel::-webkit-scrollbar-button, #category-strip-row::-webkit-scrollbar-button, #personal-feed-row::-webkit-scrollbar-button, #main-feed-row::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+
+.pf-card h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* Multi-line truncation for excerpt (e.g., 2 lines) */
+.pf-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 </style>
 
 <script>
@@ -384,12 +354,15 @@ function renderCategoryStrip(filter) {
     const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
     if (items.length === 0) { row.innerHTML = '<div class="text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(cat => {
-        const card = document.createElement('div');
+        const card = document.createElement('article');
         card.className = 'pf-card bg-gray-50 rounded shadow-sm p-3';
+        const href = cat.link ? cat.link : '#';
         card.innerHTML = `
-            <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
-            <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
-            <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>`;
+            <a href="${href}" class="block h-full">
+                <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
+                <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
+                <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>
+            </a>`;
         row.appendChild(card);
     });
 }
