@@ -138,7 +138,16 @@ $category_strip = [
         'category' => 'Money',
         'link' => 'articles/US/US-article6.php'
     ],
-        [
+    [
+        'title' => "Maven, we have a problem: NASA has lost contact with a spacecraft that has been orbiting Mars for more than a DECADE",
+        'excerpt' => "NASA has lost contact with the MAVEN orbiter — a setback that could halt a decade of Martian atmospheric research.",
+        'comments' => 35,
+        'shares' => 35,
+        'image' => 'assets/HomePage_assets/Homepage_article5-image1.png',
+        'category' => 'Science',
+        'link' => 'articles/HomePage/Home_mainfeed-article5.php'
+    ],
+    [
         'title' => "London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide",
         'comments' => 112,
         'shares' => 18,

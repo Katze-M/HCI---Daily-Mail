@@ -247,6 +247,15 @@ $category_strip = [
         'tags' => ['Culture','Showbiz']
     ],
     [
+        'title' => "Maven, we have a problem: NASA has lost contact with a spacecraft that has been orbiting Mars for more than a DECADE",
+        'excerpt' => "NASA has lost contact with the MAVEN orbiter — a setback that could halt a decade of Martian atmospheric research.",
+        'comments' => 35,
+        'shares' => 35,
+        'image' => 'assets/HomePage_assets/Homepage_article5-image1.png',
+        'category' => 'Tech',
+        'link' => 'articles/HomePage/Home_mainfeed-article5.php'
+    ],
+    [
         'title' => 'We still owe £300,000, can an offset mortgage save us money?',
         'excerpt' => 'Reader asks whether switching to an offset mortgage would reduce payments on a £300,000 balance.',
         'comments' => 19,
