@@ -10,12 +10,14 @@ $personal_feed = [
     ],
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article4.php" class="text-blue-800 hover:underline">Prince Harry believes Home Office review into his taxpayer-funded security is long overdue, sources reveal - as experts suggest his relationship with the King is thawing</a>',
+        'excerpt' => "Experts say the review could change security arrangements.",
         'comments' => 305,
         'shares' => 48,
         'image' => 'assets/Royal_assets/Royal-12.avif',
     ],
     [
         'title' => '<a href="articles/Royals/Royal_catfeed-article2.php" class="text-blue-800 hover:underline">Meghan Markle sends letter to her sick father Thomas in hospital after he made urgent plea he did not want to die with them being estranged</a>',
+        'excerpt' => "Meghan's letter to her father raises questions about their estrangement.",
         'comments' => 12,
         'shares' => 1,
         'image' => 'assets/Royal_assets/Royal-18.avif',
@@ -26,6 +28,7 @@ $personal_feed = [
 $main_feed = [
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article1.php" class="text-blue-800 hover:underline">How ex-PM John Major played the role of an honest broker between Charles and Diana during the War of the Waleses</a>',
+        'excerpt' => "An inside look at John Major's mediating role within the royal family.",
         'comments' => 220,
         'shares' => 34,
         'image' => 'assets/Royal_assets/Royal-1.avif',
@@ -33,6 +36,7 @@ $main_feed = [
     ],
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article2.php" class="text-blue-800 hover:underline">Prince William celebrates 20 years of his patronage with homeless charity Centrepoint - after Princess Diana took him to a shelter when he was 11 years old</a>',
+        'excerpt' => "William marks two decades supporting Centrepoint in a heartfelt visit.",
         'comments' => 160,
         'shares' => 19,
         'image' => 'assets/Royal_assets/Royal-5.avif',
@@ -40,6 +44,7 @@ $main_feed = [
     ],
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article3.php" class="text-blue-800 hover:underline">Lady Davina Windsor and her daughter Senna support Kate Middleton at Christmas carol concert in rare royal outing</a>',
+        'excerpt' => "Davina and her daughter Senna attend a festive outing with Kate.",
         'comments' => 98,
         'shares' => 12,
         'image' => 'assets/Royal_assets/Royal-8.avif',
@@ -47,6 +52,7 @@ $main_feed = [
     ],
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article4.php" class="text-blue-800 hover:underline">Prince Harry believes Home Office review into his taxpayer-funded security is long overdue, sources reveal - as experts suggest his relationship with the King is thawing</a>',
+        'excerpt' => "Sources say the review into taxpayer-funded security is proceeding.",
         'comments' => 305,
         'shares' => 48,
         'image' => 'assets/Royal_assets/Royal-12.avif',
@@ -54,6 +60,7 @@ $main_feed = [
     ],
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article5.php" class="text-blue-800 hover:underline">Meghan Markle sends letter to her sick father Thomas in hospital after he made urgent plea he did not want to die with them being estranged</a>',
+        'excerpt' => "Meghan reached out to her father amid concerns about his health.",
         'comments' => 142,
         'shares' => 21,
         'image' => 'assets/Royal_assets/Royal-15.avif',
@@ -64,6 +71,7 @@ $main_feed = [
 $category_strip = [
     [
         'title' => '<a href="articles/Royals/Royal_catfeed-article1.php" class="text-blue-800 hover:underline">Prince Harry turns to trusted royal aide for charity role, RICHARD EDEN reveals amid Sentable saga</a>',
+        'excerpt' => "Trusted aide steps up to take on a new charity role.",
         'comments' => 84,
         'shares' => 11,
         'image' => 'assets/Royal_assets/Royal-23.avif',
@@ -71,6 +79,7 @@ $category_strip = [
     ],
     [
         'title' => '<a href="articles/Royals/Royal_catfeed-article2.php" class="text-blue-800 hover:underline">Meghan Markle sends letter to her sick father Thomas in hospital after he made urgent plea he did not want to die with them being estranged</a>',
+        'excerpt' => "A personal letter to her father surfaces as family tensions persist.",
         'comments' => 12,
         'shares' => 1,
         'image' => 'assets/Royal_assets/Royal-18.avif',
@@ -79,6 +88,7 @@ $category_strip = [
 
     [
         'title' => '<a href="articles/Royals/Royal_mainfeed-article2.php" class="text-blue-800 hover:underline">Prince William celebrates 20 years of his patronage with homeless charity Centrepoint - after Princess Diana took him to a shelter when he was 11 years old</a>',
+        'excerpt' => "William's long-running charity patronage remembered in a celebratory event.",
         'comments' => 160,
         'shares' => 19,
         'image' => 'assets/Royal_assets/Royal-5.avif',
@@ -101,7 +111,7 @@ $category_strip = [
 include __DIR__ . '/header.php';
 ?>
 
-    <main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="max-w-6xl mx-auto px-4 py-8 royals-theme">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             <!-- Main column -->
             <div class="md:col-span-7">
@@ -124,12 +134,22 @@ include __DIR__ . '/header.php';
                             </button>
                             <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
                                 <?php foreach(array_slice($personal_feed,0,7) as $item): ?>
-                                    <article class="pf-card border p-3 bg-gray-50">
-                                        <img src="<?php echo $item['image']; ?>" alt="<?php($item['title']); ?>" class="pf-img rounded" />
-                                        <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
-                                        <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
-                                    </article>
-                                <?php endforeach; ?>
+                                        <?php
+                                            // Derive a clickable href for the card: prefer explicit 'link', otherwise try to extract from title anchor, otherwise fallback.
+                                            $href = isset($item['link']) ? $item['link'] : (preg_match('/href\="([^\"]+)"/i', $item['title'], $m) ? $m[1] : 'articles/article.php');
+                                            $plainTitle = strip_tags($item['title']);
+                                        ?>
+                                        <article class="pf-card border p-3 bg-gray-50">
+                                            <a href="<?php echo $href; ?>" class="block h-full">
+                                                <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($plainTitle); ?>" class="pf-img rounded" />
+                                                <h3 class="mt-2 font-bold text-sm"><?php echo $plainTitle; ?></h3>
+                                                <?php if (isset($item['excerpt'])): ?>
+                                                    <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
+                                                <?php endif; ?>
+                                                <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
+                                            </a>
+                                        </article>
+                                    <?php endforeach; ?>
                             </div>
                             <button aria-label="Scroll personal right" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow flex items-center justify-center" onclick="scrollFeed('personal-feed-row','right')">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700 block" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
@@ -200,7 +220,7 @@ include __DIR__ . '/header.php';
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="bg-blue-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
                     <div class="p-3">
-                        <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                        <?php foreach(array_slice($main_feed,0,9) as $item): ?>
                             <div class="flex gap-3 py-3 border-b last:border-b-0">
                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
                                 <div>
@@ -228,14 +248,14 @@ include __DIR__ . '/header.php';
 <?php include __DIR__ . '/footer.php'; ?>
 
 <style>
-/* brand color: royal purple */
-:root{ --brand: #540C75; }
-/* Override a few Tailwind-ish classes locally for this page only */
-.bg-blue-700 { background-color: var(--brand) !important; }
-.bg-blue-600 { background-color: var(--brand) !important; }
-.text-blue-700 { color: var(--brand) !important; }
-.text-blue-800 { color: var(--brand) !important; }
-.bg-blue-50 { background-color: rgba(84,12,117,0.06) !important; }
+/* brand color: royal purple (page-scoped) */
+.royals-theme { --brand: #540C75; }
+/* Override a few Tailwind-ish classes only inside this page wrapper */
+.royals-theme .bg-blue-700 { background-color: var(--brand) !important; }
+.royals-theme .bg-blue-600 { background-color: var(--brand) !important; }
+.royals-theme .text-blue-700 { color: var(--brand) !important; }
+.royals-theme .text-blue-800 { color: var(--brand) !important; }
+.royals-theme .bg-blue-50 { background-color: rgba(84,12,117,0.06) !important; }
 
 /* Feed sizing variables and shared card/image helpers (copied from index) */
 /* Feed sizing variables and shared card/image helpers are centralized in header.php */
@@ -280,18 +300,30 @@ const CAT_FILTERS = ['All','Charity','Environment','Welfare','Culture','Style','
 function renderMainFeed(filter) {
     const row = document.getElementById('main-feed-row');
     row.innerHTML = '';
-    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter);
     if (items.length === 0) { row.innerHTML = '<div class="text-center text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(post => {
         const art = document.createElement('article');
         art.className = 'pf-card bg-gray-50 rounded overflow-hidden shadow-sm';
+        // derive href from explicit link or from title HTML anchor, fallback to article.php
+        let href = 'articles/article.php';
+        if (post.link) href = post.link;
+        else if (post.title) {
+            const tmp = document.createElement('div'); tmp.innerHTML = post.title;
+            const a = tmp.querySelector('a'); if (a && a.getAttribute('href')) href = a.getAttribute('href');
+        }
+        // display title as plain text
+        let displayTitle = post.title || '';
+        if (post.title) { const tmp2 = document.createElement('div'); tmp2.innerHTML = post.title; displayTitle = tmp2.textContent || tmp2.innerText || post.title; }
         art.innerHTML = `
-            <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
-            <div class="p-3">
-                <h3 class="font-semibold">${(post.title)}</h3>
-                <p class="text-sm text-gray-600 mt-1">${(post.excerpt || '')}</p>
-                <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
-            </div>`;
+            <a href="${href}" class="block h-full">
+                <img src="${post.image}" alt="${escapeHtml(displayTitle)}" class="pf-img" />
+                <div class="p-3">
+                    <h3 class="mt-2 font-bold text-sm">${escapeHtml(displayTitle)}</h3>
+                    <p class="text-xs text-gray-600 mt-1">${escapeHtml(post.excerpt || post.title || '')}</p>
+                    <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
+                </div>
+            </a>`;
         row.appendChild(art);
     });
 }
@@ -299,15 +331,24 @@ function renderMainFeed(filter) {
 function renderCategoryStrip(filter) {
     const row = document.getElementById('category-strip-row');
     row.innerHTML = '';
-    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter);
     if (items.length === 0) { row.innerHTML = '<div class="text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(cat => {
-        const card = document.createElement('div');
+        const card = document.createElement('article');
         card.className = 'pf-card bg-gray-50 rounded shadow-sm p-3';
+        // derive href for category item
+        let href = 'articles/article.php';
+        if (cat.link) href = cat.link;
+        else if (cat.title) { const tmp = document.createElement('div'); tmp.innerHTML = cat.title; const a = tmp.querySelector('a'); if (a && a.getAttribute('href')) href = a.getAttribute('href'); }
+        let displayTitle = cat.title || '';
+        if (cat.title) { const tmp2 = document.createElement('div'); tmp2.innerHTML = cat.title; displayTitle = tmp2.textContent || tmp2.innerText || cat.title; }
         card.innerHTML = `
-            <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
-            <h4 class="mt-2 font-semibold text-sm">${(cat.title)}</h4>
-            <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>`;
+            <a href="${href}" class="block h-full">
+                <img src="${cat.image}" alt="${escapeHtml(displayTitle)}" class="pf-img rounded" />
+                <h4 class="mt-2 font-bold text-sm">${escapeHtml(displayTitle)}</h4>
+                <p class="text-xs text-gray-600 mt-1">${escapeHtml(cat.excerpt || cat.title || '')}</p>
+                <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>
+            </a>`;
         row.appendChild(card);
     });
 }

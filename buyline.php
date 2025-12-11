@@ -2,6 +2,7 @@
 $personal_feed = [
     [
         'title' => '<a href="articles/buyline/Personalfeed_article-1.php" class="text-blue-800 hover:underline">The product I rely on for winter skin relief is discounted - and it\'s perfect for tackling bumpy, uneven texture</a>',
+        'excerpt' => "A tried-and-tested winter skin saviour on sale now.",
         'comments' => 567,
         'shares' => 1500,
         'image' => 'assets/Buyline_assets/CatFeed_Artc_1 pic.avif',
@@ -9,6 +10,7 @@ $personal_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/Personalfeed_article-2.php" class="text-blue-800 hover:underline">Celebrities swear by these skincare must-haves - and you can actually gift them without breaking the bank this Christmas</a>',
+        'excerpt' => "Budget-friendly beauty gifts favoured by celebs.",
         'comments' => 65,
         'shares' => 65,
         'image' => 'assets/Buyline_assets/CatFeed_Artc_2 pic.avif',
@@ -16,6 +18,7 @@ $personal_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/Personalfeed_article-3.php" class="text-blue-800 hover:underline">Perricone MD drops rare deal on skincare-infused no make-up essentials - including liquid blush for a healthy flush</a>',
+        'excerpt' => "Perricone MD essentials on discount — beauty basics updated.",
         'comments' => 105,
         'shares' => 18,
         'image' => 'assets/Buyline_assets/CatFeed_Artc_3 pic.avif',
@@ -27,6 +30,7 @@ $personal_feed = [
 $beauty_feed = [
     [
         'title' => '<a href="articles/buyline/Beautyfeed_article-1.php" class="text-blue-800 hover:underline">The miracle in a bottle cream that celebs swear by to target wrinkles and dryness is a genius holiday gift thats priced just right</a>',
+        'excerpt' => "A cult cream loved by celebs for smoothing and hydration.",
         'comments' => 547,
         'shares' => 30,
         'image' => 'assets/Buyline_assets/MainFeed_Artc_1 pic.avif',
@@ -34,6 +38,7 @@ $beauty_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/Beautyfeed_article-2.php" class="text-blue-800 hover:underline">Panic buying presents? No need. The 10 best budget beauty stocking fillers Im gifting to friends and family this year</a>',
+        'excerpt' => "Affordable stocking fillers editors are gifting this year.",
         'comments' => 214,
         'shares' => 8,
         'image' => 'assets/Buyline_assets/MainFeed_Artc_2 pic.avif',
@@ -41,6 +46,7 @@ $beauty_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/Beautyfeed_article-3.php" class="text-blue-800 hover:underline">Men are ditching expensive fragrances for £31 scent that turns heads: You need so little that they last for ages</a>',
+        'excerpt' => "A pocket-friendly fragrance that's become a favourite.",
         'comments' => 632,
         'shares' => 29,
         'image' => 'assets/Buyline_assets/MainFeed_Artc_3 pic.avif',
@@ -52,18 +58,21 @@ $fashion_feed = [
 
     [
         'title' => '<a href="articles/buyline/Fashionfeed_article-1.php" class="text-blue-800 hover:underline">Cat Deeley just wore this fashionably festive jumper on This Morning - here\'s where you can buy it and three other Christmassy sweaters still available on the high street</a>',
+        'excerpt' => "Cat Deeley's festive jumper and three alternatives you can buy now.",
         'comments' => 23,
         'shares' => 1,
         'image' => 'assets/Buyline_assets/PerFeed_Artc_1 pic.avif'
     ],
     [
         'title' => '<a href="articles/buyline/Fashionfeed_article-2.php" class="text-blue-800 hover:underline">I’ve scoured the high street for the ultimate Christmas party dresses – these are my 27 favourites for under £100</a>',
+        'excerpt' => "27 party dresses under £100 for every style and size.",
         'comments' => 1,
         'shares' => 0,
         'image' => 'assets/Buyline_assets/PerFeed_Artc_2 pic.avif'
     ],
     [
         'title' => '<a href="articles/buyline/Fashionfeed_article-3.php" class="text-blue-800 hover:underline">Gifting season is here! These are the presents our editors are hoping to receive under the tree this year</a>',
+        'excerpt' => "Editors' wishlists: the gifts they'd love to find under the tree.",
         'comments' => 1,
         'shares' => 0,
         'image' => 'assets/Buyline_assets/PerFeed_Artc_3 pic.avif'
@@ -74,6 +83,7 @@ $fashion_feed = [
 $home_garden_feed = [
     [
         'title' => '<a href="articles/buyline/HomeGardenfeed_article-1.php" class="text-blue-800 hover:underline">The Haier air fryer that cuts cooking times in half has finally gone on sale for the lowest price we’ve ever seen</a>',
+        'excerpt' => "A top-selling air fryer now at its lowest-ever price.",
         'comments' => 84,
         'shares' => 12,
         'image' => 'assets/Buyline_assets/HomeGarden_1.avif',
@@ -81,6 +91,7 @@ $home_garden_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/HomeGardenfeed_article-2.php" class="text-blue-800 hover:underline">Interior designer reveals the colours that are making your house look dated - and how to style a divisive hue that is set to be the hottest home trend for 2026</a>',
+        'excerpt' => "Designer tips to update dated colours and refresh your home.",
         'comments' => 31,
         'shares' => 4,
         'image' => 'assets/Buyline_assets/HomeGarden_4.avif',
@@ -92,6 +103,7 @@ $home_garden_feed = [
 $travel_feed = [
     [
         'title' => '<a href="articles/buyline/Travel_article-1.php" class="text-blue-800 hover:underline">  London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide</a>',
+        'excerpt' => "The definitive guide to London's best martinis after extensive research.",
         'comments' => 112,
         'shares' => 18,
         'image' => 'assets/Buyline_assets/Travel_SPic-5.avif',
@@ -99,6 +111,7 @@ $travel_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/Travel_article-2.php" class="text-blue-800 hover:underline">The best suitcase deals on travel-editor approved brands - including Amazon and John Lewis offers of up to 40% off</a>',
+        'excerpt' => "Travel-editor approved suitcase deals across major retailers.",
         'comments' => 56,
         'shares' => 6,
         'image' => 'assets/Buyline_assets/Travel_SPic-6.avif',
@@ -110,6 +123,7 @@ $travel_feed = [
 $royals_feed = [
     [
         'title' => '<a href="articles/buyline/Royale_article-1.php" class="text-blue-800 hover:underline">Kate Middleton makes star drop earrings the must-have accessory of the season - shop her exact pair and chic alternatives</a>',
+        'excerpt' => "Shop Kate Middleton's star drop earrings and similar picks.",
         'comments' => 402,
         'shares' => 22,
         'image' => 'assets/Buyline_assets/Royal_Pic-1.avif',
@@ -117,6 +131,7 @@ $royals_feed = [
     ],
     [
         'title' => '<a href="articles/buyline/Royale_article-2.php" class="text-blue-800 hover:underline">Royal-approved gifts for him and her - including Kate Middleton s favourite handbag and jewellery</a>',
+        'excerpt' => "Royal-approved gifts including handbags and jewellery picks.",
         'comments' => 199,
         'shares' => 10,
         'image' => 'assets/Buyline_assets/Royal_Pic-6.avif',
@@ -152,10 +167,11 @@ include __DIR__ . '/header.php';
                             <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
                                 <?php foreach(array_slice($personal_feed,0,5) as $item): ?>
                                     <article class="max-w-[210px] flex-shrink-0 border rounded p-3 bg-gray-50">
-                                        <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                        <div class="relative w-48 h-28 overflow-hidden rounded-t">
                                             <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-full h-full object-cover object-center" loading="lazy" />
                                         </div>
                                         <h3 class="mt-2 font-bold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                         <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
                                     </article>
                                 <?php endforeach; ?>
@@ -224,11 +240,12 @@ include __DIR__ . '/header.php';
                         <div class="flex gap-4 overflow-x-auto py-2 px-2">
                             <?php foreach($home_garden_feed as $item): ?>
                                 <article class="max-w-[210px] flex-shrink-0 border rounded bg-gray-50">
-                                    <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                    <div class="relative w-48 h-28 overflow-hidden rounded-t">
                                         <img src="<?php echo $item['image']; ?>" class="w-full h-full object-cover" />
                                     </div>
                                     <div class="p-3">
                                         <h3 class="font-semibold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                         <div class="mt-2 text-xs text-gray-500">
                                             <?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> shares
                                         </div>
@@ -247,11 +264,12 @@ include __DIR__ . '/header.php';
                         <div class="flex gap-4 overflow-x-auto py-2 px-2">
                             <?php foreach($travel_feed as $item): ?>
                                 <article class="max-w-[210px] flex-shrink-0 border rounded bg-gray-50">
-                                    <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                    <div class="relative w-48 h-28 overflow-hidden rounded-t">
                                         <img src="<?php echo $item['image']; ?>" class="w-full h-full object-cover" />
                                     </div>
                                     <div class="p-3">
                                         <h3 class="font-semibold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                         <div class="mt-2 text-xs text-gray-500">
                                             <?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> shares
                                         </div>
@@ -270,11 +288,12 @@ include __DIR__ . '/header.php';
                         <div class="flex gap-4 overflow-x-auto py-2 px-2">
                             <?php foreach($royals_feed as $item): ?>
                                 <article class="max-w-[210px] flex-shrink-0 border rounded bg-gray-50">
-                                    <div class="relative w-48 h-32 overflow-hidden rounded-t">
+                                    <div class="relative w-48 h-28 overflow-hidden rounded-t">
                                         <img src="<?php echo $item['image']; ?>" class="w-full h-full object-cover" />
                                     </div>
                                     <div class="p-3">
                                         <h3 class="font-semibold text-sm line-clamp-2 h-10"><?php echo $item['title']; ?></h3>
+                                        <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                         <div class="mt-2 text-xs text-gray-500">
                                             <?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> shares
                                         </div>
@@ -427,12 +446,12 @@ function renderMainFeed(filter) {
         const art = document.createElement('article');
         art.className = 'max-w-[210px] flex-shrink-0 bg-gray-50 rounded overflow-hidden shadow-sm';
         art.innerHTML = `
-            <div class="relative w-48 h-32 overflow-hidden rounded-t">
+            <div class="relative w-48 h-28 overflow-hidden rounded-t">
                 <img src="${post.image}" alt="" class="w-full h-full object-cover object-center" loading="lazy" />
             </div>
             <div class="p-3">
                 <h3 class="font-semibold text-sm line-clamp-2 h-10">${(post.title)}</h3>
-                <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10">${(post.excerpt || '')}</p>
+                <p class="text-xs text-gray-600 mt-1 line-clamp-2 h-10">${(post.excerpt || post.title || '')}</p>
                 <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
             </div>`;
         row.appendChild(art);

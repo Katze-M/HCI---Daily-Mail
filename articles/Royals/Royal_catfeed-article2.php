@@ -162,7 +162,9 @@ Shop Claudia's exact suit below or browse our edit to find your perfect match.
                     </div>
 
                     <div class="mt-4 text-center">
-                        <button id="show-more-comments" data-remaining="<?php echo ($comment_count - count($comments)); ?>" class="bg-blue-700 text-white px-6 py-2 rounded-full">Show <?php echo ($comment_count - count($comments)); ?> More Comments</button>
+                        <?php $remaining = ($comment_count - count($comments)); if ($remaining > 0): ?>
+                        <button id="show-more-comments" data-remaining="<?php echo $remaining; ?>" class="bg-blue-700 text-white px-6 py-2 rounded-full">Show <?php echo $remaining; ?> More Comments</button>
+                        <?php endif; ?>
                     </div>
                 </section>
                 <style>

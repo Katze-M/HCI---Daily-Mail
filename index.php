@@ -2,6 +2,14 @@
 // Simple Home page using Tailwind via CDN, PHP arrays for content, and minimal JS
 $personal_feed = [
     [
+        'title' => "David Walliams: once the nation's favourite — now fighting to return",
+        'excerpt' => "David Walliams has faced a turbulent few years since leaving BGT and is now focused on books and podcasts.",
+        'comments' => 615,
+        'shares' => 48,
+        'image' => 'assets/tv_assets/article9-img1.png',
+        'link' => 'articles/TV/tv_article9.php'
+    ],
+    [
         'title' => "Melania Trump slammed over 'really bizarre' faux pas while reading Christmas story to kids during hospital visit",
         'excerpt' => "Melania was criticised after reading to children without showing them the pictures.",
         'comments' => 214,
@@ -10,11 +18,14 @@ $personal_feed = [
         'link' => 'articles/HomePage/Home_mainfeed-article3.php'
     ],
     [
-        'title' => "Gary Neville reveals David Luiz's message",
-        'excerpt' => "Former Manchester United man reveals unusual message.",
-        'comments' => 23,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/400x200?text=Personal+1'
+        'title' => "Trump's Treasury chief's shock admission about the economy ... and why it might be worth it",
+        'excerpt' => "Treasury Secretary Scott Bessent warns of a 'detox period' as spending cuts bite, but says private investment will fill the gap.",
+        'comments' => 117,
+        'shares' => 18,
+        'image' => 'assets/US_assets/article3-img1.png',
+        'link' => 'articles/US/US-article3.php',
+        'category' => 'US',
+        'tags' => ['Economy','Politics']
     ],
     [
         'title' => 'World Cup play-off draw: Wales and Northern Ireland',
@@ -24,40 +35,15 @@ $personal_feed = [
         'image' => 'assets/news_article_pics/news1coffeeimg1.png'
     ],
     [
-        'title' => 'Tom Hanks makes lo subway official',
-        'excerpt' => "Tom Hanks made a cameo in a surprise appearance.",
-        'comments' => 1,
+        'title' => 'Media laws to stay despite US tech giant threat',
+        'lead' => 'US pressure fails to shift Australia\'s position on media laws.',
+        'image' => 'assets/US_assets/article2-img1.png',
+        'link' => 'articles/US/US_article2.php',
+        'category' => 'US',
+        'comments' => 61,
         'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Personal+3'
-    ],
-    [
-        'title' => 'Local baker wins national pie award',
-        'excerpt' => "Small bakery takes home grand prize for rhubarb pie.",
-        'comments' => 5,
-        'shares' => 2,
-        'image' => 'https://via.placeholder.com/400x200?text=Personal+4'
-    ],
-    [
-        'title' => 'City park reopens after renovation',
-        'excerpt' => "Playgrounds and paths have been upgraded for families.",
-        'comments' => 2,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Personal+5'
-    ],
-    [
-        'title' => 'New exhibition celebrates local artists',
-        'excerpt' => "Gallery opens a month-long show of contemporary work.",
-        'comments' => 0,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/400x200?text=Personal+6'
-    ],
-    [
-        'title' => 'Weekend farmers market: what to expect',
-        'excerpt' => "Seasonal produce and live music on the high street.",
-        'comments' => 3,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/400x200?text=Personal+7'
-    ],
+        'tags' => ['Law','Tech']
+    ]
 ];
 
 $main_feed = [
@@ -67,8 +53,17 @@ $main_feed = [
         'comments' => 842,
         'shares' => 98,
         'image' => 'assets/HomePage_assets/Homepage_article2-image1.png',
-        'category' => 'News',
+        'category' => 'Latest headlines',
         'link' => 'articles/HomePage/Home_mainfeed-article2.php'
+    ],
+    [
+        'title' => "Shona McGarty shares heartbreaking confession about her mental health before I'm A Celebrity",
+        'excerpt' => "Shona McGarty says a pre-jungle digital detox helped her overcome doomscrolling and reconnect with family.",
+        'comments' => 15,
+        'shares' => 3,
+        'image' => 'assets/tv_assets/article5-img1.png',
+        'category' => 'Latest headlines',
+        'link' => 'articles/TV/tv_article5.php'
     ],
     [
         'title' => "Worker is fired from her job after boss was fed up with her arriving 40 minutes EARLY all the time",
@@ -76,127 +71,235 @@ $main_feed = [
         'comments' => 12,
         'shares' => 3,
         'image' => 'assets/HomePage_assets/Homepage_article1-image1.png',
-        'category' => 'News',
+        'category' => 'Latest headlines',
         'link' => 'articles/HomePage/Home_mainfeed-article1.php'
     ],
     [
-        'title' => "Trump's officials arrive in Ukraine",
-        'excerpt' => "Officials arrived to try to force Zelensky into accepting peace deal.",
-        'comments' => 547,
-        'shares' => 30,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+1',
-        'category' => 'News'
+        'title' => "Binky Felstead reveals what she eats in a day and how she trains to maintain her strong gym-honed figure while juggling parenting three children",
+        'excerpt' => "Binky Felstead explains her workouts and meals while juggling three children — practical tips and allergy-management updates.",
+        'comments' => 105,
+        'shares' => 20,
+        'image' => 'assets/tv_assets/article6-img1.png',
+        'category' => 'Latest headlines',
+        'link' => 'articles/TV/tv_article6.php'
     ],
     [
-        'title' => 'Austria will ban girls from wearing Islamic headscarves',
-        'excerpt' => "Ban is set to apply across all schools and public places.",
+        'title' => "Revealed: Which World Cup games the BBC and ITV will show next summer as broadcasters CONFIRM match split",
         'comments' => 214,
-        'shares' => 8,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+2',
-        'category' => 'World'
-    ],
-    [
-        'title' => 'UK considers military Putin spy shipping',
-        'excerpt' => "Warships and planes will intercept any move.",
-        'comments' => 632,
-        'shares' => 29,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+3',
-        'category' => 'U.S.'
-    ],
-    [
-        'title' => 'EU leaders meet to discuss energy crisis',
-        'excerpt' => "A plan is proposed to stabilize gas prices across member states.",
-        'comments' => 120,
         'shares' => 12,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+4',
-        'category' => 'World'
+        'image' => 'assets/news_article_pics/News-18.avif',
+        'category' => 'Latest headlines',
+        'link' => 'articles/News/News_catfeed-article1.php'
     ],
     [
-        'title' => 'Tech stocks rally after earnings beat',
-        'excerpt' => "Major technology companies reported stronger-than-expected results.",
-        'comments' => 88,
-        'shares' => 9,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+5',
-        'category' => 'Business'
+        'title' => "The item that sells every minute globally transforms under-eye bags in SECONDS: 'You look 10 years younger'",
+        'excerpt' => "An Australian beauty product that mimics the appearance of having had under-eye surgery has become a global bestseller, with one bottle purchased every minute.",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-1.avif',
+        'category' => 'Australia',
+        'link' => 'articles/News/News_mainfeed-article1.php'
     ],
     [
-        'title' => 'Climate summit: nations pledge new targets',
-        'excerpt' => "Commitments aim to reduce emissions by 2035.",
-        'comments' => 402,
-        'shares' => 55,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+6',
-        'category' => 'Science'
+        'title' => "QUENTIN LETTS: Brother Torsten shimmered, beamed and lovingly stroked his girlishly smooth throat...",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-15.avif',
+        'category' => 'Latest headlines',
+        'link' => 'articles/News/News_mainfeed-article4.php'
     ],
     [
-        'title' => 'Breakthrough in renewable battery storage',
-        'excerpt' => "A prototype promises longer life and faster charging.",
-        'comments' => 77,
-        'shares' => 11,
-        'image' => 'https://via.placeholder.com/360x220?text=Main+7',
-        'category' => 'Science'
+        'title' => "Michelle Obama blasts 'aging' leaders who 'hold on for too long' in veiled swipe at Joe Biden",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-24.avif',
+        'category' => 'Latest headlines',
+        'link' => 'articles/News/News_catfeed-article3.php'
     ],
 ];
 
 $category_strip = [
     [
+        'title' => "Taylor Swift embraces her glamorous era in a $1.7k velvet minidress for sit-down interview with Stephen Colbert",
+        'comments' => 35,
+        'shares' => 5,
+        'image' => 'assets/US_assets/article1-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/US/US_article1.php'
+    ],
+    [
+        'title' => 'Neighbours finale episode set to hit screens today - after the soap was AXED for the second time less than two years after its revival',
+        'comments' => 15,
+        'shares' => 4,
+        'image' => 'assets/tv_assets/article7-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/TV/tv_article7.php'
+    ],
+    [
         'title' => "The 19 signs that say you're insecure: Psychotherapist reveals the tell-tale quirks - including how you carry your handbag",
         'comments' => 34,
         'shares' => 5,
         'image' => 'assets/HomePage_assets/Homepage_article4-image1.png',
-        'category' => 'Lifestyle',
+        'category' => 'Health',
         'link' => 'articles/HomePage/Home_mainfeed-article4.php'
     ],
     [
-        'title' => "America's deadliest volcano enters unprecedented 72-hour tremor",
-        'comments' => 567,
-        'shares' => 1500,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+1',
-        'category' => 'News'
-    ],
-    [
-        'title' => 'Rapid earthquake swarm rocks California',
-        'comments' => 65,
-        'shares' => 65,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+2',
-        'category' => 'U.S.'
-    ],
-    [
-        'title' => 'NASA under fire as its interstellar visitor',
-        'comments' => 105,
-        'shares' => 18,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+3',
+        'title' => "Maven, we have a problem: NASA has lost contact with a spacecraft that has been orbiting Mars for more than a DECADE",
+        'excerpt' => "NASA has lost contact with the MAVEN orbiter — a setback that could halt a decade of Martian atmospheric research.",
+        'comments' => 35,
+        'shares' => 35,
+        'image' => 'assets/HomePage_assets/Homepage_article5-image1.png',
         'category' => 'Science',
-        'link' => 'articles/HomePage/Home_mainfeed-article4.php'
+        'link' => 'articles/HomePage/Home_mainfeed-article5.php'
     ],
     [
-        'title' => 'New fashion week trends: what to wear',
-        'comments' => 12,
+        'title' => 'We still owe £300,000, can an offset mortgage save us money?',
+        'excerpt' => 'Reader asks whether switching to an offset mortgage would reduce payments on a £300,000 balance.',
+        'comments' => 19,
         'shares' => 2,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+4',
-        'category' => 'Showbiz'
+        'image' => 'assets/US_assets/article6-img1.png',
+        'category' => 'Money',
+        'link' => 'articles/US/US-article6.php'
     ],
     [
-        'title' => 'Local team wins regional finals',
-        'comments' => 45,
+        'title' => "Simon Cowell: The Next Act savaged as 'dated, derivative and as flat as his hairdo'",
+        'comments' => 64,
+        'shares' => 8,
+        'image' => 'assets/tv_assets/article2-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/TV/tv_article2.php'
+    ],
+    [
+        'title' => "London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide",
+        'comments' => 112,
+        'shares' => 18,
+        'image' => 'assets/Buyline_assets/Travel_SPic-5.avif',
+        'category' => 'Lifestyle',
+        'link' => 'articles/buyline/Travel_article-1.php'
+    ],
+    [
+        'title' => "The best suitcase deals on travel-editor approved brands - including Amazon and John Lewis offers of up to 40% off",
+        'comments' => 56,
         'shares' => 6,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+5',
-        'category' => 'Sports'
-    ],
-    [
-        'title' => 'How to save money on holiday flights',
-        'comments' => 8,
-        'shares' => 1,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+6',
-        'category' => 'Travel'
-    ],
-    [
-        'title' => 'Guide to healthy winter recipes',
-        'comments' => 6,
-        'shares' => 0,
-        'image' => 'https://via.placeholder.com/300x180?text=Cat+7',
-        'category' => 'Lifestyle'
+        'image' => 'assets/Buyline_assets/Travel_SPic-6.avif',
+        'category' => 'Travel',
+        'link' => 'articles/buyline/Travel_article-2.php'
     ],
 ];
+
+// Extra articles collected from other section pages (news, royals, us, tv, buyline, mplus)
+$extra_feed = [
+    // News
+    [ 'title' => "Art swindler shares jaw-dropping explanation of how his wife 'died' and why he chopped up her body", 'excerpt' => "In opening statements...", 'comments' => 214, 'shares' => 12, 'image' => 'assets/news_article_pics/News-5.avif', 'category' => 'The Crime Desk', 'link' => 'articles/News/News_mainfeed-article2.php' ],
+    // Royals
+    [ 'title' => 'How ex-PM John Major played the role of an honest broker between Charles and Diana during the War of the Waleses', 'excerpt' => 'An inside look at John Major\'s mediating role within the royal family.', 'comments' => 220, 'shares' => 34, 'image' => 'assets/Royal_assets/Royal-1.avif', 'category' => 'King Charles III', 'link' => 'articles/Royals/Royal_mainfeed-article1.php' ],
+    [ 'title' => 'Prince William celebrates 20 years of his patronage with homeless charity Centrepoint', 'excerpt' => 'William marks two decades supporting Centrepoint in a heartfelt visit.', 'comments' => 160, 'shares' => 19, 'image' => 'assets/Royal_assets/Royal-5.avif', 'category' => 'Prince William', 'link' => 'articles/Royals/Royal_mainfeed-article2.php' ],
+    [ 'title' => 'Lady Davina Windsor and her daughter Senna support Kate Middleton at Christmas carol concert', 'excerpt' => 'Davina and her daughter Senna attend a festive outing with Kate.', 'comments' => 98, 'shares' => 12, 'image' => 'assets/Royal_assets/Royal-8.avif', 'category' => 'Kate Middleton', 'link' => 'articles/Royals/Royal_mainfeed-article3.php' ],
+    [ 'title' => 'Prince Harry believes Home Office review into his taxpayer-funded security is long overdue', 'excerpt' => 'Sources say the review into taxpayer-funded security is proceeding.', 'comments' => 305, 'shares' => 48, 'image' => 'assets/Royal_assets/Royal-12.avif', 'category' => 'Prince Harry', 'link' => 'articles/Royals/Royal_mainfeed-article4.php' ],
+    [ 'title' => 'Meghan Markle sends letter to her sick father Thomas in hospital', 'excerpt' => 'Meghan reached out to her father amid concerns about his health.', 'comments' => 142, 'shares' => 21, 'image' => 'assets/Royal_assets/Royal-15.avif', 'category' => 'Meghan Markle', 'link' => 'articles/Royals/Royal_mainfeed-article5.php' ],
+    // US
+    [ 'title' => "Taylor Swift embraces her glamorous era in a $1.7k velvet minidress for sit-down interview with Stephen Colbert", 'excerpt' => "Taylor Swift made a glamorous appearance on Wednesday's Late Show with Stephen Colbert.", 'comments' => 35, 'shares' => 5, 'image' => 'assets/US_assets/article1-img1.png', 'category' => 'Entertainment', 'link' => 'articles/US/US_article1.php' ],
+    [ 'title' => "Trump's Treasury chief's shock admission about the economy ... and why it might be worth it", 'excerpt' => "Treasury Secretary Scott Bessent warns of a 'detox period' as spending cuts bite, but expects private sector to step up.", 'comments' => 117, 'shares' => 18, 'image' => 'assets/US_assets/article3-img1.png', 'category' => 'Economy', 'link' => 'articles/US/US-article3.php' ],
+    [ 'title' => 'Show shines light on Mormons\' unique place in US culture', 'excerpt' => 'How a reality show has brought Mormon culture into mainstream conversation.', 'comments' => 5, 'shares' => 1, 'image' => 'assets/US_assets/article5-img1.png', 'category' => 'Entertainment', 'link' => 'articles/US/US-article5.php' ],
+    [ 'title' => "Walmart CEO gives update on prices as retail bellwether announces surge in sales", 'excerpt' => 'Walmart reports strong like-for-like sales and discusses pricing pressures.', 'comments' => 17, 'shares' => 6, 'image' => 'assets/US_assets/article4-img1.png', 'category' => 'Economy', 'link' => 'articles/US/US-article4.php' ],
+    [ 'title' => 'US business groups voice dismay at Trump\'s new tariffs', 'excerpt' => 'Business groups condemn sweeping tariffs and warn of cost impacts.', 'comments' => 12, 'shares' => 3, 'image' => 'assets/US_assets/article7-img1.png', 'category' => 'Business', 'link' => 'articles/US/US-article7.php' ],
+    // TV
+    [ 'title' => 'Neighbours finale episode set to hit screens today - after the soap was AXED for the second time', 'excerpt' => 'Neighbours will air its final episode on Thursday after being axed for a second time.', 'comments' => 15, 'shares' => 4, 'image' => 'assets/tv_assets/article7-img1.png', 'category' => 'Soaps', 'link' => 'articles/TV/tv_article7.php' ],
+    [ 'title' => 'Inside Netflix\'s buzzy new drama: what to expect from the gripping first season', 'excerpt' => 'Our guide to the cast, what happens and why everyone is talking about it.', 'comments' => 15, 'shares' => 10, 'image' => 'assets/tv_assets/article4-img1.png', 'category' => 'Netflix', 'link' => 'articles/TV/tv_article4.php' ],
+    [ 'title' => "Simon Cowell: The Next Act savaged as 'dated, derivative and as flat as his hairdo'", 'excerpt' => "Critics accuse the music mogul of 'rehashing The X Factor for the billionth time' with a new Netflix documentary.", 'comments' => 64, 'shares' => 8, 'image' => 'assets/tv_assets/article2-img1.png', 'category' => 'Showbiz', 'link' => 'articles/TV/tv_article2.php' ],
+    [ 'title' => "We've found Keira Knightley's exact outfits from the Waitrose Christmas advert at John Lewis - and they make for the perfect winter wardrobe", 'excerpt' => "Everything you need to recreate Keira Knightley's cosy-chic looks from the Waitrose Christmas advert.", 'comments' => 5, 'shares' => 1, 'image' => 'assets/tv_assets/article3-img1.png', 'category' => "I'm a Celebrity", 'link' => 'articles/TV/tv_article3.php' ],
+    // Buyline (beauty / fashion / travel / royals / personal)
+    [ 'title' => 'The miracle in a bottle cream that celebs swear by to target wrinkles and dryness', 'excerpt' => 'A cult cream loved by celebs for smoothing and hydration.', 'comments' => 547, 'shares' => 30, 'image' => 'assets/Buyline_assets/MainFeed_Artc_1 pic.avif', 'category' => 'Beauty', 'link' => 'articles/buyline/Beautyfeed_article-1.php' ],
+    [ 'title' => 'Panic buying presents? No need. The 10 best budget beauty stocking fillers', 'excerpt' => 'Affordable stocking fillers editors are gifting this year.', 'comments' => 214, 'shares' => 8, 'image' => 'assets/Buyline_assets/MainFeed_Artc_2 pic.avif', 'category' => 'Beauty', 'link' => 'articles/buyline/Beautyfeed_article-2.php' ],
+    [ 'title' => 'Men are ditching expensive fragrances for £31 scent that turns heads', 'excerpt' => 'A pocket-friendly fragrance that\'s become a favourite.', 'comments' => 632, 'shares' => 29, 'image' => 'assets/Buyline_assets/MainFeed_Artc_3 pic.avif', 'category' => 'Lifestyle', 'link' => 'articles/buyline/Beautyfeed_article-3.php' ],
+    [ 'title' => "Cat Deeley just wore this fashionably festive jumper on This Morning - here's where you can buy it", 'excerpt' => "Cat Deeley's festive jumper and three alternatives you can buy now.", 'comments' => 23, 'shares' => 1, 'image' => 'assets/Buyline_assets/PerFeed_Artc_1 pic.avif', 'category' => 'Fashion', 'link' => 'articles/buyline/Fashionfeed_article-1.php' ],
+    [ 'title' => 'The Haier air fryer that cuts cooking times in half has finally gone on sale', 'excerpt' => 'A top-selling air fryer now at its lowest-ever price.', 'comments' => 84, 'shares' => 12, 'image' => 'assets/Buyline_assets/HomeGarden_1.avif', 'category' => 'Home & Garden', 'link' => 'articles/buyline/HomeGardenfeed_article-1.php' ],
+    [ 'title' => 'London s 25 best martinis revealed: The definitive guide', 'excerpt' => "The definitive guide to London's best martinis after extensive research.", 'comments' => 112, 'shares' => 18, 'image' => 'assets/Buyline_assets/Travel_SPic-5.avif', 'category' => 'Travel', 'link' => 'articles/buyline/Travel_article-1.php' ],
+    [ 'title' => 'Kate Middleton makes star drop earrings the must-have accessory of the season', 'excerpt' => 'Shop Kate Middleton\'s star drop earrings and similar picks.', 'comments' => 402, 'shares' => 22, 'image' => 'assets/Buyline_assets/Royal_Pic-1.avif', 'category' => 'Royals', 'link' => 'articles/buyline/Royale_article-1.php' ],
+    // mplus entries (no dedicated article pages; link back to mplus)
+    [ 'title' => "Exclusive: Inside m+ — The City's Most Secret Skin Treatments", 'excerpt' => "We tried the treatments top insiders swear by — here's what actually works.", 'comments' => 12, 'shares' => 3, 'image' => 'assets/news_article_pics/News-4.avif', 'category' => 'Exclusive', 'link' => 'mplus.php#exclusive' ],
+    [ 'title' => "Trending on m+: A-List Fitness Routines You Can Do At Home", 'excerpt' => 'Short, intense workouts recommended by celebs — no equipment needed.', 'comments' => 4, 'shares' => 1, 'image' => 'assets/MPlus_assets/mplus-assets-img1.png', 'category' => 'Trending', 'link' => 'mplus.php#trending' ],
+];
+
+// Automatically collect any article (except podcasts) entries declared in section pages
+$sectionPages = ['news.php','royals.php','us.php','tv.php','buyline.php','mplus.php'];
+foreach ($sectionPages as $sp) {
+    $path = __DIR__ . '/' . $sp;
+    if (!file_exists($path)) continue;
+    $txt = file_get_contents($path);
+    // Find short array item blocks like [ 'title' => '...', 'link' => '...', ... ]
+    if (preg_match_all('/\[(?:[^\[\]]|(?R))*\]/s', $txt, $blocks)) {
+        foreach ($blocks[0] as $blk) {
+            // only consider blocks that contain a link to an articles/ path
+            if (!preg_match("/['\"]?link['\"]?\s*=>\s*['\"]([^'\"]+)['\"]/i", $blk, $m)) continue;
+            $link = trim($m[1]);
+            if (stripos($link, 'podcast') !== false || stripos($link, 'podcasts') !== false) continue;
+
+            // extract other fields if present
+            $title = null; $excerpt = null; $image = null; $category = null; $comments = null; $shares = null;
+            if (preg_match("/['\"]?title['\"]?\s*=>\s*['\"]([^'\"]+)['\"]/i", $blk, $mt)) $title = trim($mt[1]);
+            if (!$title && preg_match("/['\"]?title['\"]?\s*=>\s*([^,\]]+)/i", $blk, $mt2)) $title = trim(trim($mt2[1], " \t\n\r\'\""));
+            if (preg_match("/['\"]?excerpt['\"]?\s*=>\s*['\"]([^'\"]+)['\"]/i", $blk, $me)) $excerpt = trim($me[1]);
+            if (preg_match("/['\"]?image['\"]?\s*=>\s*['\"]([^'\"]+)['\"]/i", $blk, $mi)) $image = trim($mi[1]);
+            if (preg_match("/['\"]?category['\"]?\s*=>\s*['\"]([^'\"]+)['\"]/i", $blk, $mc)) $category = trim($mc[1]);
+            if (preg_match("/['\"]?comments['\"]?\s*=>\s*(\d+)/i", $blk, $mco)) $comments = intval($mco[1]);
+            if (preg_match("/['\"]?shares['\"]?\s*=>\s*(\d+)/i", $blk, $msh)) $shares = intval($msh[1]);
+
+            // Build item
+            $item = [];
+            if ($title) $item['title'] = $title;
+            if ($excerpt) $item['excerpt'] = $excerpt;
+            if ($image) $item['image'] = $image;
+            if ($category) $item['category'] = $category;
+            if ($comments !== null) $item['comments'] = $comments; else $item['comments'] = 0;
+            if ($shares !== null) $item['shares'] = $shares; else $item['shares'] = 0;
+            $item['link'] = $link;
+
+            // dedupe against existing extra_feed (by link or title)
+            $exists = false;
+            foreach ($extra_feed as $ex) {
+                if (isset($ex['link']) && isset($item['link']) && strtolower($ex['link']) === strtolower($item['link'])) { $exists = true; break; }
+                if (isset($ex['title']) && isset($item['title']) && strtolower(strip_tags($ex['title'])) === strtolower(strip_tags($item['title']))) { $exists = true; break; }
+            }
+            if (!$exists) $extra_feed[] = $item;
+        }
+    }
+}
+
+// Merge extra feed items into main feed without duplicates (use link or stripped title as key)
+$seen = [];
+$merged = [];
+foreach ($main_feed as $it) {
+    $key = isset($it['link']) ? $it['link'] : strip_tags($it['title']);
+    $lk = strtolower($key);
+    $seen[$lk] = true;
+    $merged[] = $it;
+}
+foreach ($extra_feed as $it) {
+    $key = isset($it['link']) ? $it['link'] : strip_tags($it['title']);
+    $lk = strtolower($key);
+    if (!isset($seen[$lk])) { $seen[$lk] = true; $merged[] = $it; }
+}
+$main_feed = $merged;
+// Also merge extra_feed into the category strip when the article's category
+// matches one of the index category filters. This lets the category strip
+// show related items from other sections.
+$cat_filters = ['Sports','Showbiz','Lifestyle','Health','Science','Money','Travel'];
+
+// Build seen map for existing category strip items (dedupe by link or title)
+$cat_seen = [];
+foreach ($category_strip as $c) {
+    $k = isset($c['link']) ? $c['link'] : strip_tags($c['title']);
+    $cat_seen[strtolower($k)] = true;
+}
+
+foreach ($extra_feed as $it) {
+    if (!isset($it['category'])) continue;
+    if (!in_array($it['category'], $cat_filters)) continue;
+    $k = isset($it['link']) ? $it['link'] : strip_tags($it['title']);
+    $lk = strtolower($k);
+    if (!isset($cat_seen[$lk])) { $category_strip[] = $it; $cat_seen[$lk] = true; }
+}
 
 //uses shared header/footer
 include __DIR__ . '/header.php';
@@ -224,13 +327,13 @@ include __DIR__ . '/header.php';
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 15.707a1 1 0 01-1.414 0L5.172 10l5.707-5.707a1 1 0 011.414 1.414L8.414 10l3.879 3.879a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
                             </button>
                             <div id="personal-feed-row" class="flex gap-4 overflow-x-auto py-2 px-8">
-                                <?php foreach(array_slice($personal_feed,0,7) as $item): ?>
+                                                        <?php foreach($personal_feed as $item): ?>
                                     <?php $href = isset($item['link']) ? $item['link'] : 'articles/article.php'; ?>
                                     <article class="pf-card border p-3 bg-gray-50">
                                         <a href="<?php echo $href; ?>" class="block h-full">
                                             <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
                                             <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
-                                            <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
+                                            <p class="text-xs text-gray-600 mt-1"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                             <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
                                         </a>
                                     </article>
@@ -303,7 +406,7 @@ include __DIR__ . '/header.php';
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="bg-blue-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
                     <div class="p-3">
-                        <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                        <?php foreach(array_slice($main_feed,0,9) as $item): ?>
                             <?php $sHref = isset($item['link']) ? $item['link'] : 'articles/article.php'; ?>
                             <div class="flex gap-3 py-3 border-b last:border-b-0">
                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
@@ -421,7 +524,7 @@ function renderMainFeed(filter) {
     // render into the horizontal row
     const row = document.getElementById('main-feed-row');
     row.innerHTML = '';
-    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter);
     if (items.length === 0) {
         row.innerHTML = '<div class="text-center text-gray-500">No items for this filter.</div>';
         return;
@@ -434,8 +537,8 @@ function renderMainFeed(filter) {
             <a href="${href}" class="block h-full">
                 <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
                 <div class="p-3">
-                    <h3 class="font-semibold">${escapeHtml(post.title)}</h3>
-                    <p class="text-sm text-gray-600 mt-1">${escapeHtml(post.excerpt || '')}</p>
+                    <h3 class="mt-2 font-bold text-sm">${escapeHtml(post.title)}</h3>
+                    <p class="text-xs text-gray-600 mt-1">${escapeHtml(post.excerpt || post.title || '')}</p>
                     <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
                 </div>
             </a>`;
@@ -446,7 +549,7 @@ function renderMainFeed(filter) {
 function renderCategoryStrip(filter) {
     const row = document.getElementById('category-strip-row');
     row.innerHTML = '';
-    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter);
     if (items.length === 0) {
         row.innerHTML = '<div class="text-gray-500">No items for this filter.</div>';
         return;
@@ -459,7 +562,8 @@ function renderCategoryStrip(filter) {
         card.innerHTML = `
             <a href="${href}" class="block h-full">
                 <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
-                <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
+                <h4 class="mt-2 font-bold text-sm">${escapeHtml(cat.title)}</h4>
+                <p class="text-xs text-gray-600 mt-1">${escapeHtml(cat.excerpt || cat.title || '')}</p>
                 <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>
             </a>`;
         row.appendChild(card);

@@ -93,7 +93,7 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                     <img src="/assets/dailymail-white.png" alt="Daily Mail" class="h-14 object-contain" />
                     <h1 class="text-white text-3xl font-bold">Podcasts</h1>
                 </div>
-                <button onclick="openRegisterModal()" class="bg-white text-[#0C2D78] px-4 py-2 rounded-md">Subscribe</button>
+                <button onclick="openRegisterModal()" class="bg-white text-[#0C2D78] px-4 py-2 rounded-md font-bold">Subscribe to Podcasts</button>
             </div>
         </div>
         <?php else: ?>
@@ -113,20 +113,25 @@ $current = basename($_SERVER['SCRIPT_NAME']);
 
                 <!-- Right side: subscribe + contact -->
                 <div class="flex flex-col items-end gap-3 w-1/3 min-w-[260px]">
-                    <!-- Subscribe pill -->
-                    <div class="rounded-3xl bg-white px-5 py-3 shadow-md flex items-center gap-4 w-full justify-center">
-                        <!-- Bell icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-gray-800 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M12 2a4 4 0 00-4 4v1.08A7.002 7.002 0 006 14v3l-1.707 1.707A1 1 0 005 20h14a1 1 0 00.707-1.707L18 17v-3a7.002 7.002 0 00-2-6.92V6a4 4 0 00-4-4zM8 20a4 4 0 008 0H8z" />
-                        </svg>
+                    <!-- Subscribe pill (clickable) -->
+                    <a href="login.php?next=/subscribe" role="button" aria-label="Subscribe to DailyMail+" class="rounded-3xl bg-white px-5 py-3 shadow-md flex items-center gap-4 w-full justify-center hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300">
+                        <!-- Icon with badge -->
+                        <div class="relative flex-shrink-0">
+                            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-800" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2a4 4 0 00-4 4v1.08A7.002 7.002 0 006 14v3l-1.707 1.707A1 1 0 005 20h14a1 1 0 00.707-1.707L18 17v-3a7.002 7.002 0 00-2-6.92V6a4 4 0 00-4-4zM8 20a4 4 0 008 0H8z" />
+                                </svg>
+                            </div>
+                            <span class="absolute -right-1 -top-1 inline-flex items-center justify-center w-6 h-6 bg-blue-600 text-white rounded-full text-xs font-bold">+</span>
+                        </div>
                         <div class="flex flex-col items-start md:items-center text-left">
-                            <div class="text-2xl md:text-3xl font-black text-gray-900 leading-none">SUBSCRIBE</div>
-                            <div class="mt-1 flex items-center gap-2">
-                                <img src="/assets/dailymail.png" alt="Daily Mail" class="h-6 md:h-8 inline-block" />
-                                <span class="text-2xl md:text-3xl font-bold text-gray-900">+</span>
+                            <div class="text-lg md:text-xl font-black text-gray-900 leading-none">SUBSCRIBE</div>
+                            <div class="mt-1 flex items-center gap-2 text-sm text-gray-700">
+                                <img src="/assets/dailymail.png" alt="Daily Mail" class="h-5 md:h-6 inline-block" />
+                                <span class="font-semibold text-3xl">+</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Got a story box -->
                     <div class="bg-white rounded-lg px-4 py-3 shadow w-full text-sm text-gray-900 flex items-center justify-between gap-4">
@@ -156,23 +161,37 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                                 <?php
                                             if (!function_exists('navClass')) {
                                                 function navClass($current, $page) {
+                                                    // Base classes for nav items; active styling is applied via inline style to use the brand hex
                                                     if ($current === $page) {
-                                                        // Use royal orange for Buyline, blue for others
-                                                        $bgColor = ($page === 'buyline.php') ? 'bg-orange-600' : 'bg-blue-600';
-                                                        return "text-sm px-4 py-2 {$bgColor} text-white rounded-sm";
+                                                        return 'text-sm px-4 py-2 text-white rounded-sm';
                                                     }
                                                     return 'text-sm px-4 py-2 text-black';
                                                 }
+
+                                                function navStyle($current, $page) {
+                                                    // Hex mapping for each page's brand colour (used for active nav background)
+                                                    $hexMap = [
+                                                        'buyline.php' => '#ea580c', 
+                                                        'royals.php'  => '#540C75', 
+                                                        'news.php'    => '#00AAD2', 
+                                                        'tv.php'      => '#C562A5', 
+                                                        'us.php'      => '#08306b', 
+                                                        'mplus.php'   => '#2563eb', // blue-600 fallback for mplus
+                                                    ];
+                                                    if ($current !== $page) return '';
+                                                    $hex = isset($hexMap[$page]) ? $hexMap[$page] : '#2563eb';
+                                                    return 'style="background-color: ' . $hex . '; color: #fff;"';
+                                                }
                                             }
                                         ?>
-                                <a href="/index.php" aria-current="<?php echo $current === 'index.php' ? 'page' : ''; ?>" class="<?php echo navClass($current, 'index.php'); ?>">Home</a>
-                                <a href="/news.php" class="<?php echo navClass($current, 'news.php'); ?>">News</a>
-                                <a href="/royals.php" class="<?php echo navClass($current, 'royals.php'); ?>">Royals</a>
-                                <a href="/us.php" class="<?php echo navClass($current, 'us.php'); ?>">U.S.</a>
-                                <a href="/tv.php" class="<?php echo navClass($current, 'tv.php'); ?>">TV</a>
-                                <a href="/podcasts.php" class="<?php echo navClass($current, 'podcasts.php'); ?>">Podcasts</a>
-                                <a href="/buyline.php" class="<?php echo navClass($current, 'buyline.php'); ?>">Buyline</a>
-                                <a href="/mplus.php" class="w-6 h-6 flex items-center justify-center <?php echo navClass($current, 'mplus.php'); ?>"><img src="/assets/m-logo.png" alt="m" class="inline-block h-4 w-auto mr-1">+</a>
+                                <a href="/index.php" aria-current="<?php echo $current === 'index.php' ? 'page' : ''; ?>" class="<?php echo navClass($current, 'index.php'); ?>" <?php echo navStyle($current,'index.php'); ?>>Home</a>
+                                <a href="/news.php" class="<?php echo navClass($current, 'news.php'); ?>" <?php echo navStyle($current,'news.php'); ?>>News</a>
+                                <a href="/royals.php" class="<?php echo navClass($current, 'royals.php'); ?>" <?php echo navStyle($current,'royals.php'); ?>>Royals</a>
+                                <a href="/us.php" class="<?php echo navClass($current, 'us.php'); ?>" <?php echo navStyle($current,'us.php'); ?>>U.S.</a>
+                                <a href="/tv.php" class="<?php echo navClass($current, 'tv.php'); ?>" <?php echo navStyle($current,'tv.php'); ?>>TV</a>
+                                <a href="/podcasts.php" class="<?php echo navClass($current, 'podcasts.php'); ?>" <?php echo navStyle($current,'podcasts.php'); ?>>Podcasts</a>
+                                <a href="/buyline.php" class="<?php echo navClass($current, 'buyline.php'); ?>" <?php echo navStyle($current,'buyline.php'); ?>>Buyline</a>
+                                <a href="/mplus.php" class="w-6 h-6 flex items-center justify-center <?php echo navClass($current, 'mplus.php'); ?>" <?php echo navStyle($current,'mplus.php'); ?>><img src="/assets/m-logo.png" alt="m" class="inline-block h-4 w-auto mr-1">M+</a>
                             </div>
                         </div>
 

@@ -2,6 +2,66 @@
 // US section landing page (based on index.php) — US-themed placeholders
 $personal_feed = [
     [
+        'title' => "Taylor Swift embraces her glamorous era in a $1.7k velvet minidress for sit-down interview with Stephen Colbert",
+        'excerpt' => "Taylor Swift made a glamorous appearance on Wednesday's Late Show with Stephen Colbert.",
+        'comments' => 35,
+        'shares' => 5,
+        'image' => 'assets/US_assets/article1-img1.png',
+        'link' => 'articles/US/US_article1.php'
+    ],
+    [
+        'title' => "Trump's Treasury chief's shock admission about the economy ... and why it might be worth it",
+        'excerpt' => "Treasury Secretary Scott Bessent warns of a 'detox period' as spending cuts bite, but says private investment will fill the gap.",
+        'comments' => 117,
+        'shares' => 18,
+        'image' => 'assets/US_assets/article3-img1.png',
+        'link' => 'articles/US/US-article3.php',
+        'category' => 'US',
+        'tags' => ['Economy','Politics']
+    ],
+    [
+        'title' => 'US business groups voice dismay at Trump\'s new tariffs',
+        'excerpt' => 'Business groups condemn sweeping tariffs and warn of cost impacts.',
+        'comments' => 12,
+        'shares' => 3,
+        'image' => 'assets/US_assets/article7-img1.png',
+        'category' => 'Politics',
+        'link' => 'articles/US/US-article7.php',
+        'tags' => ['Politics','Business','Economy']
+    ],
+    [
+        'title' => "Trump explodes at Zelensky for not accepting peace deal as he warns Putin 'has the upper hand'",
+        'excerpt' => "The President criticised Zelensky and warned Russia holds the upper hand in negotiations.",
+        'comments' => 842,
+        'shares' => 98,
+        'image' => 'assets/HomePage_assets/Homepage_article2-image1.png',
+        'category' => 'Politics'
+    ],
+    [
+        'title' => "David Walliams: once the nation's favourite — now fighting to return",
+        'excerpt' => "David Walliams has faced a turbulent few years since leaving BGT and is now focused on books and podcasts.",
+        'comments' => 615,
+        'shares' => 48,
+        'image' => 'assets/tv_assets/article9-img1.png',
+        'link' => 'articles/TV/tv_article9.php'
+    ],
+    [
+        'title' => "Michelle Obama blasts 'aging' leaders who 'hold on for too long' in veiled",
+        'excerpt' => "At a leadership summit, Obama warned that leaders who stay too long harm democratic renewal.",
+        'comments' => 10,
+        'shares' => 5,
+        'image' => 'assets/news_article_pics/News-25.avif',
+        'link' => 'articles/News/News_catfeed-article3.php'
+    ],
+    [
+        'title' => "Art swindler shares jaw-dropping explanation of how his wife 'died' and why he chopped up her body",
+        'excerpt' => "Art fraudster Brian Walshe claims he found his wife dead in bed and panicked, according to opening statements at his trial.",
+        'comments' => 56,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-5.avif',
+        'link' => 'articles/News/News_mainfeed-article2.php'
+    ],
+    [
         'title' => "Trump explodes at Zelensky for not accepting peace deal as he warns Putin 'has the upper hand'",
         'excerpt' => "The President criticised Zelensky and warned Russia holds the upper hand in negotiations.",
         'comments' => 842,
@@ -9,57 +69,80 @@ $personal_feed = [
         'image' => 'assets/HomePage_assets/Homepage_article2-image1.png'
     ],
     [
-        'title' => "Trump announces new campaign rally dates",
-        'excerpt' => "Former president schedules a series of rallies across swing states.",
-        'comments' => 842,
-        'shares' => 120,
-        'image' => 'https://via.placeholder.com/400x200?text=Trump+Rally'
-    ],
+        'title' => 'Stranger Things fans spot worrying clue beloved character will be killed off',
+        'excerpt' => "Fans noticed a missing character photo in recent Netflix promos — could this be a sign?",
+        'comments' => 120,
+        'shares' => 18,
+    ]
+    ];
+    $main_feed = [
     [
-        'title' => 'Netflix confirms new hit series reboot',
-        'excerpt' => "Streaming giant teases a major reboot from a beloved franchise.",
-        'comments' => 312,
-        'shares' => 45,
-        'image' => 'https://via.placeholder.com/400x200?text=Netflix+Reboot'
-    ],
-    [
-        'title' => 'US economy adds jobs but inflation persists',
-        'excerpt' => "Employment numbers beat estimates while price pressures continue.",
-        'comments' => 215,
-        'shares' => 30,
-        'image' => 'https://via.placeholder.com/400x200?text=Economy+Data'
-    ],
-    [
-        'title' => 'Hollywood stars at awards ceremony',
-        'excerpt' => "A-glamour winners were celebrated at the annual gala.",
-        'comments' => 98,
-        'shares' => 12,
-        'image' => 'https://via.placeholder.com/400x200?text=Hollywood+Gala'
-    ],
-    [
-        'title' => 'Silicon Valley startup raises $200m',
-        'excerpt' => "Investors back an AI firm promising faster inference.",
-        'comments' => 76,
-        'shares' => 6,
-        'image' => 'https://via.placeholder.com/400x200?text=Startup+Funding'
-    ],
-    [
-        'title' => 'Wall Street opens lower amid rate fears',
-        'excerpt' => "Traders worry over possible Fed action after data.",
-        'comments' => 64,
-        'shares' => 9,
-        'image' => 'https://via.placeholder.com/400x200?text=Wall+Street'
-    ],
-    [
-        'title' => 'New tech privacy bill moves through Congress',
-        'excerpt' => "Bipartisan talks aim to set clearer rules for platforms.",
-        'comments' => 42,
+        'title' => "Taylor Swift embraces her glamorous era in a $1.7k velvet minidress for sit-down interview with Stephen Colbert",
+        'excerpt' => "Taylor Swift made a glamorous appearance on Wednesday's Late Show with Stephen Colbert.",
+        'comments' => 35,
         'shares' => 5,
-        'image' => 'https://via.placeholder.com/400x200?text=Privacy+Bill'
+        'image' => 'assets/US_assets/article1-img1.png',
+        'category' => 'Entertainment',
+        'link' => 'articles/US/US_article1.php'
     ],
-];
-
-$main_feed = [
+    [
+        'title' => "Show shines light on Mormons' unique place in US culture",
+        'excerpt' => "How a reality show has brought Mormon culture into mainstream conversation.",
+        'comments' => 5,
+        'shares' => 1,
+        'image' => 'assets/US_assets/article5-img1.png',
+        'category' => 'Entertainment',
+        'link' => 'articles/US/US-article5.php',
+        'tags' => ['Culture','Showbiz']
+    ],
+    [
+        'title' => "David Walliams: once the nation's favourite — now fighting to return",
+        'excerpt' => "David Walliams has faced a turbulent few years since leaving BGT and is now focused on books and podcasts.",
+        'comments' => 615,
+        'shares' => 48,
+        'image' => 'assets/tv_assets/article9-img1.png',
+        'category' => 'Entertainment',
+        'link' => 'articles/TV/tv_article9.php',
+        'tags' => ['Showbiz','Entertainment']
+    ],
+    [
+        'title' => "Michelle Obama blasts 'aging' leaders who 'hold on for too long' in veiled",
+        'excerpt' => "Obama criticises senior politicians who cling to power and urges generational renewal.",
+        'comments' => 10,
+        'shares' => 5,
+        'image' => 'assets/news_article_pics/News-25.avif',
+        'category' => 'Politics',
+        'link' => 'articles/News/News_catfeed-article3.php'
+    ],
+    [
+        'title' => "Trump's Treasury chief's shock admission about the economy ... and why it might be worth it",
+        'excerpt' => "Treasury Secretary Scott Bessent warns of a 'detox period' as spending cuts bite, but expects private sector to step up.",
+        'comments' => 117,
+        'shares' => 18,
+        'image' => 'assets/US_assets/article3-img1.png',
+        'category' => 'Economy',
+        'tags' => ['Politics','Economy'],
+        'link' => 'articles/US/US-article3.php'
+    ],
+    [
+        'title' => 'US business groups voice dismay at Trump\'s new tariffs',
+        'excerpt' => 'Business groups condemn sweeping tariffs and warn of cost impacts.',
+        'comments' => 12,
+        'shares' => 3,
+        'image' => 'assets/US_assets/article7-img1.png',
+        'category' => 'Business',
+        'link' => 'articles/US/US-article7.php',
+        'tags' => ['Business','Economy','Politics']
+    ],
+    [
+        'title' => "Art swindler shares jaw-dropping explanation of how his wife 'died' and why he chopped up her body",
+        'excerpt' => "Art fraudster Brian Walshe claims he found his wife dead in bed and panicked, according to opening statements at his trial.",
+        'comments' => 56,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-5.avif',
+        'category' => 'U.S.',
+        'link' => 'articles/News/News_mainfeed-article2.php'
+    ],
     [
         'title' => "Melania Trump slammed over 'really bizarre' faux pas while reading Christmas story to kids during hospital visit",
         'excerpt' => "Melania was criticised after reading to children without showing the pictures.",
@@ -70,112 +153,154 @@ $main_feed = [
         'link' => 'articles/HomePage/Home_mainfeed-article3.php'
     ],
     [
-        'title' => "Trump indicted in new case, pleads not guilty",
-        'excerpt' => "Court filings show charges related to presidential documents.",
-        'comments' => 1324,
-        'shares' => 210,
-        'image' => 'https://via.placeholder.com/360x220?text=Trump+Indictment',
-        'category' => 'U.S.'
+        'title' => "Walmart CEO gives update on prices as retail bellwether announces surge in sales",
+        'excerpt' => "Walmart reports strong like-for-like sales and discusses pricing pressures across grocery categories.",
+        'comments' => 17,
+        'shares' => 6,
+        'image' => 'assets/US_assets/article4-img1.png',
+        'category' => 'Economy',
+        'link' => 'articles/US/US-article4.php',
+        'tags' => ['Business','Economy']
     ],
     [
-        'title' => 'Netflix stock tumbles after subscriber warning',
-        'excerpt' => "A surprising slowdown in subscribers rattles investors.",
-        'comments' => 796,
-        'shares' => 98,
-        'image' => 'https://via.placeholder.com/360x220?text=Netflix+News',
-        'category' => 'Business'
+        'title' => 'Stranger Things promo sparks death theory',
+        'excerpt' => "Fans analyse Netflix promos and fear for a beloved character's fate.",
+        'comments' => 98,
+        'shares' => 14,
+        'image' => 'assets/news_article_pics/tv_latestimg1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/tv_latest_article.php'
     ],
     [
-        'title' => 'Inflation cools but cost-of-living remains high',
-        'excerpt' => "Household budgets still squeezed despite easing prices.",
-        'comments' => 542,
-        'shares' => 76,
-        'image' => 'https://via.placeholder.com/360x220?text=Inflation',
-        'category' => 'Economy'
+        'title' => "Simon Cowell: The Next Act savaged as 'dated, derivative and as flat as his hairdo'",
+        'excerpt' => "Critics accuse the music mogul of 'rehashing The X Factor for the billionth time' with a new Netflix documentary.",
+        'comments' => 64,
+        'shares' => 8,
+        'image' => 'assets/tv_assets/article2-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/TV/tv_article2.php'
+    ],
+];
+$category_strip = [
+    [
+        'title' => 'Taylor Swift embraces her glamorous era in a $1.7k velvet minidress for sit-down interview with Stephen Colbert',
+        'excerpt' => "Taylor Swift made a glamorous appearance on Wednesday's Late Show with Stephen Colbert.",
+        'comments' => 35,
+        'shares' => 5,
+        'image' => 'assets/US_assets/article1-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/US/US_article1.php'
     ],
     [
-        'title' => 'Hollywood director wins top prize at festival',
-        'excerpt' => "Festival crowd applauds an unexpected debut feature.",
-        'comments' => 124,
-        'shares' => 16,
-        'image' => 'https://via.placeholder.com/360x220?text=Film+Prize',
-        'category' => 'Entertainment'
+        'title' => "David Walliams: once the nation's favourite — now fighting to return",
+        'comments' => 615,
+        'shares' => 48,
+        'image' => 'assets/tv_assets/article9-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/TV/tv_article9.php',
+        'tags' => ['Showbiz','Entertainment']
     ],
     [
-        'title' => 'Tech layoffs continue across major firms',
-        'excerpt' => "Firms restructure as growth expectations shift.",
-        'comments' => 398,
-        'shares' => 41,
-        'image' => 'https://via.placeholder.com/360x220?text=Tech+Layoffs',
-        'category' => 'Tech'
-    ],
-    [
-        'title' => 'Supreme Court to hear major digital rights case',
-        'excerpt' => "Justices will consider whether platforms can be regulated.",
-        'comments' => 289,
-        'shares' => 34,
-        'image' => 'https://via.placeholder.com/360x220?text=Supreme+Court',
+        'title' => "Art swindler shares jaw-dropping explanation of how his wife 'died' and why he chopped up her body",
+        'excerpt' => "Art fraudster Brian Walshe claims he found his wife dead in bed and panicked, according to opening statements at his trial.",
+        'comments' => 56,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-5.avif',
+        'link' => 'articles/News/News_mainfeed-article2.php',
         'category' => 'Law'
     ],
     [
-        'title' => 'Retail sales rebound ahead of holiday season',
-        'excerpt' => "Consumers spending increases across categories.",
-        'comments' => 173,
-        'shares' => 22,
-        'image' => 'https://via.placeholder.com/360x220?text=Retail+Sales',
-        'category' => 'Business'
-    ],
-];
-
-$category_strip = [
-    [
-        'title' => "Trump endorses several midterm candidates",
-        'comments' => 231,
-        'shares' => 40,
-        'image' => 'https://via.placeholder.com/300x180?text=Trump+Endorsements',
+        'title' => "Trump explodes at Zelensky for not accepting peace deal as he warns Putin 'has the upper hand'",
+        'excerpt' => "The President criticised Zelensky and warned Russia holds the upper hand in negotiations.",
+        'comments' => 842,
+        'shares' => 98,
+        'image' => 'assets/HomePage_assets/Homepage_article2-image1.png',
         'category' => 'Politics'
     ],
     [
-        'title' => 'Netflix greenlights a major sci-fi show',
-        'comments' => 129,
+        'title' => 'US business groups voice dismay at Trump\'s new tariffs',
+        'excerpt' => 'Business groups condemn sweeping tariffs and warn of cost impacts.',
+        'comments' => 12,
+        'shares' => 3,
+        'image' => 'assets/US_assets/article7-img1.png',
+        'category' => 'Politics',
+        'link' => 'articles/US/US-article7.php',
+        'tags' => ['Politics','Business','Economy']
+    ],
+    [
+        'title' => 'Stranger Things fans spot worrying clue',
+        'excerpt' => "Fans noticed a missing character photo in recent Netflix promos — could this be a sign?",
+        'comments' => 120,
         'shares' => 18,
-        'image' => 'https://via.placeholder.com/300x180?text=Netflix+Greenlight',
-        'category' => 'Showbiz'
+        'image' => 'assets/news_article_pics/tv_latestimg1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/tv_latest_article.php'
     ],
     [
-        'title' => 'US unemployment rate ticks down',
-        'comments' => 88,
-        'shares' => 9,
-        'image' => 'https://via.placeholder.com/300x180?text=Jobs+Data',
-        'category' => 'Economy'
+        'title' => "Show shines light on Mormons' unique place in US culture",
+        'excerpt' => 'How a reality show has brought Mormon culture into mainstream conversation.',
+        'comments' => 5,
+        'shares' => 1,
+        'image' => 'assets/US_assets/article5-img1.png',
+        'category' => 'Culture',
+        'link' => 'articles/US/US-article5.php',
+        'tags' => ['Culture','Showbiz']
     ],
     [
-        'title' => 'Netflix partners with an indie studio',
-        'comments' => 41,
-        'shares' => 7,
-        'image' => 'https://via.placeholder.com/300x180?text=Netflix+Deal',
-        'category' => 'Business'
+        'title' => 'We still owe £300,000, can an offset mortgage save us money?',
+        'excerpt' => 'Reader asks whether switching to an offset mortgage would reduce payments on a £300,000 balance.',
+        'comments' => 19,
+        'shares' => 2,
+        'image' => 'assets/US_assets/article6-img1.png',
+        'category' => 'Money',
+        'link' => 'articles/US/US-article6.php'
     ],
     [
-        'title' => 'Major tech CEO testifies before Congress',
-        'comments' => 202,
-        'shares' => 27,
-        'image' => 'https://via.placeholder.com/300x180?text=CEO+Testimony',
-        'category' => 'Tech'
+        'title' => "Simon Cowell: The Next Act savaged as 'dated, derivative and as flat as his hairdo' in SCATHING reviews",
+        'comments' => 64,
+        'shares' => 8,
+        'image' => 'assets/tv_assets/article2-img1.png',
+        'category' => 'Showbiz',
+        'link' => 'articles/TV/tv_article2.php',
+        'excerpt' => "Critics accuse the music mogul of rehashing his old format in a new Netflix documentary."
     ],
     [
-        'title' => 'Streaming trends: what to watch this month',
-        'comments' => 31,
-        'shares' => 4,
-        'image' => 'https://via.placeholder.com/300x180?text=Streaming+Trends',
-        'category' => 'Culture'
+        'title' => 'Media laws to stay despite US tech giant threat',
+        'excerpt' => "Government confirms media regulations will remain despite pressure from major US tech firms.",
+        'comments' => 61,
+        'shares' => 3,
+        'image' => 'assets/US_assets/article2-img1.png',
+        'category' => 'Law',
+        'link' => 'articles/US/US_article2.php',
+        'tags' => ['Law','Tech']
     ],
     [
-        'title' => 'Housing market shows signs of cooling',
-        'comments' => 54,
+        'title' => "Walmart CEO gives update on prices as retail bellwether announces surge in sales",
+        'excerpt' => "Walmart reports stronger-than-expected sales and provides an update on pricing pressures across grocery categories.",
+        'comments' => 17,
         'shares' => 6,
-        'image' => 'https://via.placeholder.com/300x180?text=Housing',
-        'category' => 'Money'
+        'image' => 'assets/US_assets/article4-img1.png',
+        'category' => 'Business',
+        'link' => 'articles/US/US-article4.php',
+        'tags' => ['Business','Economy']
+    ],
+    [
+        'title' => "Trump's Treasury chief's shock admission about the economy ... and why it might be worth it",
+        'excerpt' => "Treasury Secretary Scott Bessent warns of a 'detox period' as spending cuts bite, but expects private investment to step in.",
+        'comments' => 117,
+        'shares' => 18,
+        'image' => 'assets/US_assets/article3-img1.png',
+        'category' => 'Politics',
+        'link' => 'articles/US/US-article3.php'
+    ],
+    [
+        'title'=>'Inside Netflix\'s buzzy new drama: what to expect from the gripping first season',
+        'excerpt'=>'First look at the cast, the tone and why the show is on everyone\'s watchlist.',
+        'comments'=>15,
+        'shares'=>10,
+        'image'=>'assets/tv_assets/article4-img1.png',
+        'category'=>'Netflix',
+        'link'=>'articles/TV/tv_article4.php'
     ],
 ];
 
@@ -183,7 +308,7 @@ $category_strip = [
 include __DIR__ . '/header.php';
 ?>
 
-    <main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="max-w-6xl mx-auto px-4 py-8 us-theme">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             <!-- Main column -->
             <div class="md:col-span-7">
@@ -211,7 +336,7 @@ include __DIR__ . '/header.php';
                                             <a href="<?php echo $href; ?>" class="block h-full">
                                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
                                                 <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
-                                                <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
+                                                <p class="text-xs text-gray-600 mt-1"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                                 <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
                                             </a>
                                         </article>
@@ -286,7 +411,7 @@ include __DIR__ . '/header.php';
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="bg-blue-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
                     <div class="p-3">
-                        <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                        <?php foreach(array_slice($main_feed,0,9) as $item): ?>
                             <?php $sHref = isset($item['link']) ? $item['link'] : 'articles/article.php'; ?>
                             <div class="flex gap-3 py-3 border-b last:border-b-0">
                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
@@ -311,10 +436,18 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
         </div>
+
     </main>
-<?php include __DIR__ . '/footer.php'; ?>
-<style>
-/* Feed sizing variables and shared card/image helpers are centralized in header.php */
+    <?php include __DIR__ . '/footer.php'; ?>
+    <style>
+    /* brand color: dark blue (scoped to `.us-theme` so header buttons are unaffected) */
+    .us-theme { --brand: #08306b; }
+    /* Override a few Tailwind-ish classes only inside `.us-theme` */
+    .us-theme .bg-blue-700 { background-color: var(--brand) !important; }
+    .us-theme .bg-blue-600 { background-color: var(--brand) !important; }
+    .us-theme .text-blue-700 { color: var(--brand) !important; }
+    .us-theme .text-blue-800 { color: var(--brand) !important; }
+    .us-theme .bg-blue-50 { background-color: rgba(84,12,117,0.06) !important; }
 
 .anim-hidden { max-height: 0; opacity: 0; transform: translateY(-6px); transition: max-height .28s ease, opacity .28s ease, transform .28s ease; overflow: hidden; }
 .anim-open { max-height: 600px; opacity: 1; transform: translateY(0); transition: max-height .35s ease, opacity .35s ease, transform .35s ease; }
@@ -330,24 +463,33 @@ include __DIR__ . '/header.php';
 const MAIN_FEED = <?php echo json_encode($main_feed, JSON_HEX_TAG); ?>;
 const CAT_STRIP = <?php echo json_encode($category_strip, JSON_HEX_TAG); ?>;
 
-const MAIN_FILTERS = ['All','Latest headlines','Politics','Business','Entertainment','Tech'];
+const MAIN_FILTERS = ['All','Latest headlines','Politics','Business','Entertainment','Economy'];
 const CAT_FILTERS = ['All','Politics','Business','Tech','Culture','Showbiz','Money','Law'];
 
 function renderMainFeed(filter) {
     const row = document.getElementById('main-feed-row');
     row.innerHTML = '';
-    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    // Treat 'Latest headlines' as equivalent to 'All' (show newest items regardless of category)
+    const items = MAIN_FEED.filter(i => {
+        if (!filter || filter === 'All' || filter === 'Latest headlines') return true;
+        if (i.category === filter) return true;
+        if (i.tags && Array.isArray(i.tags) && i.tags.includes(filter)) return true;
+        return false;
+    });
     if (items.length === 0) { row.innerHTML = '<div class="text-center text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(post => {
         const art = document.createElement('article');
         art.className = 'pf-card bg-gray-50 rounded overflow-hidden shadow-sm';
+        const href = post.link ? post.link : 'articles/article.php';
         art.innerHTML = `
-            <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
-            <div class="p-3">
-                <h3 class="font-semibold">${escapeHtml(post.title)}</h3>
-                <p class="text-sm text-gray-600 mt-1">${escapeHtml(post.excerpt || '')}</p>
-                <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
-            </div>`;
+            <a href="${href}" class="block h-full">
+                <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
+                <div class="p-3">
+                    <h3 class="mt-2 font-bold text-sm">${escapeHtml(post.title)}</h3>
+                    <p class="text-xs text-gray-600 mt-1">${escapeHtml(post.excerpt || post.title || '')}</p>
+                    <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
+                </div>
+            </a>`;
         row.appendChild(art);
     });
 }
@@ -355,15 +497,25 @@ function renderMainFeed(filter) {
 function renderCategoryStrip(filter) {
     const row = document.getElementById('category-strip-row');
     row.innerHTML = '';
-    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    // Match by category OR tags (if provided). 'All' shows everything.
+    const items = CAT_STRIP.filter(i => {
+        if (!filter || filter === 'All') return true;
+        if (i.category === filter) return true;
+        if (i.tags && Array.isArray(i.tags) && i.tags.includes(filter)) return true;
+        return false;
+    });
     if (items.length === 0) { row.innerHTML = '<div class="text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(cat => {
-        const card = document.createElement('div');
+        const card = document.createElement('article');
         card.className = 'pf-card bg-gray-50 rounded shadow-sm p-3';
+        const href = cat.link ? cat.link : 'articles/article.php';
         card.innerHTML = `
-            <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
-            <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
-            <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>`;
+            <a href="${href}" class="block h-full">
+                <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
+                <h4 class="mt-2 font-bold text-sm">${escapeHtml(cat.title)}</h4>
+                <p class="text-xs text-gray-600 mt-1">${escapeHtml(cat.excerpt || cat.title || '')}</p>
+                <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>
+            </a>`;
         row.appendChild(card);
     });
 }

@@ -120,6 +120,24 @@ $category_strip = [
         'category' => 'Lifestyle',
         'link' => 'articles/News/News_catfeed-article3.php'
     ],
+    [
+        'title' => "The item that sells every minute globally transforms under-eye bags in SECONDS: 'You look 10 years younger'",
+        'excerpt' => "An Australian beauty product that mimics the appearance of having had under-eye surgery has become a global bestseller, with one bottle purchased every minute.",
+        'comments' => 214,
+        'shares' => 12,
+        'image' => 'assets/news_article_pics/News-1.avif',
+        'category' => 'Health',
+        'link' => 'articles/News/News_mainfeed-article1.php'
+    ],
+    [
+        'title' => 'We still owe £300,000, can an offset mortgage save us money?',
+        'excerpt' => 'Reader asks whether switching to an offset mortgage would reduce payments on a £300,000 balance.',
+        'comments' => 19,
+        'shares' => 2,
+        'image' => 'assets/US_assets/article6-img1.png',
+        'category' => 'Money',
+        'link' => 'articles/US/US-article6.php'
+    ],
         [
         'title' => "London s 25 best martinis revealed: After five years of research (and hundreds of drinks!), HUGHIE DE ZULUETA and ELLA MAY share their must-read guide",
         'comments' => 112,
@@ -145,7 +163,7 @@ $category_strip = [
 include __DIR__ . '/header.php';
 ?>
 
-    <main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="max-w-6xl mx-auto px-4 py-8 news-theme">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             <!-- Main column -->
             <div class="md:col-span-7">
@@ -173,7 +191,7 @@ include __DIR__ . '/header.php';
                                             <a href="<?php echo $href; ?>" class="block h-full">
                                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="pf-img rounded" />
                                                 <h3 class="mt-2 font-bold text-sm"><?php echo $item['title']; ?></h3>
-                                                <p class="text-xs text-gray-600 mt-1"><?php echo $item['excerpt']; ?></p>
+                                                <p class="text-xs text-gray-600 mt-1"><?php echo isset($item['excerpt']) ? $item['excerpt'] : strip_tags($item['title']); ?></p>
                                                 <div class="mt-2 text-xs text-gray-500"><?php echo $item['comments']; ?> comments • <?php echo $item['shares']; ?> share</div>
                                             </a>
                                         </article>
@@ -247,8 +265,8 @@ include __DIR__ . '/header.php';
             <aside class="md:col-span-3">
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="bg-blue-600 text-white px-4 py-2 font-semibold">Don't Miss</div>
-                    <div class="p-3">
-                        <?php foreach(array_slice($main_feed,0,3) as $item): ?>
+                        <div class="p-3">
+                        <?php foreach(array_slice($main_feed,0,9) as $item): ?>
                             <?php $sHref = isset($item['link']) ? $item['link'] : 'articles/article.php'; ?>
                             <div class="flex gap-3 py-3 border-b last:border-b-0">
                                 <img src="<?php echo $item['image']; ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="w-20 h-14 object-cover rounded" />
@@ -277,14 +295,14 @@ include __DIR__ . '/header.php';
 <?php include __DIR__ . '/footer.php'; ?>
 
 <style>
-/* brand color: cyan */
-:root{ --brand: #00AAD2; }
-/* Override a few Tailwind-ish classes locally for this page only */
-.bg-blue-700 { background-color: var(--brand) !important; }
-.bg-blue-600 { background-color: var(--brand) !important; }
-.text-blue-700 { color: var(--brand) !important; }
-.text-blue-800 { color: var(--brand) !important; }
-.bg-blue-50 { background-color: rgba(0,170,210,0.06) !important; }
+/* brand color: cyan (page-scoped to avoid header overrides) */
+.news-theme { --brand: #00AAD2; }
+/* Override a few Tailwind-ish classes only inside this page wrapper */
+.news-theme .bg-blue-700 { background-color: var(--brand) !important; }
+.news-theme .bg-blue-600 { background-color: var(--brand) !important; }
+.news-theme .text-blue-700 { color: var(--brand) !important; }
+.news-theme .text-blue-800 { color: var(--brand) !important; }
+.news-theme .bg-blue-50 { background-color: rgba(0,170,210,0.06) !important; }
 
 /* Feed sizing variables and shared card/image helpers are centralized in header.php */
 
@@ -329,7 +347,7 @@ const CAT_FILTERS = ['All','Sports','Showbiz','Lifestyle','Health','Science','Mo
 function renderMainFeed(filter) {
     const row = document.getElementById('main-feed-row');
     row.innerHTML = '';
-    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    const items = MAIN_FEED.filter(i => !filter || filter === 'All' ? true : i.category === filter);
     if (items.length === 0) { row.innerHTML = '<div class="text-center text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(post => {
         const art = document.createElement('article');
@@ -339,8 +357,8 @@ function renderMainFeed(filter) {
             <a href="${href}" class="block h-full">
                 <img src="${post.image}" alt="${escapeHtml(post.title)}" class="pf-img" />
                 <div class="p-3">
-                    <h3 class="font-semibold">${escapeHtml(post.title)}</h3>
-                    <p class="text-sm text-gray-600 mt-1">${escapeHtml(post.excerpt || '')}</p>
+                    <h3 class="mt-2 font-bold text-sm">${escapeHtml(post.title)}</h3>
+                    <p class="text-xs text-gray-600 mt-1">${escapeHtml(post.excerpt || post.title || '')}</p>
                     <div class="mt-3 text-xs text-gray-500">${post.comments} comments • ${post.shares} shares</div>
                 </div>
             </a>`;
@@ -351,16 +369,17 @@ function renderMainFeed(filter) {
 function renderCategoryStrip(filter) {
     const row = document.getElementById('category-strip-row');
     row.innerHTML = '';
-    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter).slice(0,7);
+    const items = CAT_STRIP.filter(i => !filter || filter === 'All' ? true : i.category === filter);
     if (items.length === 0) { row.innerHTML = '<div class="text-gray-500">No items for this filter.</div>'; return; }
     items.forEach(cat => {
         const card = document.createElement('article');
         card.className = 'pf-card bg-gray-50 rounded shadow-sm p-3';
-        const href = cat.link ? cat.link : '#';
+        const href = cat.link ? cat.link : 'articles/article.php';
         card.innerHTML = `
             <a href="${href}" class="block h-full">
                 <img src="${cat.image}" alt="${escapeHtml(cat.title)}" class="pf-img rounded" />
-                <h4 class="mt-2 font-semibold text-sm">${escapeHtml(cat.title)}</h4>
+                <h4 class="mt-2 font-bold text-sm">${escapeHtml(cat.title)}</h4>
+                <p class="text-xs text-gray-600 mt-1">${escapeHtml(cat.excerpt || cat.title || '')}</p>
                 <div class="text-xs text-gray-500 mt-1">${cat.comments} comments • ${cat.shares} shares</div>
             </a>`;
         row.appendChild(card);
