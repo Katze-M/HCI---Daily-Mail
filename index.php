@@ -1,5 +1,4 @@
 <?php
-// Simple Home page using Tailwind via CDN, PHP arrays for content, and minimal JS
 $personal_feed = [
     [
         'title' => "David Walliams: once the nation's favourite — now fighting to return",
@@ -281,9 +280,8 @@ foreach ($extra_feed as $it) {
     if (!isset($seen[$lk])) { $seen[$lk] = true; $merged[] = $it; }
 }
 $main_feed = $merged;
-// Also merge extra_feed into the category strip when the article's category
-// matches one of the index category filters. This lets the category strip
-// show related items from other sections.
+/* Also merge extra_feed into the category strip when the article's category
+    matches one of the index category filters. */
 $cat_filters = ['Sports','Showbiz','Lifestyle','Health','Science','Money','Travel'];
 
 // Build seen map for existing category strip items (dedupe by link or title)
@@ -434,8 +432,6 @@ include __DIR__ . '/header.php';
     </main>
 <?php include __DIR__ . '/footer.php'; ?>
 <style>
-/* Feed sizing variables and shared card/image helpers are defined in header.php */
-
 /* Slide + fade animation helpers for filter strips */
 .anim-hidden {
     max-height: 0;
@@ -479,7 +475,7 @@ include __DIR__ . '/header.php';
 }
 
 /* Hide native scrollbar arrows for the horizontal filter strips while keeping scrolling usable
-   - Targets the main filter strip, category filter panel, and the category strip row. */
+    Targets the main filter strip, category filter panel, and the category strip row. */
 #mainFiltersStrip,
 #catFiltersPanel,
 #category-strip-row,

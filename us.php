@@ -1,5 +1,4 @@
 <?php
-// US section landing page (based on index.php) — US-themed placeholders
 $personal_feed = [
     [
         'title' => "Taylor Swift embraces her glamorous era in a $1.7k velvet minidress for sit-down interview with Stephen Colbert",

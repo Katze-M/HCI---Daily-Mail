@@ -1,6 +1,18 @@
 <?php
 // Shared header include: contains <head> and the site header/nav
 $current = basename($_SERVER['SCRIPT_NAME']);
+// Page brand hex mapping (used for filter hover backgrounds etc.)
+$brandMap = [
+    'buyline.php' => '#ea580c',
+    'royals.php'  => '#540C75',
+    'news.php'    => '#00AAD2',
+    'tv.php'      => '#C562A5',
+    'us.php'      => '#08306b',
+    'mplus.php'   => '#2563eb',
+    'podcasts.php'=> '#0C2D78',
+    'index.php'   => '#2563eb'
+];
+$brandHex = isset($brandMap[$current]) ? $brandMap[$current] : '#2563eb';
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,7 +45,7 @@ $current = basename($_SERVER['SCRIPT_NAME']);
         .global-back-btn {
             position: fixed; /* fixed to viewport so it doesn't affect document flow */
             left: 16px;
-            top: 72px; /* will be adjusted by script on load/resize */
+            top: 72px; 
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -42,7 +54,7 @@ $current = basename($_SERVER['SCRIPT_NAME']);
             background: #ffffff;
             border-radius: 9999px;
             box-shadow: 0 6px 12px rgba(15,23,42,0.08);
-            color: #374151; /* gray-700 */
+            color: #374151; 
             border: none;
             cursor: pointer;
             z-index: 70;
@@ -51,18 +63,27 @@ $current = basename($_SERVER['SCRIPT_NAME']);
             .global-back-btn { left: 12px; top: 64px; width: 36px; height: 36px; }
         }
             /* Shared feed sizing variables and card helpers so all pages (including
-               article pages) render feed items consistently. Previously these
-               were duplicated in `index.php`/`news.php` and missing from many
-               article templates which caused the feed layout to differ on
-               article pages. Centralizing here avoids visual regressions. */
+               article pages) render feed items consistently. */
             :root{
                 --pf-card-width: 200px;
                 --pf-img-height: 140px;
+                --brand-hex: <?php echo $brandHex; ?>;
             }
-            .pf-card{ flex: 0 0 var(--pf-card-width); width: var(--pf-card-width); box-sizing: border-box; border-radius:0.5rem; overflow:hidden; }
+            .pf-card{ flex: 0 0 var(--pf-card-width); width: var(--pf-card-width); box-sizing: border-box; border-radius:0.5rem; overflow:hidden; transition: transform .22s cubic-bezier(.2,.9,.2,1), box-shadow .22s cubic-bezier(.2,.9,.2,1); will-change: transform, box-shadow; }
+            .pf-card:hover{ transform: translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(2,6,23,0.12); }
             .pf-img{ width:100%; height:var(--pf-img-height); object-fit:cover; display:block; }
-            /* --- Simple animation utilities --- */
-            /* No entrance animations for header; keep only hover transitions */
+
+            /* Make whole card clickable when wrapped by anchor */
+            .pf-card > a { display: block; color: inherit; text-decoration: none; }
+
+            /* Filter button hover uses the current page brand color */
+            #mainFiltersStrip button:hover, #catFiltersPanel button:hover, .panel-slide button:hover { background-color: var(--brand-hex) !important; color: #fff !important; }
+            /* Slight raise on filter hover */
+            #mainFiltersStrip button, #catFiltersPanel button { transition: background-color .18s ease, transform .12s ease, box-shadow .12s ease; position: relative; z-index: 1; }
+            /* Allow hover lift to be visible outside the rounded container without breaking horizontal scroll */
+            #mainFiltersStrip, #catFiltersPanel, .panel-slide { overflow-x: auto; overflow-y: visible; }
+            #mainFiltersStrip button:hover, #catFiltersPanel button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(2,6,23,0.06); z-index: 30; }
+            
 
             /* Header hover transitions */
             header a, header button { transition: transform .12s ease, box-shadow .18s ease, background-color .18s ease; }
@@ -89,9 +110,10 @@ $current = basename($_SERVER['SCRIPT_NAME']);
             @keyframes dm-circle-draw { to { stroke-dashoffset: 0; } }
             @keyframes dm-check-draw { to { stroke-dashoffset: 0; } }
             @keyframes dm-pop { 0% { transform: scale(.88); opacity: .0 } 60% { transform: scale(1.05); opacity: 1 } 100% { transform: scale(1); opacity: 1 } }
-            .dm-success-card.animate { animation: dm-pop 420ms cubic-bezier(.2,.9,.2,1); }
-            .dm-check-circle.animate { animation: dm-circle-draw 380ms cubic-bezier(.2,.9,.2,1) forwards; }
-            .dm-check-tick.animate { animation: dm-check-draw 420ms cubic-bezier(.2,.9,.2,1) 160ms forwards; }
+            /* Slightly slower animations for better visibility */
+            .dm-success-card.animate { animation: dm-pop 560ms cubic-bezier(.2,.9,.2,1); }
+            .dm-check-circle.animate { animation: dm-circle-draw 700ms cubic-bezier(.2,.9,.2,1) forwards; }
+            .dm-check-tick.animate { animation: dm-check-draw 900ms cubic-bezier(.2,.9,.2,1) 300ms forwards; }
             /* modal backdrop blur utility used by page-level modals (podcasts details/register) */
             .modal-bg { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); background: rgba(0,0,0,0.56); }
 
@@ -258,9 +280,9 @@ $current = basename($_SERVER['SCRIPT_NAME']);
     </button>
 
     <script>
-        // Position the back button directly below the header so it appears
-        // visually under the header, but because it's `position: fixed` it
-        // won't affect the article container layout (it won't push content).
+        /* Position the back button directly below the header so it appears
+            visually under the header, but because it's `position: fixed` it
+            won't affect the article container layout (it won't push content).*/
         (function positionBackButton(){
             function update() {
                 var header = document.querySelector('header');
@@ -272,17 +294,17 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                 if (header) {
                     var rect = header.getBoundingClientRect();
                     // When header is visible, place the button a few px below it.
-                    // When header scrolls away (rect.bottom becomes small/negative),
-                    // clamp so the button remains at the viewport top (upper-left).
+                    /* When header scrolls away (rect.bottom becomes small/negative),
+                        clamp so the button remains at the viewport top (upper-left).*/
                     top = Math.round(Math.max(16, rect.bottom + offset));
                 }
                 btn.style.top = top + 'px';
                 // For very narrow viewports keep a small left offset
                 btn.style.left = (window.innerWidth <= 640) ? '12px' : '16px';
             }
-            // Update on load, resize and scroll. We update on scroll using
-            // requestAnimationFrame to avoid layout thrashing and keep the
-            // button clamped to the upper-left once the header scrolls away.
+            /* Update on load, resize and scroll. Update scroll using
+            requestAnimationFrame to avoid layout thrashing and keep the
+            button clamped to the upper-left once the header scrolls away.*/
             var ticking = false;
             function onScroll() {
                 if (!ticking) {
@@ -305,9 +327,9 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                 <script>
                     // Article click loader and site auth interception
                     (function(){
-                    // Article loader: when clicking links that point to article pages,
-                    // show a brief loading overlay (1-2s) then navigate. Anchors
-                    // referencing the 'articles/' path will trigger the loader.
+                    /* Article loader: when clicking links that point to article pages,
+                    show a brief loading overlay (1-2s) then navigate. Anchors
+                    referencing the 'articles/' path will trigger the loader (loading animation).*/
                     function isArticleHref(href){
                         if(!href) return false;
                         try{ const u = new URL(href, location.origin); return /\/articles\//.test(u.pathname) || /articles\//.test(href); }catch(e){ return /articles\//.test(href); }
@@ -386,12 +408,11 @@ $current = basename($_SERVER['SCRIPT_NAME']);
                             }, timeout);
                         }
 
-                        // NOTE: header auth buttons no longer trigger the success modal
-                        // on click. The success modal is shown only when the login flow
-                        // completes and the destination page includes `login_success=1`.
+                        /* Header auth buttons no longer trigger the success modal
+                        on click. The success modal is shown only when the login flow
+                        completes and the destination page includes `login_success=1`.*/
 
-                        // If the destination page was loaded after a login (login_success=1),
-                        // show the success modal on page load and then remove the flag from the URL.
+                        // If the destination page was loaded after a login (login_success=1), show the success modal on page load and then remove the flag from the URL.
                         document.addEventListener('DOMContentLoaded', function(){
                             try{
                                 const sp = new URLSearchParams(window.location.search);

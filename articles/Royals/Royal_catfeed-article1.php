@@ -1,6 +1,4 @@
 <?php
-// Article: Trump explodes at Zelensky...
-
 $comments = [
     [
         'name' => 'RoyalFollower',

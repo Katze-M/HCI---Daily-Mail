@@ -1,5 +1,4 @@
 <?php
-// Article: The 19 signs that say you're insecure
 $comments = [
     ['name' => 'CuriousReader', 'location' => 'UK', 'time' => '4h', 'text' => 'Some of these hit home...', 'up' => 1, 'down' => 0],
     ['name' => 'FashionGuru', 'location' => 'London', 'time' => '2h', 'text' => 'Handbag habits say more than you think.', 'up' => 2, 'down' => 0],

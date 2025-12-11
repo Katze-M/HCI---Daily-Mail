@@ -1,5 +1,4 @@
 <?php
-// Article: Melania Trump slammed over 'really bizarre' faux pas
 $comments = [
     ['name' => 'ParentVoice', 'location' => 'UK', 'time' => '3h', 'text' => 'Reading to kids means showing pictures — common sense.', 'up' => 2, 'down' => 0],
     ['name' => 'TeacherSam', 'location' => 'Manchester', 'time' => '2h', 'text' => 'As a former teacher this was awkward to watch.', 'up' => 1, 'down' => 0],

@@ -1,5 +1,4 @@
 <?php
-// Article: Maven lost contact
 $comments = [
     ['name' => 'SpaceFan', 'location' => 'USA', 'time' => '3h', 'text' => 'This is worrying — fingers crossed for the team on the ground.', 'up' => 4, 'down' => 0],
     ['name' => 'AstroNerd', 'location' => 'UK', 'time' => '1h', 'text' => 'MAVEN has been vital for Martian science. Hope they recover telemetry soon.', 'up' => 6, 'down' => 1],

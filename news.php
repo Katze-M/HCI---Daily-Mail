@@ -1,5 +1,4 @@
 <?php
-// News landing page (copied from index.php and adapted for news feed)
 $personal_feed = [
     [
         'title' => "Revealed: Which World Cup games the BBC and ITV will show next summer as broadcasters CONFIRM match split",
@@ -313,8 +312,6 @@ include __DIR__ . '/header.php';
 .news-theme .text-blue-800 { color: var(--brand) !important; }
 .news-theme .bg-blue-50 { background-color: rgba(0,170,210,0.06) !important; }
 
-/* Feed sizing variables and shared card/image helpers are centralized in header.php */
-
 /* keep other helpers similar to index */
 .anim-hidden { max-height: 0; opacity: 0; transform: translateY(-6px); transition: max-height .28s ease, opacity .28s ease, transform .28s ease; overflow: hidden; }
 .anim-open { max-height: 600px; opacity: 1; transform: translateY(0); transition: max-height .35s ease, opacity .35s ease, transform .35s ease; }
@@ -336,7 +333,7 @@ include __DIR__ . '/header.php';
 /* Multi-line truncation for excerpt (e.g., 2 lines) */
 .pf-card p {
     display: -webkit-box;
-    -webkit-line-clamp: 2;    /* Number of lines to show */
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;

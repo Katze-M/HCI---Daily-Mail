@@ -1,5 +1,4 @@
 <?php
-// Royals landing page (based on index.php) — royal-themed placeholders
 $personal_feed = [
     [
         'title' => '<a href="articles/buyline/Royale_article-1.php" class="text-blue-800 hover:underline">Kate Middleton makes star drop earrings the must-have accessory of the season - shop her exact pair and chic alternatives</a>',
@@ -256,9 +255,6 @@ include __DIR__ . '/header.php';
 .royals-theme .text-blue-700 { color: var(--brand) !important; }
 .royals-theme .text-blue-800 { color: var(--brand) !important; }
 .royals-theme .bg-blue-50 { background-color: rgba(84,12,117,0.06) !important; }
-
-/* Feed sizing variables and shared card/image helpers (copied from index) */
-/* Feed sizing variables and shared card/image helpers are centralized in header.php */
 
 /* keep other helpers similar to index */
 .anim-hidden { max-height: 0; opacity: 0; transform: translateY(-6px); transition: max-height .28s ease, opacity .28s ease, transform .28s ease; overflow: hidden; }

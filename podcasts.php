@@ -1,8 +1,4 @@
 <?php
-// show errors for development
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 // All podcasts (example data)
 $allPodcasts = [
     // Crime (7 total)
@@ -45,8 +41,6 @@ foreach($categories as $cat){
     }
 }
 
-// NOTE: removed $featured (Featured section) as requested
-
 // Group by category
 $groupedPodcasts = [];
 foreach($allPodcasts as $pod){
@@ -81,7 +75,7 @@ function jattr($data){
 </div>
 
 
-  <!-- DON'T MISS (kept) -->
+  <!-- DON'T MISS SECTION -->
   <div class="podcast-section" data-category="DontMiss">
     <h2 class="text-2xl font-bold text-[#0C2D78] mb-3">Don't Miss</h2>
 
@@ -186,9 +180,8 @@ function filterCategory(cat){
   if(cat === "All"){
     sections.forEach(sec => {
       sec.style.display = "block";
-      // Find the row container by its known id pattern (dontmiss-row or row-<category>).
-      // This avoids accidentally selecting the surrounding wrapper and
-      // ensures we target the element that holds the podcast cards.
+      /* This avoids accidentally selecting the surrounding wrapper and
+         ensures we target the element that holds the podcast cards. */
       const row = sec.querySelector('#dontmiss-row, [id^="row-"]');
       if(row){
         // remove any grid-specific classes that may have been added
@@ -246,9 +239,9 @@ function filterCategory(cat){
         row.style.overflowX = "visible";
         row.style.overflowY = "visible";
         row.scrollLeft = 0;
-        // In grid mode make each card take full width of its grid cell so the
-        // grid can manage column sizing and gaps (prevents forced fixed widths
-        // from overflowing or compressing the layout).
+        /* In grid mode make each card take full width of its grid cell so the
+           grid can manage column sizing and gaps (prevents forced fixed widths
+           from overflowing or compressing the layout).*/
         const cards = row.querySelectorAll('article');
         cards.forEach(c => {
           c.classList.remove('w-48');
@@ -265,8 +258,7 @@ function filterCategory(cat){
 </script>
 
 <script>
-// Ensure the page starts in the horizontal "All" mode on first load so each
-// category shows a horizontal scroller and doesn't overflow to the page edge.
+// Ensure the page starts in the horizontal "All" mode on first load so each category shows a horizontal scroller and doesn't overflow to the page edge.
 document.addEventListener('DOMContentLoaded', function(){
   try { filterCategory('All'); } catch (e) { /* ignore if function not available */ }
 });

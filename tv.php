@@ -1,5 +1,4 @@
 <?php
-// TV section page — layout copied from the homepage but with TV-specific placeholders
 include __DIR__ . '/header.php';
 
 $personal_feed = [
@@ -239,7 +238,7 @@ $category_strip = [
         scrollbar-width: none; /* Firefox */
     }
     #mainFiltersStrip::-webkit-scrollbar, #catFiltersPanel::-webkit-scrollbar {
-        display: none; /* Safari/Chrome */
+        display: none;
         width: 0;
         height: 0;
     }

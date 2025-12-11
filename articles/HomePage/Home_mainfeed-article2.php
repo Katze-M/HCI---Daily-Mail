@@ -1,5 +1,4 @@
 <?php
-// Article: Trump explodes at Zelensky...
 $comments = [
     ['name' => 'Jane D', 'text' => 'This interview will stir debate.', 'time' => '2h'],
     ['name' => 'Reader123', 'text' => 'Hard to see easy answers here.', 'time' => '1h'],
