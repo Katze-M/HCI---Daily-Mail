@@ -79,7 +79,7 @@ $mplus_main = [
         'excerpt' => "Small tweaks that make a big difference to sleep and relaxation.",
         'comments' => 1,
         'shares' => 0,
-        'image' => 'assets/news_article_pics/news1coffeeimg2.png',
+        'image' => 'assets/Buyline_assets/HomeGarden_4.avif',
         'category' => 'Lifestyle'
     ]
 ];
@@ -103,7 +103,7 @@ $mplus_categories = [
         'title' => "Beauty: Editor Picks",
         'comments' => 5,
         'shares' => 2,
-        'image' => 'assets/HomePage_assets/Homepage_article4-image1.png',
+        'image' => 'assets/Buyline_assets/MainFeed_Artc_2 pic.avif',
         'category' => 'Beauty'
     ],
     [
@@ -131,7 +131,7 @@ $mplus_categories = [
         'title' => "Health: Wellness Trends",
         'comments' => 2,
         'shares' => 0,
-        'image' => 'assets/news_article_pics/News-7.avif',
+        'image' => 'assets/MPlus_assets/mplus-assets-img1.png',
         'category' => 'Health'
     ]
 ];
@@ -277,7 +277,7 @@ $mplus_noquote_all = true;
     </main>
 
     <!-- Subscription modal -->
-    <div id="mplusModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div id="mplusModal" class="fixed inset-0 modal-bg hidden items-center justify-center z-50">
         <div class="bg-white rounded-lg max-w-md w-full p-6">
             <h2 class="text-xl font-semibold">Subscribe to DailyMail+</h2>
             <p class="text-gray-600 mt-2">This content is available to DailyMail+ subscribers only. Subscribe to access exclusive m+ articles.</p>
