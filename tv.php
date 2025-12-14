@@ -9,6 +9,7 @@ $personal_feed = [
         'link' => 'articles/TV/tv_article8.php',
         'category' => 'personal',
         'comments' => 13,
+        'shares' => 2,
         'tags' => ['antiques','kitchen','personal']
     ],
     [
@@ -17,6 +18,7 @@ $personal_feed = [
         'link' => 'articles/TV/tv_article9.php',
         'category' => 'personal',
         'comments' => 615,
+        'shares' => 48,
         'tags' => ['showbiz','celebrity','tv']
     ],
     ['title'=>'Inside Netflix\'s buzzy new drama: what to expect','excerpt'=>'A first look at the new Netflix series everyone is talking about.','comments'=>15,'shares'=>10,'image'=>'assets/tv_assets/article4-img1.png','link'=>'articles/TV/tv_article4.php'],
